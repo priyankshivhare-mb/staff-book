@@ -18,3 +18,14 @@ button:disabled {
 .img-responsive {
   max-width: 100%;
 }
+
+#navbarSupportedContent {
+  justify-content: flex-end;
+}
+
+.nav-mb-theme {
+  border-bottom: solid 3px;
+  border-bottom-color: #f7aa59;
+  height: 38px;
+  padding: 0 8px;
+}
