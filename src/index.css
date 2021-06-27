@@ -24,8 +24,26 @@ button:disabled {
 }
 
 .nav-mb-theme {
+  font-size: 14px;
   border-bottom: solid 3px;
   border-bottom-color: #f7aa59;
   height: 38px;
-  padding: 0 8px;
+  padding: 6px 8px 8px 8px;
+}
+
+.nav-item {
+  border-left: 1px solid #ffdeb0;
+  background: linear-gradient(to bottom, #ffffff 0%, #eeeae3 50%, #f5f3f2 100%);
+}
+
+.nav-item a {
+  background-color: #ffffff;
+}
+
+.nav-item.active {
+  font-weight: bold;
+}
+
+.nav-item.active a {
+  color: #FE8A02 !important;
 }
