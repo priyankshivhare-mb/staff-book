@@ -17,6 +17,7 @@ import BannerImage from '../../assets/dashboard-cta.png';
 const Home = props => {
     const [ isModalOpen, handleModalState ] = useState(false);
     const confirmStaffBookActivation = () => {
+        // Todo: The logic to be replaced by DB calls in future states
         const cookies = new Cookies();
         cookies.set('isStaffBookEnabled', 'true', { path: '/' });
         window.location.reload();

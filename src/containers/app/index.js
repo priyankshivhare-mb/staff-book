@@ -9,7 +9,6 @@ const App = () => {
 
     const cookies = new Cookies();
     const isStaffBookEnabled = cookies && cookies.get('isStaffBookEnabled');
-    console.log(isStaffBookEnabled);
 
     return (
     <>
