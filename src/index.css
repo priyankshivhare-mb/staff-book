@@ -19,6 +19,7 @@ button:disabled {
   max-width: 100%;
 }
 
+/* Navbar */
 #navbarSupportedContent {
   justify-content: flex-end;
 }
@@ -52,3 +53,12 @@ button:disabled {
 .nav-item.active a {
   color: #FE8A02 !important;
 }
+
+/* Navbar End */
+
+/* Modal */
+.modal-show {
+  display: block;
+}
+
+/* Modal End */

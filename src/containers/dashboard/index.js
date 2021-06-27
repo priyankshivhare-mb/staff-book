@@ -1,4 +1,5 @@
-import React from 'react'
+import React, { useState } from 'react'
+import Cookies from 'universal-cookie';
 import {push} from 'connected-react-router'
 import {bindActionCreators} from 'redux'
 import {connect} from 'react-redux'
@@ -8,12 +9,37 @@ import {
     decrement,
     decrementAsync
 } from '../../modules/counter'
-import BannerCta from '../../assets/dashboard-cta.png';
+import Modal from '../common/modal';
+import BannerImage from '../../assets/dashboard-cta.png';
 
-const Home = props => (
+
+
+const Home = props => {
+    const [ isModalOpen, handleModalState ] = useState(false);
+    const confirmStaffBookActivation = () => {
+        const cookies = new Cookies();
+        cookies.set('isStaffBookEnabled', 'true', { path: '/' });
+        window.location.reload();
+    }
+
+    return (
     <div>
         <h1>Dashboard</h1>
-        <img src={BannerCta} className="img-responsive" />
+        <img
+            src={BannerImage}
+            className="img-responsive"
+            onClick={() => handleModalState(true)}
+        />
+
+        {
+            isModalOpen &&
+            <Modal
+                title="Activate Staff-book?"
+                content="Are you sure you want to activate Staff-book?"
+                handleConfirm={() => confirmStaffBookActivation()}
+                handleCancel={() => handleModalState(false)}
+            />
+        }
 
         <p>Count: {props.count}</p>
 
@@ -37,7 +63,7 @@ const Home = props => (
             </button>
         </p>
     </div>
-)
+)}
 
 const mapStateToProps = ({counter}) => ({
     count: counter.count,
