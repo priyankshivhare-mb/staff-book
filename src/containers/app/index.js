@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import {Route, Link} from 'react-router-dom'
 import Dashboard from '../dashboard'
-import About from '../about'
+import StaffBook from '../staff-book'
 
 const App = () => {
     const [ activeLink, setActiveLink ] = useState('dashboard');
@@ -20,6 +20,9 @@ const App = () => {
                     <li className="nav-item">
                         <Link className="nav-link" to="#">Staff</Link>
                     </li>
+                    <li className={`${activeLink === 'staffBook' ? 'active' : ''} nav-item`}>
+                        <Link className="nav-link" to="/staff-book" onClick={() => setActiveLink('staffBook')}>Staff Book</Link>
+                    </li>
                     <li className="nav-item">
                         <Link className="nav-link" to="#">Services & Pricing</Link>
                     </li>
@@ -29,16 +32,13 @@ const App = () => {
                     <li className="nav-item">
                         <Link className="nav-link" to="#">Manager Tool</Link>
                     </li>
-                    <li className={`${activeLink === 'aboutUs' ? 'active' : ''} nav-item`}>
-                        <Link className="nav-link" to="/about-us" onClick={() => setActiveLink('aboutUs')}>About us</Link>
-                    </li>
                 </ul>
             </div>
         </nav>
         <div className="container">
             <main>
                 <Route exact path="/" component={Dashboard}/>
-                <Route exact path="/about-us" component={About}/>
+                <Route exact path="/staff-book" component={StaffBook}/>
             </main>
         </div>
     </>
