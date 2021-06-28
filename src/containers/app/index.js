@@ -37,7 +37,7 @@ const App = () => {
                         <Link className="nav-link" to="#">Products</Link>
                     </li>
                     <li className="nav-item">
-                        <Link className="nav-link" to="#">Manager Tool</Link>
+                        <Link className="nav-link" to="#">Manager Tools</Link>
                     </li>
                 </ul>
             </div>
