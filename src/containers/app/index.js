@@ -3,6 +3,7 @@ import {Route, Link} from 'react-router-dom'
 import Cookies from 'universal-cookie';
 import Dashboard from '../dashboard'
 import StaffBook from '../staff-book'
+import mbLogo from '../../assets/MB-logo.png';
 
 const App = () => {
     const [ activeLink, setActiveLink ] = useState('dashboard');
@@ -13,7 +14,7 @@ const App = () => {
     return (
     <>
         <div className="spacer-nav">
-            { /* Probably something will come here */ }
+            <img src={mbLogo} className="img-responsive mb-logo" />
         </div>
         <nav className="navbar navbar-expand-lg navbar-light nav-mb-theme">
             <div className="collapse navbar-collapse" id="navbarSupportedContent">
