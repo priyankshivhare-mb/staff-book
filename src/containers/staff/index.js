@@ -1,10 +1,10 @@
 import React from 'react'
 
-const StaffBook = () => (
+const Staff = () => (
   <div>
-    <h1>Staff Book</h1>
+    <h1>Staff</h1>
     <p>Did you get here via Redux?</p>
   </div>
 )
 
-export default StaffBook
+export default Staff

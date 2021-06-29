@@ -1,55 +1,43 @@
-import React, { useState } from 'react'
-import {Route, Link} from 'react-router-dom'
+import React, {useState} from 'react';
+import {Route, Link} from 'react-router-dom';
 import Cookies from 'universal-cookie';
-import Dashboard from '../dashboard'
-import StaffBook from '../staff-book'
+import Dashboard from '../dashboard';
+import StaffBook from '../staff-book';
+import Staff from '../staff';
+import Navigation from '../common/navigation';
 import mbLogo from '../../assets/MB-logo.png';
 
 const App = () => {
-    const [ activeLink, setActiveLink ] = useState('dashboard');
-
+    const [activeLink, setActiveLink] = useState('dashboard');
     const cookies = new Cookies();
     const isStaffBookEnabled = cookies && cookies.get('isStaffBookEnabled');
+    const isBusinessOwnerFlow = window.location.pathname === '/staff-book' || window.location.pathname === '/';
 
     return (
-    <>
-        <div className="spacer-nav">
-            <img src={mbLogo} className="img-responsive mb-logo" />
-        </div>
-        <nav className="navbar navbar-expand-lg navbar-light nav-mb-theme">
-            <div className="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul className="navbar-nav mr-auto">
-                    <li className={`${activeLink === 'dashboard' ? 'active' : ''} nav-item`}>
-                        <Link className="nav-link" to="/" onClick={() => setActiveLink('dashboard')}>Dashboard</Link>
-                    </li>
-                    <li className="nav-item">
-                        <Link className="nav-link" to="#">Setup Checklist</Link>
-                    </li>
-                    <li className="nav-item">
-                        <Link className="nav-link" to="#">Staff</Link>
-                    </li>
-                    { isStaffBookEnabled && <li className={`${activeLink === 'staffBook' ? 'active' : ''} nav-item`}>
-                        <Link className="nav-link" to="/staff-book" onClick={() => setActiveLink('staffBook')}>Staff Book</Link>
-                    </li> }
-                    <li className="nav-item">
-                        <Link className="nav-link" to="#">Services & Pricing</Link>
-                    </li>
-                    <li className="nav-item">
-                        <Link className="nav-link" to="#">Products</Link>
-                    </li>
-                    <li className="nav-item">
-                        <Link className="nav-link" to="#">Manager Tools</Link>
-                    </li>
-                </ul>
+        <>
+            {isBusinessOwnerFlow ?
+                <>
+                    <div className="spacer-nav">
+                        <img src={mbLogo} className="img-responsive mb-logo"/>
+                    </div>
+                    <Navigation
+                        activeLink={activeLink}
+                        setActiveLink={setActiveLink}
+                        isStaffBookEnabled={isStaffBookEnabled}
+                    />
+                </> : <>
+                    <h1>Staff flow</h1>
+                </>
+            }
+            <div className="container">
+                <main>
+                    <Route exact path="/" component={Dashboard}/>
+                    <Route exact path="/staff-book" component={StaffBook}/>
+                    <Route exact path="/staff" component={Staff}/>
+                </main>
             </div>
-        </nav>
-        <div className="container">
-            <main>
-                <Route exact path="/" component={Dashboard}/>
-                <Route exact path="/staff-book" component={StaffBook}/>
-            </main>
-        </div>
-    </>
-)};
+        </>
+    )
+};
 
 export default App
