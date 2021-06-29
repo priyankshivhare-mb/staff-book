@@ -5,8 +5,7 @@ html {
 body {
   margin: 0;
   padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial,
-    sans-serif;
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
   font-size: 1rem;
   line-height: 1.5;
 }
@@ -20,18 +19,14 @@ button:disabled {
   max-height: 100%;
 }
 
-.mb-logo {
-  margin-left: 20px;
-}
-
 /* Navbar */
-#navbarSupportedContent {
-  justify-content: flex-end;
-}
-
 .spacer-nav {
   height: 114px;
   border-bottom: 1px solid #a4a7b3;
+
+  .mb-logo {
+    margin-left: 20px;
+  }
 }
 
 .nav-mb-theme {
@@ -40,23 +35,27 @@ button:disabled {
   border-bottom-color: #f7aa59;
   height: 41px;
   padding: 6px 8px 8px 8px;
-}
 
-.nav-item {
-  border-left: 1px solid #ffdeb0;
-  background: linear-gradient(to bottom, #ffffff 0%, #eeeae3 50%, #f5f3f2 100%);
-}
+  #navbarSupportedContent {
+    justify-content: flex-end;
+  }
 
-.nav-item a {
-  background-color: #ffffff;
-}
+  .nav-item {
+    border-left: 1px solid #ffdeb0;
+    background: linear-gradient(to bottom, #ffffff 0%, #eeeae3 50%, #f5f3f2 100%);
 
-.nav-item.active {
-  font-weight: bold;
-}
+    a {
+      background-color: #ffffff;
+    }
 
-.nav-item.active a {
-  color: #FE8A02 !important;
+    &.active {
+      font-weight: bold;
+
+      a {
+        color: #FE8A02 !important;
+      }
+    }
+  }
 }
 
 /* Navbar End */
