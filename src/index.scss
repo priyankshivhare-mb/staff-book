@@ -34,17 +34,15 @@ button:disabled {
   border-bottom: solid 3px;
   border-bottom-color: #f7aa59;
   height: 41px;
-  padding: 6px 8px 8px 8px;
-
-  #navbarSupportedContent {
-    justify-content: flex-end;
-  }
+  padding: 0;
 
   .nav-item {
     border-left: 1px solid #ffdeb0;
-    background: linear-gradient(to bottom, #ffffff 0%, #eeeae3 50%, #f5f3f2 100%);
+    padding-top: 10px;
+    padding-bottom: 14px;
 
     a {
+      padding: 0 8px;
       background-color: #ffffff;
     }
 
@@ -53,6 +51,13 @@ button:disabled {
 
       a {
         color: #FE8A02 !important;
+        box-shadow: none;
+        background: none;
+
+        &:hover, &:active, &:focus {
+          box-shadow: none;
+          background: none;
+        }
       }
     }
   }

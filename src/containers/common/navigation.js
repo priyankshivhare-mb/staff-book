@@ -3,9 +3,9 @@ import {Link} from "react-router-dom";
 
 const Navigation = (props) => {
     return (
-        <nav className="navbar navbar-expand-lg navbar-light nav-mb-theme">
-            <div className="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul className="navbar-nav mr-auto">
+        <nav className="navbar navbar-default nav-mb-theme">
+            <div className="collapse navbar-collapse">
+                <ul className="navbar-nav navbar pull-right">
                     <li className={`${props.activeLink === 'dashboard' ? 'active' : ''} nav-item`}>
                         <Link className="nav-link" to="/" onClick={() => props.setActiveLink('dashboard')}>Dashboard</Link>
                     </li>
