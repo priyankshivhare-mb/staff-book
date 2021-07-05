@@ -1,4 +1,5 @@
 import React from 'react'
+import profilePic from '../../assets/placeholder-image.png';
 
 const ProfileCard = () => {
     return (
@@ -6,14 +7,14 @@ const ProfileCard = () => {
             <div className="col-md-12 profile-view-wrapper">
                 <div className="row profile-main">
                     <div className="col-md-2">
-                        <img src="https://via.placeholder.com/150" className="img-responsive rounded-circle profile-img"/>
+                        <img src={profilePic} className="img-responsive rounded-circle profile-img"/>
                     </div>
                     <div className="col-md-10">
                         <div className="row">
                             <div className="col-md-6">
                                 <h3>Marvin McKinney</h3>
                             </div>
-                            <div className="col-md-6">
+                            <div className="col-md-6 profile-score-wrapper">
                                 <button type="button" className="btn primary-orange">
                                     Profile Score 90%
                                 </button>
@@ -57,19 +58,19 @@ const ProfileCard = () => {
                 </div>
                 <div className="row profile-footer">
                     <div className="col-md-12">
-                        <span>
+                        <span className="label-emp footer-col">
                             7
                         </span>
-                        <span>
+                        <span className="label-emp footer-col">
                             3
                         </span>
-                        <span>
-                            Active: 11 Mar 2021
+                        <span className="footer-col">
+                            <span className="label-emp">Active:</span> 11 Mar 2021
                         </span>
-                        <span>
-                            Modified: 28 Feb 2021
+                        <span className="footer-col">
+                            <span className="label-emp">Modified: </span>28 Feb 2021
                         </span>
-                        <span>
+                        <span className="pull-right review">
                             15 Review
                         </span>
                     </div>

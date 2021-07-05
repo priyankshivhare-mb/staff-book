@@ -73,10 +73,29 @@ button:disabled {
       opacity: 0.3;
       font-weight: 700;
     }
+
+    .profile-score-wrapper {
+      text-align: right;
+    }
   }
 
   .profile-footer {
     border-top: 1px solid #c4c4c4;
     padding: 10px 8px;
+
+    .footer-col {
+      border-right: 1px solid rgba(0,0,0,0.1);
+      margin-right: 14px;
+      padding-right: 14px;
+    }
+
+    .label-emp {
+      font-weight: 700;
+    }
+
+    .review {
+      color: #0A7C8E;
+      font-weight: 700;
+    }
   }
 }
