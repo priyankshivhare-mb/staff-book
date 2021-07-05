@@ -29,3 +29,54 @@ button:disabled {
 }
 
 /* Modal End */
+
+.profile-view-wrapper {
+  background: #FFFFFF;
+  box-shadow: 0 1px 3px rgba(45, 45, 45, 0.2);
+
+  .profile-main {
+    padding: 24px;
+
+    .profile-img {
+      max-width: 116px;
+    }
+
+    h3 {
+      color: #0A7C8E;
+      font-weight: 600;
+      font-size: 24px;
+      margin-bottom: 13px;
+    }
+
+    .primary-orange {
+      background: #6CBB11;
+      padding: 5px 10px;
+      border-radius: 27px;
+      text-transform: capitalize;
+    }
+    .primary-blue {
+      background: #3AC1FF;
+      padding: 5px 10px;
+      border-radius: 27px;
+      text-transform: capitalize;
+    }
+
+    .candidate-specifics {
+      margin-bottom: 23px;
+
+      span {
+        font-weight: 700;
+      }
+    }
+
+    .candidate-label {
+      opacity: 0.3;
+      font-weight: 700;
+    }
+  }
+
+  .profile-footer {
+    border-top: 1px solid #c4c4c4;
+    padding: 10px 8px;
+  }
+}
