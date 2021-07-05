@@ -7,6 +7,7 @@ import App from './containers/app'
 
 import 'sanitize.css/sanitize.css'
 import './index.scss'
+import './paper-dashboard.scss';
 
 const target = document.querySelector('#root')
 
