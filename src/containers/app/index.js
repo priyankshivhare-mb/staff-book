@@ -1,11 +1,10 @@
 import React, {useState} from 'react';
-import {Route, Link} from 'react-router-dom';
+import {Route} from 'react-router-dom';
 import Cookies from 'universal-cookie';
 import Dashboard from '../dashboard';
 import StaffBook from '../staff-book';
 import Staff from '../staff';
 import Navigation from '../common/navigation';
-import mbLogo from '../../assets/MB-logo.png';
 
 const App = () => {
     const [activeLink, setActiveLink] = useState('dashboard');
@@ -17,9 +16,6 @@ const App = () => {
         <>
             {isBusinessOwnerFlow ?
                 <>
-                    <div className="spacer-nav">
-                        <img src={mbLogo} className="img-responsive mb-logo"/>
-                    </div>
                     <Navigation
                         activeLink={activeLink}
                         setActiveLink={setActiveLink}

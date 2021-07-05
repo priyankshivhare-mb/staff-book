@@ -3,9 +3,9 @@ import {Link} from "react-router-dom";
 
 const Navigation = (props) => {
     return (
-        <nav className="navbar navbar-default nav-mb-theme">
-            <div className="collapse navbar-collapse">
-                <ul className="navbar-nav navbar pull-right">
+        <div className="container">
+            <header className="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+                <ul className="nav nav-pills">
                     <li className={`${props.activeLink === 'dashboard' ? 'active' : ''} nav-item`}>
                         <Link className="nav-link" to="/" onClick={() => props.setActiveLink('dashboard')}>Dashboard</Link>
                     </li>
@@ -28,8 +28,8 @@ const Navigation = (props) => {
                         <Link className="nav-link" to="#">Manager Tools</Link>
                     </li>
                 </ul>
-            </div>
-        </nav>
+            </header>
+        </div>
     );
 };
 

@@ -20,48 +20,6 @@ button:disabled {
 }
 
 /* Navbar */
-.spacer-nav {
-  height: 114px;
-  border-bottom: 1px solid #a4a7b3;
-
-  .mb-logo {
-    margin-left: 20px;
-  }
-}
-
-.nav-mb-theme {
-  font-size: 14px;
-  border-bottom: solid 3px;
-  border-bottom-color: #f7aa59;
-  height: 41px;
-  padding: 0;
-
-  .nav-item {
-    border-left: 1px solid #ffdeb0;
-    padding-top: 10px;
-    padding-bottom: 14px;
-
-    a {
-      padding: 0 8px;
-      background-color: #ffffff;
-    }
-
-    &.active {
-      font-weight: bold;
-
-      a {
-        color: #FE8A02 !important;
-        box-shadow: none;
-        background: none;
-
-        &:hover, &:active, &:focus {
-          box-shadow: none;
-          background: none;
-        }
-      }
-    }
-  }
-}
 
 /* Navbar End */
 
