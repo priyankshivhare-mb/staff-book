@@ -6,7 +6,14 @@ const ProfileCard = (props) => {
             <div className={`col-md-12 profile-view-wrapper ${props.isHighlighted && 'highlighted'}`}>
                 <div className="row profile-main">
                     <div className="col-md-2">
-                        <img src={props.profilePic} className="img-responsive rounded-circle profile-img"/>
+                        <div className="row">
+                            <img src={props.profilePic} className="img-responsive rounded-circle profile-img"/>
+                            <div className="social-wrapper">
+                                <span className="col"><i className="fa fa-facebook-official" /></span>
+                                <span className="col"><i className="fa fa-instagram" /></span>
+                                <span className="col"><i className="fa fa-twitter" /></span>
+                            </div>
+                        </div>
                     </div>
                     <div className="col-md-10">
                         <div className="row">
