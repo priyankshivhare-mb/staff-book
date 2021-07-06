@@ -1,33 +1,32 @@
 import React from 'react'
-import profilePic from '../../assets/placeholder-image.png';
 
-const ProfileCard = () => {
+const ProfileCard = (props) => {
     return (
-      <>
-            <div className="col-md-12 profile-view-wrapper">
+      <div className="row">
+            <div className={`col-md-12 profile-view-wrapper ${props.isHighlighted && 'highlighted'}`}>
                 <div className="row profile-main">
                     <div className="col-md-2">
-                        <img src={profilePic} className="img-responsive rounded-circle profile-img"/>
+                        <img src={props.profilePic} className="img-responsive rounded-circle profile-img"/>
                     </div>
                     <div className="col-md-10">
                         <div className="row">
                             <div className="col-md-6">
-                                <h3>Marvin McKinney</h3>
+                                <h3>{props.name}</h3>
                             </div>
                             <div className="col-md-6 profile-score-wrapper">
                                 <button type="button" className="btn primary-orange">
-                                    Profile Score 90%
+                                    Profile Score {props.profileScore}%
                                 </button>
                                 <button type="button" className="btn primary-blue">
-                                    Employment Score 70%
+                                    Employment Score {props.employmentScore}%
                                 </button>
                             </div>
                         </div>
                         <div className="row">
                             <div className="col-md-6 candidate-specifics">
-                                <span className="col"><i className="fa-solid fa-suitcase" /> 6yr 3m</span>
-                                <span className="col"><i className="fa-solid fa-wallet" /> $20 /hrs</span>
-                                <span className="col"><i className="fa-solid fa-location-dot" /> Philadelphia</span>
+                                <span className="col"><i className="fa-solid fa-suitcase" /> {props.experience}</span>
+                                <span className="col"><i className="fa-solid fa-wallet" /> ${props.wagePerHr} /hrs</span>
+                                <span className="col"><i className="fa-solid fa-location-dot" /> {props.location}</span>
                             </div>
                         </div>
                         <div className="row">
@@ -35,7 +34,7 @@ const ProfileCard = () => {
                                 Current
                             </div>
                             <div className="col-md-10">
-                                Salon Manager - Beauty and Spa @ Chenz
+                                {props.currentJob}
                             </div>
                         </div>
                         <div className="row">
@@ -43,7 +42,7 @@ const ProfileCard = () => {
                                 Key Skills
                             </div>
                             <div className="col-md-10">
-                                Beauty / Fitness / Spa
+                                {props.keySkills}
                             </div>
                         </div>
                         <div className="row">
@@ -51,7 +50,7 @@ const ProfileCard = () => {
                                 May also know
                             </div>
                             <div className="col-md-10">
-                                Beauty, Salon Managerstrong, Backend
+                                {props.secondarySkills}
                             </div>
                         </div>
                     </div>
@@ -59,24 +58,24 @@ const ProfileCard = () => {
                 <div className="row profile-footer">
                     <div className="col-md-12">
                         <span className="label-emp footer-col">
-                            7
+                            {props.profileViews}
                         </span>
                         <span className="label-emp footer-col">
-                            3
+                            {props.profileDownloads}
                         </span>
                         <span className="footer-col">
-                            <span className="label-emp">Active:</span> 11 Mar 2021
+                            <span className="label-emp">Active:</span> {props.lastActive}
                         </span>
                         <span className="footer-col">
-                            <span className="label-emp">Modified: </span>28 Feb 2021
+                            <span className="label-emp">Modified: </span>{props.lastModified}
                         </span>
                         <span className="pull-right review">
-                            15 Review
+                            {props.reviewCount} Review
                         </span>
                     </div>
                 </div>
             </div>
-      </>
+      </div>
     );
 };
 

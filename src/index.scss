@@ -45,6 +45,11 @@ button:disabled {
 .profile-view-wrapper {
   background: #FFFFFF;
   box-shadow: 0 1px 3px rgba(45, 45, 45, 0.2);
+  margin-bottom: 12px;
+
+  &.highlighted {
+    background-color: #F9F3D9;
+  }
 
   .profile-main {
     padding: 24px;
