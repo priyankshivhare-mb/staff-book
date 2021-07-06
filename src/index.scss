@@ -20,7 +20,19 @@ button:disabled {
 }
 
 /* Navbar */
+.nav-link {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.011em;
+    text-align: left;
+    color: #696C74 !important;
+    text-transform: capitalize !important;
 
+    border-left: 1px solid #696C74;
+    border-radius: unset !important;
+}
 /* Navbar End */
 
 /* Modal */
