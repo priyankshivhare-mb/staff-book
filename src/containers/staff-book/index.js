@@ -1,5 +1,6 @@
 import React, {Component} from 'react'
 import profilePic from '../../assets/placeholder-image.png';
+import profilePic2 from '../../assets/placeholder-image-2.png';
 import ProfileCard from '../common/profileCard';
 
 class StaffBook extends Component {
@@ -28,7 +29,7 @@ class StaffBook extends Component {
 
                 <ProfileCard
                     isHighlighted={true}
-                    profilePic={profilePic}
+                    profilePic={profilePic2}
                     name="Leslie Alexandar"
                     profileScore={90}
                     employmentScore={70}
