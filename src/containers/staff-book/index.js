@@ -13,7 +13,7 @@ class StaffBook extends Component {
                     profileScore={90}
                     employmentScore={70}
                     experience="6y 2m"
-                    wagePerHr={20}
+                    wage="$12000 /yr"
                     location="Philadelphia"
                     currentJob="Salon Manager - Beauty and Spa @ Chenz Salons and Spa Studio"
                     keySkills="Beauty / Fitness / Spa Services"
@@ -33,7 +33,7 @@ class StaffBook extends Component {
                     profileScore={90}
                     employmentScore={70}
                     experience="6y 2m"
-                    wagePerHr={20}
+                    wage="$20 /hr"
                     location="Philadelphia"
                     currentJob="Salon Manager - Beauty and Spa @ Chenz Salons and Spa Studio"
                     keySkills="Beauty / Fitness / Spa Services"

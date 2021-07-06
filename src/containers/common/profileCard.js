@@ -24,9 +24,9 @@ const ProfileCard = (props) => {
                         </div>
                         <div className="row">
                             <div className="col-md-6 candidate-specifics">
-                                <span className="col"><i className="fa-solid fa-suitcase" /> {props.experience}</span>
-                                <span className="col"><i className="fa-solid fa-wallet" /> ${props.wagePerHr} /hrs</span>
-                                <span className="col"><i className="fa-solid fa-location-dot" /> {props.location}</span>
+                                <span className="col"><i className="fa fa-suitcase" /> {props.experience}</span>
+                                <span className="col"><i className="fa fa-money" /> {props.wage}</span>
+                                <span className="col"><i className="fa fa-map-marker" /> {props.location}</span>
                             </div>
                         </div>
                         <div className="row">
@@ -58,10 +58,10 @@ const ProfileCard = (props) => {
                 <div className="row profile-footer">
                     <div className="col-md-12">
                         <span className="label-emp footer-col">
-                            {props.profileViews}
+                            <i className="fa fa-eye" /> {props.profileViews}
                         </span>
                         <span className="label-emp footer-col">
-                            {props.profileDownloads}
+                            <i className="fa fa-download" /> {props.profileDownloads}
                         </span>
                         <span className="footer-col">
                             <span className="label-emp">Active:</span> {props.lastActive}
@@ -70,7 +70,7 @@ const ProfileCard = (props) => {
                             <span className="label-emp">Modified: </span>{props.lastModified}
                         </span>
                         <span className="pull-right review">
-                            {props.reviewCount} Review
+                            {props.reviewCount} Review <i className="fa fa-commenting-o" />
                         </span>
                     </div>
                 </div>
