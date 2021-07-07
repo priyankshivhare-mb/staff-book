@@ -1,47 +1,56 @@
 import React from 'react';
 import { Link } from "react-router-dom";
 import StaffBookLogo from '../../assets/staff-book-logo.png';
+import CandidateStatusIcon from '../../assets/icons/candidate-status.png';
+import DashboardIcon from '../../assets/icons/dashboard.png';
+import NotificationIcon from '../../assets/icons/notification.png';
+import RecommendedProfileIcon from '../../assets/icons/recommended-profile.png';
+import SearchProfileIcon from '../../assets/icons/search-profile.png';
+import SettingsIcon from '../../assets/icons/settings.png';
+import ShortlistedProfileIcon from '../../assets/icons/shortlisted-profile.png';
 
 const Navigation = (props) => {
   return (
     <nav className="navbar navbar-expand-lg">
-      <a className="navbar-brand" href="/">
+      <Link className="navbar-brand" to="/">
         <img src={StaffBookLogo} height="80" alt="" />
-      </a>
+      </Link>
       <div className="collapse navbar-collapse" id="navbarNav">
         <ul className="navbar-nav ml-auto">
           <li className="nav-item active">
-            <a className="nav-link" href="#"><i className="fa fa-th-large" /> Dashboard</a>
+            <Link className="nav-link" to="/">
+              <img src={DashboardIcon} height="15px"/> Dashboard
+            </Link>
           </li>
           <li className="nav-item active">
-            <a className="nav-link" href="#">
-              <i className="fa fa-file-text-o" /> Search Profile
-            </a>
+            <Link className="nav-link" to="#">
+              <img src={SearchProfileIcon} height="18px"/> Search Profile
+            </Link>
           </li>
           <li className="nav-item active">
-            <a className="nav-link" href="#">
-              <i className="fa fa-file-text-o" /> Shortlisted Profiles
-            </a>
+            <Link className="nav-link" to="#">
+              <img src={ShortlistedProfileIcon} height="18px"/> Shortlisted Profiles
+            </Link>
           </li>
           <li className="nav-item active">
-            <a className="nav-link" href="#">
-              <i className="fa fa-file-text-o" /> Recommended Profiles
-            </a>
+            <Link className="nav-link" to="#">
+              <img src={RecommendedProfileIcon} height="18px"/> Recommended Profiles
+            </Link>
           </li>
           <li className="nav-item active">
-            <a className="nav-link" href="#">
-              <i className="fa fa-file-text-o" /> Candidates Status
-            </a>
+            <Link className="nav-link" to="#">
+              <img src={CandidateStatusIcon} height="18px"/> Candidates Status
+            </Link>
           </li>
           <li className="nav-item active">
-            <a className="nav-link" href="#">
-              <i className="fa fa-bell-o" />
-            </a>
+            <Link className="nav-link" to="#">
+              <img src={NotificationIcon} height="18px"/>
+            </Link>
           </li>
           <li className="nav-item active">
-            <a className="nav-link" href="#">
-              <i className="fa fa-cog" />
-            </a>
+            <Link className="nav-link" to="#">
+              <img src={SettingsIcon} height="18px"/>
+            </Link>
           </li>
         </ul>
       </div>
