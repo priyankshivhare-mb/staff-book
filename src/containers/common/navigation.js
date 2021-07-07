@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import StaffBookLogo from '../../assets/staff-book-logo.png';
 import CandidateStatusIcon from '../../assets/icons/candidate-status.png';
 import DashboardIcon from '../../assets/icons/dashboard.png';
@@ -12,45 +12,45 @@ import ShortlistedProfileIcon from '../../assets/icons/shortlisted-profile.png';
 const Navigation = (props) => {
   return (
     <nav className="navbar navbar-expand-lg">
-      <Link className="navbar-brand" to="/">
+      <NavLink className="navbar-brand" to="/">
         <img src={StaffBookLogo} height="80" alt="" />
-      </Link>
+      </NavLink>
       <div className="collapse navbar-collapse" id="navbarNav">
         <ul className="navbar-nav ml-auto">
           <li className="nav-item active">
-            <Link className="nav-link" to="/">
+            <NavLink className="nav-link" to="/" activeClassName="active">
               <img src={DashboardIcon} height="15px"/> Dashboard
-            </Link>
+            </NavLink>
           </li>
-          <li className="nav-item active">
-            <Link className="nav-link" to="#">
+          <li className="nav-item">
+            <NavLink className="nav-link" to="/search-profiles" activeClassName="active">
               <img src={SearchProfileIcon} height="18px"/> Search Profile
-            </Link>
+            </NavLink>
           </li>
-          <li className="nav-item active">
-            <Link className="nav-link" to="#">
+          <li className="nav-item">
+            <NavLink className="nav-link" to="/shortlisted-profiles" activeClassName="active">
               <img src={ShortlistedProfileIcon} height="18px"/> Shortlisted Profiles
-            </Link>
+            </NavLink>
           </li>
-          <li className="nav-item active">
-            <Link className="nav-link" to="#">
+          <li className="nav-item">
+            <NavLink className="nav-link" to="/recommended-profiles" activeClassName="active">
               <img src={RecommendedProfileIcon} height="18px"/> Recommended Profiles
-            </Link>
+            </NavLink>
           </li>
-          <li className="nav-item active">
-            <Link className="nav-link" to="#">
+          <li className="nav-item">
+            <NavLink className="nav-link" to="/candidate-status" activeClassName="active">
               <img src={CandidateStatusIcon} height="18px"/> Candidates Status
-            </Link>
+            </NavLink>
           </li>
-          <li className="nav-item active">
-            <Link className="nav-link" to="#">
+          <li className="nav-item">
+            <NavLink className="nav-link" to="/notifications" activeClassName="active">
               <img src={NotificationIcon} height="18px"/>
-            </Link>
+            </NavLink>
           </li>
-          <li className="nav-item active">
-            <Link className="nav-link" to="#">
+          <li className="nav-item">
+            <NavLink className="nav-link" to="/settings" activeClassName="active">
               <img src={SettingsIcon} height="18px"/>
-            </Link>
+            </NavLink>
           </li>
         </ul>
       </div>
