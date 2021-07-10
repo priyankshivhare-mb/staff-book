@@ -1,4 +1,17 @@
 import React from 'react'
+import GoogleMapWithMarker from '../common/googleMapWithMarker';
+
+const markerPosition = [{
+    lat: 37.772,
+    lng: -122.214
+}, {
+    lat: 39.772,
+    lng: -122.214
+}];
+
+const handleOnClick = (lat, lng) => {
+    console.log(lat, lng);
+};
 
 const Staff = () => (
     <div className="wrapper">
@@ -157,7 +170,26 @@ const Staff = () => (
             <div className="content">
                 <div className="card">
                     <div className="card-header">
-                        <h3>Hello, world!</h3>
+                        <GoogleMapWithMarker
+                            containerClassName="map-class-name"
+                            width="800px"
+                            height="400px"
+                            zoom={4}
+                            mapCenter={
+                                {lat: 38.772,
+                                lng: -122.214}}
+                            markerData={markerPosition}
+                            onMarkerClick={handleOnClick}
+                            showInfobox={true}
+                            infoboxPosition={{lat: 38.772,
+                                lng: -122.214}}
+                        >
+                            <div style={{backgroundColor: 'yellow', opacity: 0.75, padding: 12}}>
+                                <div style={{fontSize: 16, fontColor: `#08233B`}}>
+                                    Hello, World!
+                                </div>
+                            </div>
+                        </GoogleMapWithMarker>
                     </div>
                 </div>
             </div>
