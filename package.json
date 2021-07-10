@@ -17,6 +17,7 @@
   },
   "dependencies": {
     "connected-react-router": "4.5.0",
+    "google-map-react": "^2.1.10",
     "node-sass": "4.13.1",
     "react": "16.14.0",
     "react-dom": "16.14.0",
