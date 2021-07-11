@@ -16,7 +16,8 @@
     "downloads": 23,
     "active_date": "2021-06-11",
     "modified_date": "2021-05-18",
-    "reviews": 13
+    "reviews": 13,
+    "rating": "4.1"
   },
   {
     "id": 2,
@@ -35,7 +36,8 @@
     "downloads": 21,
     "active_date": "2021-07-12",
     "modified_date": "2021-06-30",
-    "reviews": 15
+    "reviews": 15,
+    "rating": "4.0"
   },
   {
     "id": 3,
@@ -54,7 +56,8 @@
     "downloads": 14,
     "active_date": "2021-07-16",
     "modified_date": "2021-07-01",
-    "reviews": 19
+    "reviews": 19,
+    "rating": "3.8"
   },
   {
     "id": 4,
@@ -73,7 +76,8 @@
     "downloads": 40,
     "active_date": "2021-07-27",
     "modified_date": "2021-07-20",
-    "reviews": 5
+    "reviews": 5,
+    "rating": "4.9"
   },
   {
     "id": 5,
@@ -92,7 +96,8 @@
     "downloads": 54,
     "active_date": "2021-07-30",
     "modified_date": "2021-07-24",
-    "reviews": 12
+    "reviews": 12,
+    "rating": "4.8"
   },
   {
     "id": 6,
@@ -111,7 +116,8 @@
     "downloads": 19,
     "active_date": "2021-06-21",
     "modified_date": "2021-05-18",
-    "reviews": 17
+    "reviews": 17,
+    "rating": "2.9"
   },
   {
     "id": 7,
@@ -129,6 +135,7 @@
     "downloads": 14,
     "active_date": "2021-06-15",
     "modified_date": "2021-06-12",
-    "reviews": 6
+    "reviews": 6,
+    "rating": "5.0"
   }
 ]
