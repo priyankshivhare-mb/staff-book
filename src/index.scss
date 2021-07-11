@@ -1,3 +1,35 @@
+@font-face {
+    font-family: 'averta';
+    src: url('/fonts/averta/bold-webfont.woff2') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'averta';
+    src: url('/fonts/averta/bolditalic-webfont.woff2') format('woff2');
+    font-weight: bold;
+    font-style: italic;
+
+}
+
+@font-face {
+    font-family: 'averta';
+    src: url('/fonts/averta/regular-webfont.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'averta';
+    src: url('/fonts/averta/regularitalic-webfont.woff2') format('woff2');
+    font-weight: normal;
+    font-style: italic;
+
+}
+
 html {
   font-size: 100%;
 }
@@ -5,7 +37,7 @@ html {
 body {
   margin: 0;
   padding: 0;
-  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  font-family: averta, "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
   font-size: 1rem;
   line-height: 1.5;
 }

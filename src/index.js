@@ -5,9 +5,9 @@ import { ConnectedRouter } from 'connected-react-router'
 import store, { history } from './store'
 import App from './containers/app'
 
-import 'sanitize.css/sanitize.css'
-import './index.scss'
+import 'sanitize.css/sanitize.css';
 import './paper-dashboard.scss';
+import './index.scss';
 
 const target = document.querySelector('#root')
 
