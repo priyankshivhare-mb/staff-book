@@ -1,13 +1,9 @@
 import React from 'react';
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import StaffBookLogo from '../../assets/staff-book-logo.png';
-import CandidateStatusIcon from '../../assets/icons/candidate-status.png';
-import DashboardIcon from '../../assets/icons/dashboard.png';
-import NotificationIcon from '../../assets/icons/notification.png';
-import RecommendedProfileIcon from '../../assets/icons/recommended-profile.png';
-import SearchProfileIcon from '../../assets/icons/search-profile.png';
-import SettingsIcon from '../../assets/icons/settings.png';
-import ShortlistedProfileIcon from '../../assets/icons/shortlisted-profile.png';
+import staffProfiles from '../../fixtures/staffProfiles.json';
+
+const currentUser = staffProfiles[0];
 
 const Navigation = (props) => {
   return (
@@ -19,38 +15,41 @@ const Navigation = (props) => {
         <ul className="navbar-nav ml-auto">
           <li className="nav-item active">
             <NavLink className="nav-link" to="/" activeClassName="active">
-              <img src={DashboardIcon} height="15px"/> Dashboard
+              Dashboard
             </NavLink>
           </li>
           <li className="nav-item">
             <NavLink className="nav-link" to="/search-profiles" activeClassName="active">
-              <img src={SearchProfileIcon} height="18px"/> Search Profile
+              Search Profile
             </NavLink>
           </li>
           <li className="nav-item">
             <NavLink className="nav-link" to="/shortlisted-profiles" activeClassName="active">
-              <img src={ShortlistedProfileIcon} height="18px"/> Shortlisted Profiles
+              Jobs Posted
             </NavLink>
           </li>
           <li className="nav-item">
             <NavLink className="nav-link" to="/recommended-profiles" activeClassName="active">
-              <img src={RecommendedProfileIcon} height="18px"/> Recommended Profiles
+              Staff-On-Call
             </NavLink>
           </li>
           <li className="nav-item">
-            <NavLink className="nav-link" to="/candidate-status" activeClassName="active">
-              <img src={CandidateStatusIcon} height="18px"/> Candidates Status
-            </NavLink>
+            <Link href="#" className="navbar-icon">
+              <i className="fa fa-search" />
+            </Link>
           </li>
+          <span className="navbar-divider"/>
           <li className="nav-item">
-            <NavLink className="nav-link" to="/notifications" activeClassName="active">
-              <img src={NotificationIcon} height="18px"/>
-            </NavLink>
+            <Link href="#" className="navbar-icon">
+              <i className="fa fa-bell-o" />
+            </Link>
           </li>
+          <span className="navbar-divider"/>
           <li className="nav-item">
-            <NavLink className="nav-link" to="/settings" activeClassName="active">
-              <img src={SettingsIcon} height="18px"/>
-            </NavLink>
+            <Link href="#" className="nav-link">
+              <span className="current-user-name">{currentUser.name}</span>
+              <img className="rounded-circle" src={currentUser.img_url} height="35px"/>
+            </Link>
           </li>
         </ul>
       </div>
