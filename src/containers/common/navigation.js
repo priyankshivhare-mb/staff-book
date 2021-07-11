@@ -9,7 +9,7 @@ const Navigation = (props) => {
   return (
     <nav className="navbar navbar-expand-lg">
       <NavLink className="navbar-brand" to="/">
-        <img src={StaffBookLogo} height="80" alt="" />
+        <img src={StaffBookLogo} height="65" alt="" />
       </NavLink>
       <div className="collapse navbar-collapse" id="navbarNav">
         <ul className="navbar-nav ml-auto">
