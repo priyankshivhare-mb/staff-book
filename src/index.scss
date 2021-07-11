@@ -59,11 +59,26 @@ button:disabled {
     line-height: 24px;
     letter-spacing: -0.011em;
     text-align: left;
-    color: #696C74 !important;
+    color: #252733 !important;
     text-transform: capitalize !important;
-
-    box-shadow: 1px 0px 0px rgba(0, 0, 0, 0.1);
-    border-radius: unset !important;
+}
+a.navbar-icon {
+    float: left;
+    text-align: center;
+    padding: 10px;
+    color: #6E6B7B !important;
+    text-decoration: none;
+    font-size: 17px;
+}
+.navbar-divider {
+    position: static;
+    border: 1px solid #DFE0EB;
+    margin: 0px 15px;
+    height: 40px;
+}
+.current-user-name {
+    padding: 0 15px 0 0;
+    color: #252733;
 }
 /* Navbar End */
 
