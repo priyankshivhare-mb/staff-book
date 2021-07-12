@@ -1,56 +1,34 @@
-import React, { Component } from 'react';
-import { ResponsiveContainer, FunnelChart, Funnel, Cell, Tooltip } from 'recharts';
+import React from "react";
+import D3Funnel from "d3-funnel";
 import { scaleOrdinal } from 'd3-scale';
 import { schemeCategory10 } from 'd3-scale-chromatic';
 
-const colors1 = scaleOrdinal(schemeCategory10).range();
+const colorPalette = scaleOrdinal(schemeCategory10).domain([])
+    .range(['#0A7C8E', '#3B96A5', '#6CB0BB', '#84BDC6', '#9DCBD2', '#6CBB11']);
 
-const data = [
-    { value: 100, name: 'ABC' },
-    { value: 80, name: 'XYZ' },
-    { value: 50, name: 'YZD' },
-    { value: 40, name: 'AAD' },
-    { value: 26, name: 'ADX' },
-];
+const options = {
+    block: {
+        dynamicHeight: false,
+        minHeight: 15,
+        fill: {
+            type: 'gradient',
+            scale: colorPalette
+        },
+    },
+    chart: {
+        curve: {
+            enabled: true,
+        },
+        bottomPinch: 1,
+    },
+};
 
-export default class JobPipeline extends Component {
+export default class JobPipeline extends React.Component {
+    componentDidMount() {
+        const chart = new D3Funnel("#jobPipelineFunnel");
+        chart.draw(this.props.data, options);
+    }
     render() {
-        return (
-            <div className="funnel-charts">
-                <p>active FunnelChart2</p>
-                <div className="funnel-chart-wrapper" style={{ width: '50%', height: '300', backgroundColor: '#f5f5f5' }}>
-                    <ResponsiveContainer>
-                        <FunnelChart>
-                            <Tooltip />
-                            <Funnel
-                                dataKey="value"
-                                data={data}
-                                activeIndex={1}
-                                isAnimationActive={false}
-                                activeShape={(payload) => {
-                                    return (
-                                        <rect
-                                            className="custom-active-shape"
-                                            x={payload.x}
-                                            y={payload.y}
-                                            height={payload.height}
-                                            width={payload.upperWidth}
-                                            fill="red"
-                                            strokeWidth="4"
-                                            stroke="#fff"
-                                        />);
-                                }}
-                            >
-                                {
-                                    data.map((entry, index) => (
-                                        <Cell key={`slice-${index}`} fill={colors1[index % 10]} opacity={0.5} />
-                                    ))
-                                }
-                            </Funnel>
-                        </FunnelChart>
-                    </ResponsiveContainer>
-                </div>
-            </div>
-        );
+        return <div id="jobPipelineFunnel" />;
     }
 }

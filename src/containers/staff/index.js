@@ -14,6 +14,15 @@ const handleOnClick = (lat, lng) => {
     console.log(lat, lng);
 };
 
+const funnelData = [
+    { label: "Received", value: 5000, labelColor: "#FFFFFF" },
+    { label: "Shortlisted", value: 2500, labelColor: "#FFFFFF" },
+    { label: "Scheduled", value: 500, labelColor: "#FFFFFF" },
+    { label: "Conducted", value: 200, labelColor: "#FFFFFF" },
+    { label: "Verified", value: 200, labelColor: "#FFFFFF" },
+    { label: "Accepted", value: 200, labelColor: "#FFFFFF" },
+];
+
 const Staff = () => (
     <div className="wrapper">
         <div className="sidebar" data-color="white">
@@ -191,7 +200,7 @@ const Staff = () => (
                                 </div>
                             </div>
                         </GoogleMapWithMarker>
-                        <JobPipeline />
+                        <JobPipeline data={funnelData}/>
                     </div>
                 </div>
             </div>
