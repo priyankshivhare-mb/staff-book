@@ -1,5 +1,6 @@
 import React from 'react'
 import GoogleMapWithMarker from '../common/googleMapWithMarker';
+import JobPipeline from '../common/jobPipeline';
 
 const markerPosition = [{
     lat: 37.772,
@@ -190,21 +191,13 @@ const Staff = () => (
                                 </div>
                             </div>
                         </GoogleMapWithMarker>
+                        <JobPipeline />
                     </div>
                 </div>
             </div>
 
             <footer className="footer">
                 <div className="container-fluid">
-                    <nav>
-                        <ul>
-                            <li>
-                                <a href="#">
-                                    TBD
-                                </a>
-                            </li>
-                        </ul>
-                    </nav>
                 </div>
             </footer>
         </div>
