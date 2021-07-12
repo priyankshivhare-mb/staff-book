@@ -2,9 +2,13 @@ import React, {Component} from 'react'
 import profilePic from '../../assets/placeholder-image.png';
 import profilePic2 from '../../assets/placeholder-image-2.png';
 import ProfileCard from '../common/profileCard';
+import {bindActionCreators} from 'redux';
+import { getUserProfiles } from '../../modules/profile';
+import { connect } from 'react-redux';
 
 class StaffBook extends Component {
     render() {
+        console.log(this.props.profile);
         return (
             <>
 
@@ -50,4 +54,20 @@ class StaffBook extends Component {
     }
 };
 
-export default StaffBook;
+
+const mapStateToProps = ({profile}) => ({
+    profile: profile,
+})
+
+const mapDispatchToProps = dispatch =>
+    bindActionCreators(
+        {
+            getUserProfiles
+        },
+        dispatch
+    )
+
+export default connect(
+    mapStateToProps,
+    mapDispatchToProps
+)(StaffBook)
