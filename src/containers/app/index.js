@@ -4,6 +4,7 @@ import Cookies from 'universal-cookie';
 import Dashboard from '../dashboard';
 import StaffBook from '../staff-book';
 import Staff from '../staff';
+import DashboardNew from '../dashboardNew';
 import Navigation from '../common/navigation';
 
 const App = () => {
@@ -13,27 +14,22 @@ const App = () => {
     const isBusinessOwnerFlow = window.location.pathname === '/staff-book' || window.location.pathname === '/';
 
     return (
-        <>
-            {isBusinessOwnerFlow ?
-                <>
-                    <Navigation
-                        activeLink={activeLink}
-                        setActiveLink={setActiveLink}
-                        isStaffBookEnabled={isStaffBookEnabled}
-                    />
-                </> : <>
-                    <h1>Staff flow</h1>
-                </>
-            }
-            <div className="container">
-                <main>
-                    <Route exact path="/" component={Dashboard}/>
-                    <Route exact path="/staff-book" component={StaffBook}/>
-                    <Route exact path="/staff" component={Staff}/>
-                </main>
-            </div>
-        </>
-    )
+      <>
+        <Navigation
+          activeLink={activeLink}
+          setActiveLink={setActiveLink}
+          isStaffBookEnabled={isStaffBookEnabled}
+        />
+        <div className="container-fluid">
+          <main>
+            <Route exact path="/" component={Dashboard}/>
+            <Route exact path="/staff-book" component={StaffBook}/>
+            <Route exact path="/staff" component={Staff}/>
+            <Route exact path="/dashboard" component={DashboardNew}/>
+          </main>
+        </div>
+      </>
+   )
 };
 
-export default App
+export default App;

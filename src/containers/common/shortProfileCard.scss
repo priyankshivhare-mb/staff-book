@@ -1,0 +1,45 @@
+.short-profile {
+    box-shadow: inset 0px -1px 0px rgba(213, 217, 222, 0.5);
+    padding: 8px 0;
+
+    & .padding-left-0 {
+        padding-left: 0px;
+    }
+
+    & .padding-left-3 {
+        padding-left: 3px;
+    }
+
+    & .padding-top-5 {
+        padding-top: 5px;
+    }
+
+    & .profile-pic {
+        padding-right: 5px;
+    }
+
+    & .profile-details {
+        padding-left: 5px;
+        padding-right: 0px;
+    }
+
+    & .profile-rating {
+        font-size: 12px;
+        padding-right: 0px;
+
+        & .profile-score {
+            color: #00AF08;
+            font-size: 16px;
+        }
+    }
+
+    & .key-skills {
+        font-size: 14px;
+        color: #000000;
+        opacity: 0.5;
+    }
+
+    & .icon {
+        stroke-opacity: 50%;
+    }
+}

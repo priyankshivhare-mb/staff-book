@@ -40,6 +40,7 @@ body {
   font-family: averta, "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
   font-size: 1rem;
   line-height: 1.5;
+  background-color: #F9F9FA;
 }
 
 button:disabled {
@@ -52,6 +53,9 @@ button:disabled {
 }
 
 /* Navbar */
+.navbar {
+    background-color: white;
+}
 .nav-link {
     font-size: 16px;
     font-style: normal;
