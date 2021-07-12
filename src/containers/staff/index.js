@@ -200,7 +200,11 @@ const Staff = () => (
                                 </div>
                             </div>
                         </GoogleMapWithMarker>
-                        <JobPipeline data={funnelData}/>
+                        <div className="row">
+                            <div className="col-md-4">
+                                <JobPipeline data={funnelData}/>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

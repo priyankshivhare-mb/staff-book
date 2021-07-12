@@ -11,7 +11,7 @@ const options = {
         dynamicHeight: false,
         minHeight: 15,
         fill: {
-            type: 'gradient',
+            type: 'solid',
             scale: colorPalette
         },
     },
