@@ -4,7 +4,6 @@ import Cookies from 'universal-cookie';
 import Dashboard from '../dashboard';
 import StaffBook from '../staff-book';
 import Staff from '../staff';
-import DashboardNew from '../dashboardNew';
 import Navigation from '../common/navigation';
 
 const App = () => {
@@ -25,11 +24,10 @@ const App = () => {
             <Route exact path="/" component={Dashboard}/>
             <Route exact path="/staff-book" component={StaffBook}/>
             <Route exact path="/staff" component={Staff}/>
-            <Route exact path="/dashboard" component={DashboardNew}/>
           </main>
         </div>
       </>
-   )
+    );
 };
 
 export default App;
