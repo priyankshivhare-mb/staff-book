@@ -9,62 +9,48 @@ import {
     decrement,
     decrementAsync
 } from '../../modules/counter'
-import Modal from '../common/modal';
-import BannerImage from '../../assets/dashboard-cta.png';
 
+import ShortProfileCard from '../common/shortProfileCard.js';
+import DashboardWidget from '../../containers/dashboard/dashboardWidget.js';
+
+import staffProfiles from '../../fixtures/staffProfiles.json';
+import RequestStaffOnCallWidget from './widgets/requestStaffOnCallWidget.js';
+import BookedStaffOnCallWidget from './widgets/bookedStaffOnCallWidget.js';
+import StaffWaitlistWidget from './widgets/staffWaitlistWidget.js';
 
 
 const Home = props => {
-    const [ isModalOpen, handleModalState ] = useState(false);
-    const confirmStaffBookActivation = () => {
-        // Todo: The logic to be replaced by DB calls in future states
-        const cookies = new Cookies();
-        cookies.set('isStaffBookEnabled', 'true', { path: '/' });
-        window.location.reload();
-    }
-
-    return (
-    <div>
-        <h1>Dashboard</h1>
-        <img
-            src={BannerImage}
-            className="img-responsive"
-            onClick={() => handleModalState(true)}
-        />
-
-        {
-            isModalOpen &&
-            <Modal
-                title="Activate Staff-book?"
-                content="Are you sure you want to activate Staff-book?"
-                handleConfirm={() => confirmStaffBookActivation()}
-                handleCancel={() => handleModalState(false)}
-            />
-        }
-
-        <p>Count: {props.count}</p>
-
-        <p>
-            <button className="btn btn-primary" onClick={props.increment}>Increment</button>
-            <button onClick={props.incrementAsync} disabled={props.isIncrementing}>
-                Increment Async
+  return(
+    <div className="container-fluid">
+      <div className="row dashboard-heading">
+        <div className="col-sm-6">
+          <div className="welcome">
+            Welcome John!
+          </div>
+        </div>
+        <div className="col-sm-6">
+          <div className="float-right">
+            <button className="btn btn-primary add-post-button">
+              Create Job Posting
             </button>
-        </p>
+          </div>
+        </div>
+      </div>
 
-        <p>
-            <button onClick={props.decrement}>Decrement</button>
-            <button onClick={props.decrementAsync} disabled={props.isDecrementing}>
-                Decrement Async
-            </button>
-        </p>
-
-        <p>
-            <button onClick={() => props.changePage()}>
-                Go to about page via redux
-            </button>
-        </p>
+      <div className="row">
+        <div className="col-sm">
+          <RequestStaffOnCallWidget />
+        </div>
+        <div className="col-sm">
+          <BookedStaffOnCallWidget />
+        </div>
+        <div className="col-sm">
+          <StaffWaitlistWidget />
+        </div>
+      </div>
     </div>
-)}
+  );
+};
 
 const mapStateToProps = ({counter}) => ({
     count: counter.count,
@@ -73,18 +59,18 @@ const mapStateToProps = ({counter}) => ({
 })
 
 const mapDispatchToProps = dispatch =>
-    bindActionCreators(
+      bindActionCreators(
         {
-            increment,
-            incrementAsync,
-            decrement,
-            decrementAsync,
-            changePage: () => push('/about-us')
+          increment,
+          incrementAsync,
+          decrement,
+          decrementAsync,
+          changePage: () => push('/about-us')
         },
         dispatch
-    )
+      )
 
 export default connect(
-    mapStateToProps,
-    mapDispatchToProps
+  mapStateToProps,
+  mapDispatchToProps
 )(Home)
