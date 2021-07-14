@@ -1,8 +1,8 @@
 import React from 'react';
 
-import { ReactComponent as WalletIcon } from '../../assets/icons/wallet.svg';
-import { ReactComponent as LocationIcon } from '../../assets/icons/location.svg';
-import { ReactComponent as ReviewsIcon } from '../../assets/icons/reviews.svg';
+import { ReactComponent as WalletIcon } from '../../../../assets/icons/wallet.svg';
+import { ReactComponent as LocationIcon } from '../../../../assets/icons/location.svg';
+import { ReactComponent as ReviewsIcon } from '../../../../assets/icons/reviews.svg';
 
 import './shortProfileCard.scss';
 

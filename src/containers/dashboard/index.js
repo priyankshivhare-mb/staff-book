@@ -10,13 +10,12 @@ import {
     decrementAsync
 } from '../../modules/counter'
 
-import ShortProfileCard from '../common/shortProfileCard.js';
-import DashboardWidget from '../../containers/dashboard/dashboardWidget.js';
+import DashboardWidget from '../../containers/dashboard/dashboardWidget';
 
 import staffProfiles from '../../fixtures/staffProfiles.json';
-import RequestStaffOnCallWidget from './widgets/requestStaffOnCallWidget.js';
-import BookedStaffOnCallWidget from './widgets/bookedStaffOnCallWidget.js';
-import StaffWaitlistWidget from './widgets/staffWaitlistWidget.js';
+import RequestStaffOnCallWidget from './widgets/requestStaffOnCallWidget';
+import BookedStaffOnCallWidget from './widgets/bookedStaffOnCallWidget';
+import StaffWaitlistWidget from './widgets/staffWaitlistWidget';
 
 
 const Home = props => {
@@ -37,7 +36,15 @@ const Home = props => {
         </div>
       </div>
 
-      <div className="row">
+      <div className="row dashboard-metrics">
+        <div className="col">a</div>
+        <div className="col">a</div>
+        <div className="col">a</div>
+        <div className="col">a</div>
+        <div className="col">a</div>
+      </div>
+
+      <div className="row widgets">
         <div className="col-sm">
           <RequestStaffOnCallWidget />
         </div>
