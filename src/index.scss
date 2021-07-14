@@ -105,23 +105,18 @@ a.navbar-icon {
   .profile-main {
     padding: 24px;
 
-    .profile-img {
-      max-width: 116px;
-      margin-left: 20px;
-    }
-
-    .social-wrapper {
-      text-align: center;
-      margin-top: 23px;
-      font-size: 24px;
-      color: #999;
-    }
-
     h3 {
-      color: #0A7C8E;
       font-weight: 600;
       font-size: 24px;
-      margin-bottom: 13px;
+      margin-bottom: 6px;
+      margin-top: 20px;
+    }
+
+    h4 {
+      font-size: 20px;
+      font-weight: 600;
+      color: rgba(0, 0, 0, 0.5);
+      margin-top: 0;
     }
 
     .primary-orange {
@@ -141,18 +136,67 @@ a.navbar-icon {
       margin-bottom: 23px;
 
       span {
-        font-weight: 700;
+        &.bold {
+          font-weight: 700;
+        }
+      }
+
+      img {
+        max-width: 24px;
+        margin-right: 10px;
       }
     }
 
-    .candidate-label {
-      opacity: 0.3;
-      font-weight: 700;
+    .candidate-highlight {
+      margin-bottom: 20px;
+
+      .bullet {
+        background-color: #E5F2F4;
+        padding: 8px 16px;
+        border-radius: 20px;
+        margin-right: 10px;
+
+        .highlight {
+          color: #00a60a;
+          font-weight: bold;
+        }
+      }
     }
 
     .profile-score-wrapper {
       text-align: right;
+      position: relative;
+      margin-top: 20px;
+
+      .profile-rating {
+        color: rgba(0, 0, 0, 0.5);
+        font-size: 16px;
+        position: absolute;
+        top: 0;
+        right: 148px;
+
+        .highlight-rating {
+          font-weight: 600;
+          font-size: 32px;
+          color: #00AF08;
+
+          .star-icon {
+            max-width: 25px;
+            margin-right: 2px;
+            margin-top: -10px;
+          }
+        }
+      }
+      .profile-rating-sub-details {
+        font-size: 12px;
+        height: 18px;
+        color: rgba(0, 0, 0, 0.5);
+      }
     }
+  }
+
+  .bio-wrapper {
+    margin-bottom: 20px;
   }
 
   .profile-footer {
@@ -163,6 +207,11 @@ a.navbar-icon {
       border-right: 1px solid rgba(0,0,0,0.1);
       margin-right: 14px;
       padding-right: 14px;
+
+      img {
+        max-width: 24px;
+        margin-right: 10px;
+      }
     }
 
     .label-emp {
@@ -172,6 +221,11 @@ a.navbar-icon {
     .review {
       color: #0A7C8E;
       font-weight: 700;
+
+      img {
+        max-width: 24px;
+        margin-left: 10px;
+      }
     }
   }
 }

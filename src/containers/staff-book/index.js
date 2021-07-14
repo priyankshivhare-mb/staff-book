@@ -1,4 +1,4 @@
-import React, {Component} from 'react'
+import React, {Component} from 'react';
 import profilePic from '../../assets/placeholder-image.png';
 import profilePic2 from '../../assets/placeholder-image-2.png';
 import ProfileCard from '../common/profileCard';
@@ -11,18 +11,21 @@ class StaffBook extends Component {
         console.log(this.props.profile);
         return (
             <>
-
                 <ProfileCard
                     profilePic={profilePic}
                     name="Marvin McKinney"
-                    profileScore={90}
-                    employmentScore={70}
-                    experience="6y 2m"
+                    profileRating={4.3}
+                    recommendation={8}
                     wage="$12000 /yr"
                     location="Philadelphia"
-                    currentJob="Salon Manager - Beauty and Spa @ Chenz Salons and Spa Studio"
-                    keySkills="Beauty / Fitness / Spa Services"
-                    secondarySkills="Beauty, Salon Managerstong, Back end operations, Client coordination Customer service, Team handling, Client servicing, Hair spa, Good communication skills, Safety regulations"
+                    currentJob="Salon Manager"
+                    email="courtney@gmail.com"
+                    mobile="+1 (234) 234 567"
+                    whatsapp="+1 (234) 234 567"
+                    jobsCompleted="98%"
+                    budgetPerc="85%"
+                    hireRate="60%"
+                    bio="Beauty, Salon Managerstong, Back end operations, Client coordination Customer service, Team handling, Client servicing, Hair spa, Good communication skills, Safety regulations"
                     profileViews={10}
                     profileDownloads={2}
                     lastActive="11 Mar 2020"
@@ -33,16 +36,20 @@ class StaffBook extends Component {
 
                 <ProfileCard
                     isHighlighted={true}
-                    profilePic={profilePic2}
+                    profilePic={profilePic}
                     name="Leslie Alexandar"
-                    profileScore={90}
-                    employmentScore={70}
-                    experience="6y 2m"
+                    profileRating={4.5}
+                    recommendation={4}
                     wage="$20 /hr"
                     location="Philadelphia"
-                    currentJob="Salon Manager - Beauty and Spa @ Chenz Salons and Spa Studio"
-                    keySkills="Beauty / Fitness / Spa Services"
-                    secondarySkills="Beauty, Salon Managerstong, Back end operations, Client coordination Customer service, Team handling, Client servicing, Hair spa, Good communication skills, Safety regulations"
+                    currentJob="Salon Manager"
+                    email="courtney@gmail.com"
+                    mobile="+1 (234) 234 567"
+                    whatsapp="+1 (234) 234 567"
+                    jobsCompleted="98%"
+                    budgetPerc="85%"
+                    hireRate="60%"
+                    bio="Beauty, Salon Managerstong, Back end operations, Client coordination Customer service, Team handling, Client servicing, Hair spa, Good communication skills, Safety regulations"
                     profileViews={10}
                     profileDownloads={2}
                     lastActive="11 Mar 2020"

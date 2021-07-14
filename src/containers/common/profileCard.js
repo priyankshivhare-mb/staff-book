@@ -1,74 +1,95 @@
 import React from 'react'
+import star from '../../assets/icons/star.png';
+import wallet from '../../assets/icons/wallet.png';
+import location from '../../assets/icons/location.png';
+import heart from '../../assets/icons/heart.png';
+import eye from '../../assets/icons/eye.png';
+import download from '../../assets/icons/download.png';
+import comment from '../../assets/icons/comment.png';
+import email from '../../assets/icons/email.png';
+import mobile from '../../assets/icons/mobile.png';
+import whatsapp from '../../assets/icons/whatsapp.png';
 
 const ProfileCard = (props) => {
     return (
-      <div className="row">
+        <div className="row">
             <div className={`col-md-12 profile-view-wrapper ${props.isHighlighted && 'highlighted'}`}>
                 <div className="row profile-main">
                     <div className="col-md-2">
                         <div className="row">
-                            <img src={props.profilePic} className="img-responsive rounded-circle profile-img"/>
-                            <div className="social-wrapper">
-                                <span className="col"><i className="fa fa-facebook-official" /></span>
-                                <span className="col"><i className="fa fa-instagram" /></span>
-                                <span className="col"><i className="fa fa-twitter" /></span>
-                            </div>
+                            <img src={props.profilePic} className="img-responsive"/>
                         </div>
                     </div>
                     <div className="col-md-10">
                         <div className="row">
                             <div className="col-md-6">
                                 <h3>{props.name}</h3>
+                                <h4>{props.currentJob}</h4>
                             </div>
                             <div className="col-md-6 profile-score-wrapper">
-                                <button type="button" className="btn primary-orange">
-                                    Profile Score {props.profileScore}%
-                                </button>
-                                <button type="button" className="btn primary-blue">
-                                    Employment Score {props.employmentScore}%
-                                </button>
+                                <span className="profile-rating">
+                                    <span className="highlight-rating">
+                                        <img className="star-icon" src={star} alt="star-icon"/>
+                                        {props.profileRating}
+                                    </span>/5</span>
+                                <span className="profile-rating-sub-details">
+                                    Based on 200 ratings <br/> 20 times rated 5 stars</span>
                             </div>
                         </div>
                         <div className="row">
-                            <div className="col-md-6 candidate-specifics">
-                                <span className="col"><i className="fa fa-suitcase" /> {props.experience}</span>
-                                <span className="col"><i className="fa fa-money" /> {props.wage}</span>
-                                <span className="col"><i className="fa fa-map-marker" /> {props.location}</span>
+                            <div className="col-md-12 candidate-specifics">
+                                <span className="col bold">
+                                    <img src={wallet} />
+                                    {props.wage}</span>
+                                <span className="col">
+                                    <img src={location} />
+                                    {props.location}</span>
+                                <span className="col">
+                                    <img src={heart} />
+                                    <span className="bold">{props.recommendation}</span> Recommendations</span>
                             </div>
                         </div>
                         <div className="row">
-                            <div className="col-md-2 candidate-label">
-                                Current
-                            </div>
-                            <div className="col-md-10">
-                                {props.currentJob}
-                            </div>
-                        </div>
-                        <div className="row">
-                            <div className="col-md-2 candidate-label">
-                                Key Skills
-                            </div>
-                            <div className="col-md-10">
-                                {props.keySkills}
+                            <div className="col-md-12 candidate-specifics">
+                                <span className="col">
+                                    <img src={email} />
+                                    {props.email}</span>
+                                <span className="col">
+                                    <img src={mobile} />
+                                    {props.mobile}</span>
+                                <span className="col">
+                                    <img src={whatsapp} />{props.whatsapp} </span>
                             </div>
                         </div>
                         <div className="row">
-                            <div className="col-md-2 candidate-label">
-                                May also know
-                            </div>
-                            <div className="col-md-10">
-                                {props.secondarySkills}
+                            <div className="col-md-12 candidate-highlight">
+                                <span className="col bullet">
+                                    <span className="highlight">{props.jobsCompleted}</span> Jobs Completed
+                                </span>
+                                <span className="col bullet">
+                                    <span className="highlight">{props.budgetPerc}</span> On Budget
+                                </span>
+                                <span className="col bullet">
+                                    <span className="highlight">{props.hireRate}</span> Repeat Hire Rate
+                                </span>
                             </div>
                         </div>
+                    </div>
+                </div>
+                <div className="row">
+                    <div className="col-md-12 bio-wrapper">
+                        {props.bio}
                     </div>
                 </div>
                 <div className="row profile-footer">
                     <div className="col-md-12">
                         <span className="label-emp footer-col">
-                            <i className="fa fa-eye" /> {props.profileViews}
+                            <img src={eye} />
+                            {props.profileViews}
                         </span>
                         <span className="label-emp footer-col">
-                            <i className="fa fa-download" /> {props.profileDownloads}
+                            <img src={download} />
+                            {props.profileDownloads}
                         </span>
                         <span className="footer-col">
                             <span className="label-emp">Active:</span> {props.lastActive}
@@ -77,12 +98,13 @@ const ProfileCard = (props) => {
                             <span className="label-emp">Modified: </span>{props.lastModified}
                         </span>
                         <span className="pull-right review">
-                            {props.reviewCount} Review <i className="fa fa-commenting-o" />
+                            {props.reviewCount} Review
+                            <img src={comment} />
                         </span>
                     </div>
                 </div>
             </div>
-      </div>
+        </div>
     );
 };
 
