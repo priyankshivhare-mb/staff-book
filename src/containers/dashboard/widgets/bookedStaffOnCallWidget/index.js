@@ -11,6 +11,8 @@ export default () => (
     toLink="#"
     badgeText="20 Bookings"
   >
-    <div>ASD</div>
+    <ShortProfileCard {...staffProfiles[4]} />
+    <ShortProfileCard {...staffProfiles[5]} />
+    <ShortProfileCard {...staffProfiles[6]} />
   </DashboardWidget>
 );
