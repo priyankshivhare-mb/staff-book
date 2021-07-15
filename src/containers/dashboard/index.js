@@ -1,24 +1,16 @@
-import React, { useState } from 'react'
-import Cookies from 'universal-cookie';
-import {push} from 'connected-react-router'
-import {bindActionCreators} from 'redux'
-import {connect} from 'react-redux'
-import {
-    increment,
-    incrementAsync,
-    decrement,
-    decrementAsync
-} from '../../modules/counter'
+import React from 'react';
+import { bindActionCreators } from 'redux';
+import { getUserProfiles } from '../../modules/profile';
+import { connect } from 'react-redux';
 
-import DashboardWidget from '../../containers/dashboard/dashboardWidget';
-
-import staffProfiles from '../../fixtures/staffProfiles.json';
 import RequestStaffOnCallWidget from './widgets/requestStaffOnCallWidget';
 import BookedStaffOnCallWidget from './widgets/bookedStaffOnCallWidget';
 import StaffWaitlistWidget from './widgets/staffWaitlistWidget';
 
 
 const Home = props => {
+  const { profiles } = props;
+
   return(
     <div className="container-fluid">
       <div className="row dashboard-heading">
@@ -46,38 +38,32 @@ const Home = props => {
 
       <div className="row widgets">
         <div className="col-sm">
-          <RequestStaffOnCallWidget />
+          <RequestStaffOnCallWidget profiles={profiles} />
         </div>
         <div className="col-sm">
-          <BookedStaffOnCallWidget />
+          <BookedStaffOnCallWidget profiles={profiles} />
         </div>
         <div className="col-sm">
-          <StaffWaitlistWidget />
+          <StaffWaitlistWidget profiles={profiles} />
         </div>
       </div>
     </div>
   );
 };
 
-const mapStateToProps = ({counter}) => ({
-    count: counter.count,
-    isIncrementing: counter.isIncrementing,
-    isDecrementing: counter.isDecrementing
-})
+const mapStateToProps = ({profile}) => ({
+    profiles: profile,
+});
 
 const mapDispatchToProps = dispatch =>
-      bindActionCreators(
+    bindActionCreators(
         {
-          increment,
-          incrementAsync,
-          decrement,
-          decrementAsync,
-          changePage: () => push('/about-us')
+            getUserProfiles
         },
         dispatch
-      )
+    );
 
 export default connect(
-  mapStateToProps,
-  mapDispatchToProps
-)(Home)
+    mapStateToProps,
+    mapDispatchToProps
+)(Home);
