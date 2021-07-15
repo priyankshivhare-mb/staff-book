@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import profilePic from '../../assets/placeholder-image.png';
 import ProfileCard from '../common/profileCard';
+import Gallery from '../common/gallery';
 import {bindActionCreators} from 'redux';
 import { getUserProfiles } from '../../modules/profile';
 import { connect } from 'react-redux';
@@ -51,7 +52,7 @@ class StaffOnCall extends Component {
                             <h3>Education and Certification</h3>
                         </div>
                         <div className="col-md-12">
-                            <h3>Work Gallery</h3>
+                            <Gallery />
                         </div>
                     </div>
                     <div className="col-md-4">
