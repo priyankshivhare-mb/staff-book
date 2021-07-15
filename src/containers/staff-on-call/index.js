@@ -9,13 +9,17 @@ import { connect } from 'react-redux';
 
 class StaffOnCall extends Component {
     render() {
-        console.log(this.props.profile);
+        const imageMap = this.props.profile.map(profile => profile['img_url']);
+
         return (
             <div className="staff-on-call-wrapper">
-                <div className="row">
-                    <div className="col-md-12">
+                <div className="row staff-head-wrapper">
+                    <div className="col-md-8">
                         <h1 className="heading-1">Request Staff On Call</h1>
-                        <button className="btn pull-right">Post Free Job</button>
+                        <p className="staff-breadcrumb">Dashboard/Staff on Call/Request Staff on Call</p>
+                    </div>
+                    <div className="col-md-4">
+                        <button className="btn btn-light pull-right">Download Resume</button>
                     </div>
                 </div>
                 <div className="row">
@@ -53,7 +57,7 @@ class StaffOnCall extends Component {
                             <h3>Education and Certification</h3>
                         </div>
                         <div className="col-md-12">
-                            <Gallery />
+                            <Gallery imageData={imageMap}/>
                         </div>
                     </div>
                     <div className="col-md-4">

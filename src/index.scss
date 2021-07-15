@@ -52,6 +52,12 @@ button:disabled {
   max-height: 100%;
 }
 
+.staff-breadcrumb {
+  display: inline-block;
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
 /* Navbar */
 .navbar {
     background-color: white;
@@ -273,9 +279,21 @@ a.navbar-icon {
 }
 /* Gallery end */
 
-.heading-1 {
-  font-weight: 600;
-  font-size: 24px;
+.staff-head-wrapper {
+  margin-bottom: 8px;
+
+  .heading-1 {
+    font-weight: 600;
+    font-size: 24px;
+    margin-bottom: 2px;
+  }
+
+  .btn-light {
+    text-transform: capitalize;
+    color: #0A7C8E;
+    background-color: #ffffff;
+    border: 1px solid #0A7C8E;
+  }
 }
 
 /* Skills start */
