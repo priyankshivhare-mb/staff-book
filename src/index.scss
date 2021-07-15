@@ -272,3 +272,36 @@ a.navbar-icon {
 
 }
 /* Gallery end */
+
+.heading-1 {
+  font-weight: 600;
+  font-size: 24px;
+}
+
+/* Skills start */
+.skills-wrapper {
+  background-color: #ffffff;
+  padding: 20px;
+  box-shadow: 0px 1px 3px rgba(45, 45, 45, 0.2);
+  border-radius: 3px;
+
+  h3 {
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  .show-skills {
+    margin-bottom: 6px;
+    padding-left: 0;
+
+    span {
+      padding: 8px 16px;
+      border: 1px solid black;
+      border-radius: 20px;
+      margin-right: 8px;
+      line-height: 50px;
+    }
+  }
+}
+
+/* Skills end */

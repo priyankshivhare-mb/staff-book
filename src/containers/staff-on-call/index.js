@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import profilePic from '../../assets/placeholder-image.png';
 import ProfileCard from '../common/profileCard';
 import Gallery from '../common/gallery';
+import Skills from '../common/skills';
 import {bindActionCreators} from 'redux';
 import { getUserProfiles } from '../../modules/profile';
 import { connect } from 'react-redux';
@@ -13,7 +14,7 @@ class StaffOnCall extends Component {
             <div className="staff-on-call-wrapper">
                 <div className="row">
                     <div className="col-md-12">
-                        <h1>Request Staff On Call</h1>
+                        <h1 className="heading-1">Request Staff On Call</h1>
                         <button className="btn pull-right">Post Free Job</button>
                     </div>
                 </div>
@@ -43,7 +44,7 @@ class StaffOnCall extends Component {
                             />
                         </div>
                         <div className="col-md-12">
-                            <h3>Key Skills</h3>
+                            <Skills skillSet={['Beauty', 'Salon', 'Social Media', 'Beauty', 'Salon', 'Social Media']}/>
                         </div>
                         <div className="col-md-12">
                             <h3>Profile</h3>
