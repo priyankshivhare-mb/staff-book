@@ -9,7 +9,7 @@ import StaffWaitlistWidget from './widgets/staffWaitlistWidget';
 
 
 const Home = props => {
-  const { profiles } = props;
+  const { profiles, getUserProfiles } = props;
 
   return(
     <div className="container-fluid">
@@ -29,11 +29,15 @@ const Home = props => {
       </div>
 
       <div className="row dashboard-metrics">
-        <div className="col">a</div>
-        <div className="col">a</div>
-        <div className="col">a</div>
-        <div className="col">a</div>
-        <div className="col">a</div>
+        <div className="col-md-12">
+          <div className="row">
+            <div className="col"><div className="box-shadow">im content</div></div>
+            <div className="col"><div className="box-shadow">im content</div></div>
+            <div className="col"><div className="box-shadow">im content</div></div>
+            <div className="col"><div className="box-shadow">im content</div></div>
+            <div className="col"><div className="box-shadow">im content</div></div>
+          </div>
+        </div>
       </div>
 
       <div className="row widgets">

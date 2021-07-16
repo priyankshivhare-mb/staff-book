@@ -1,6 +1,6 @@
 import React from 'react';
 
-import ShortProfileCard from './shortProfileCard.js';
+import ShortProfileCard from '../shortProfileCard.js';
 import DashboardWidget from '../../dashboardWidget';
 
 const StaffWaitlistWidget = props => {
@@ -12,9 +12,9 @@ const StaffWaitlistWidget = props => {
       toLink="#"
       badgeText="10 Profiles"
     >
-      <ShortProfileCard {...profiles[4]} />
-      <ShortProfileCard {...profiles[5]} />
-      <ShortProfileCard {...profiles[6]} />
+      <ShortProfileCard {...profiles[4]} showMatchingScore={true} />
+      <ShortProfileCard {...profiles[5]} showMatchingScore={true} />
+      <ShortProfileCard {...profiles[6]} showMatchingScore={true} />
     </DashboardWidget>
   );
 };
