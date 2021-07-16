@@ -1,8 +1,10 @@
 import React, {Component} from 'react';
 import profilePic from '../../assets/placeholder-image.png';
+import twitter from '../../assets/icons/twitter.png';
 import ProfileCard from '../common/profileCard';
 import Gallery from '../common/gallery';
 import Skills from '../common/skills';
+import SocialCard from '../common/socialCard';
 import {bindActionCreators} from 'redux';
 import { getUserProfiles } from '../../modules/profile';
 import { connect } from 'react-redux';
@@ -65,7 +67,28 @@ class StaffOnCall extends Component {
                             <h3>Booking Request</h3>
                         </div>
                         <div className="col-md-12">
-                            <h3>Social Profile</h3>
+                            <h3 className="heading-3">Social Profile</h3>
+                            <SocialCard
+                                icon={twitter}
+                                username="courtney_henry"
+                                attr1="200 posts"
+                                attr2="200 followers"
+                                attr3="20 following"
+                            />
+                            <SocialCard
+                                icon={twitter}
+                                username="courtney_henry"
+                                attr1="200 posts"
+                                attr2="200 followers"
+                                attr3="20 following"
+                            />
+                            <SocialCard
+                                icon={twitter}
+                                username="courtney_henry"
+                                attr1="200 posts"
+                                attr2="200 followers"
+                                attr3="20 following"
+                            />
                         </div>
                     </div>
                 </div>
