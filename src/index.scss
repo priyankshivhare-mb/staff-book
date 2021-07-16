@@ -100,7 +100,7 @@ a.navbar-icon {
 /* Modal End */
 
 .staff-on-call-wrapper {
-  padding: 25px;
+  padding: 0 25px 25px 25px;
 }
 
 /* Profile view start */
@@ -323,3 +323,46 @@ a.navbar-icon {
 }
 
 /* Skills end */
+
+/* Social card start */
+.social-wrapper {
+  position: relative;
+  background-color: #ffffff;
+  padding: 20px;
+  box-shadow: 0px 1px 3px rgba(45, 45, 45, 0.2);
+  border-radius: 3px;
+  margin-bottom: 16px;
+
+  .social-icon {
+    max-width: 46px;
+  }
+
+  .username {
+    font-size: 16px;
+    font-weight: 600;
+  }
+  .font-light {
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.5);
+  }
+
+  .profile-selector {
+    position: absolute;
+    right: 10px;
+    font-size: 12px;
+    color: #0A7C8E;
+    font-weight: 600;
+    cursor: pointer;
+  }
+
+  .action-wrapper {
+    width: 95%;
+  }
+}
+/* Social card end */
+
+.heading-3 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
