@@ -1,0 +1,63 @@
+.short-profile {
+    box-shadow: inset 0px -1px 0px rgba(213, 217, 222, 0.5);
+    padding: 8px 0;
+
+    & .profile-meta {
+        height: 20px;
+    }
+
+    & .matching-score {
+        border-radius: 27px;
+        padding: 1px 4px;
+        font-size: 13px;
+        color: white;
+        width: 100%;
+        text-align: center;
+        font-weight: bold;
+
+        &.green {
+            background-color: #6CBB11;
+        }
+
+        &.yellow {
+            background-color: #FFBA35;
+        }
+
+        &.red {
+            background-color: #E85815;
+        }
+    }
+
+
+    & i.fa-check-circle-o {
+        font-size: 25px;
+        padding-left: 10px;
+        padding-top: 1.5px;
+    }
+
+    & .profile-score-cont {
+        padding-right: 10px;
+        padding-left: 0px;
+    }
+
+    & .profile-rating {
+        font-size: 14px;
+        padding-right: 0px;
+        float: right;
+
+        & .profile-score {
+            color: #00AF08;
+            font-size: 18px;
+        }
+    }
+
+    & .key-skills {
+        font-size: 12px;
+        color: #000000;
+        opacity: 0.5;
+    }
+
+    & .icon {
+        stroke-opacity: 50%;
+    }
+}

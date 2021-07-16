@@ -23,6 +23,20 @@
         padding-right: 0px;
     }
 
+    & .profile-score-cont {
+        padding-right: 10px;
+        padding-left: 0px;
+        border-right: 1px solid #00000050;
+    }
+
+    & .profile-meta {
+        padding: 0px;
+        & i.fa-check-circle-o {
+            font-size: 12px;
+            padding-left: 10px;
+        }
+    }
+
     & .profile-rating {
         font-size: 12px;
         padding-right: 0px;
@@ -34,7 +48,7 @@
     }
 
     & .key-skills {
-        font-size: 14px;
+        font-size: 12px;
         color: #000000;
         opacity: 0.5;
     }

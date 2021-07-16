@@ -1,8 +1,8 @@
 import React from 'react';
 
-import { ReactComponent as WalletIcon } from '../../assets/icons/wallet.svg';
-import { ReactComponent as LocationIcon } from '../../assets/icons/location.svg';
-import { ReactComponent as ReviewsIcon } from '../../assets/icons/reviews.svg';
+import { ReactComponent as WalletIcon } from '../../../../assets/icons/wallet.svg';
+import { ReactComponent as LocationIcon } from '../../../../assets/icons/location.svg';
+import { ReactComponent as ReviewsIcon } from '../../../../assets/icons/reviews.svg';
 
 import './shortProfileCard.scss';
 
@@ -29,24 +29,29 @@ const ShortProfileCard = (props) => {
           </div>
           <div className="col-10 padding-left-0">
             <div className="row">
-              <div className="col-md-9 padding-left-0">
+              <div className="col-md-8 padding-left-0">
                 <div className="row">
                   <div className="col-sm-12 name padding-left-0">
                     {name}
                   </div>
-                  <div className="col-sm-12 key-skills padding-left-0">
-                    {keySkills}
-                  </div>
                 </div>
               </div>
-              <div className="col-md-3 profile-rating float-right">
-                <span className="profile-score">
-                  <i className="fa fa-star" /> {rating}
-                </span>
-                 /5
+              <div className="col-md-4 float-right profile-meta">
+                <div className="profile-rating d-inline-block">
+                  <div className="profile-score-cont">
+                    <span className="profile-score">
+                      <i className="fa fa-star" /> {rating}
+                    </span>
+                    /5
+                  </div>
+                </div>
+                <i className="fa fa-check-circle-o" style={{color: '#6CBB11'}} />
               </div>
             </div>
             <div className="col-md-12 padding-left-0 padding-top-5">
+              <div className="col-sm-12 key-skills padding-left-0">
+                {keySkills}
+              </div>
               <div className="row">
                 <div className="col-sm-4 padding-left-3">
                   <WalletIcon className="icon"/> fotter
