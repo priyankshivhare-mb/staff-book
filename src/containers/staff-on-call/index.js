@@ -7,11 +7,12 @@ import Skills from '../common/skills';
 import SocialCard from '../common/socialCard';
 import {bindActionCreators} from 'redux';
 import { getUserProfiles } from '../../modules/profile';
+import { getStaffGallery } from '../../modules/staffGalleryImages';
 import { connect } from 'react-redux';
 
 class StaffOnCall extends Component {
     render() {
-        const imageMap = this.props.profile.map(profile => profile['img_url']);
+        const imageMap = this.props.staffGalleryImages;
 
         return (
             <div className="staff-on-call-wrapper">
@@ -101,14 +102,16 @@ class StaffOnCall extends Component {
 };
 
 
-const mapStateToProps = ({profile}) => ({
-    profile: profile,
+const mapStateToProps = ({ profile, staffGalleryImages }) => ({
+  profile,
+  staffGalleryImages
 })
 
 const mapDispatchToProps = dispatch =>
     bindActionCreators(
         {
-            getUserProfiles
+          getUserProfiles,
+          getStaffGallery
         },
         dispatch
     )
