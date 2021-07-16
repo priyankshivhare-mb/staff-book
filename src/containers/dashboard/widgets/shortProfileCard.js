@@ -32,7 +32,7 @@ class ShortProfileCard extends React.Component {
   }
 
   renderMatchingScore() {
-    const score = Math.floor(Math.random() * 100);
+    const score = Math.floor(Math.random() * 101);
 
     const {
       showMatchingScore=false,
