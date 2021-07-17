@@ -1,8 +1,8 @@
 import React from 'react';
 
-import { ReactComponent as WalletIcon } from '../../../assets/icons/wallet.svg';
-import { ReactComponent as LocationIcon } from '../../../assets/icons/location.svg';
-import { ReactComponent as ReviewsIcon } from '../../../assets/icons/reviews.svg';
+import { ReactComponent as WalletIcon } from '../../assets/icons/wallet.svg';
+import { ReactComponent as LocationIcon } from '../../assets/icons/location.svg';
+import { ReactComponent as ReviewsIcon } from '../../assets/icons/reviews.svg';
 
 import './shortProfileCard.scss';
 
@@ -31,8 +31,12 @@ class ShortProfileCard extends React.Component {
     );
   }
 
+  randomIntFromInterval(min, max) {
+    return Math.floor(Math.random() * (max - min + 1) + min);
+  }
+
   renderMatchingScore() {
-    const score = Math.floor(Math.random() * 101);
+    const score = this.randomIntFromInterval(60, 100);
 
     const {
       showMatchingScore=false,

@@ -12,10 +12,12 @@ $color-mindbody-primary: #0A7C8E;
         background-color: $color-mindbody-primary;
     }
 }
+
 .dashboard-widget {
     box-shadow: 0px 1px 3px rgba(45, 45, 45, 0.2);
     min-height: 250px;
     background-color: white;
+    margin-bottom: 25px;
 
     & .title {
         font-weight: bold;
@@ -55,5 +57,49 @@ $color-mindbody-primary: #0A7C8E;
         height: 100px;
         background-color: white;
         box-shadow: 0px 1px 3px rgba(45, 45, 45, 0.2);
+    }
+}
+
+.dashboard-small-widget {
+    & .title {
+        font-size: 30px;
+    }
+
+    & .copy {
+        font-size: 14px;
+        color: black;
+        opacity: 0.5;
+    }
+}
+
+.job-profiles {
+    box-shadow: inset -1px 0px 0px rgba(213, 217, 222, 0.5);
+
+    & .job-profile {
+        box-shadow: inset 0px -1px 0px rgba(213, 217, 222, 0.5);
+        height: 67.5px; // doing this to make the total height of the widget same as other widgets
+        & .title {
+            font-size: 16px;
+            margin: unset;
+        }
+        & .stats {
+            font-size: 12px;
+            opacity: 50%;
+            & .stat {
+                border-right: 1px solid #00000050;
+                text-align: center;
+            }
+            & .stat.no-border {
+                border-right: unset;
+            }
+        }
+        & .graphup {
+            width: inherit;
+            height: 15px;
+        }
+
+        &:hover {
+            cursor: pointer;
+        }
     }
 }
