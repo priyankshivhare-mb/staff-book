@@ -482,5 +482,9 @@ a.navbar-icon {
 /* Custom checkbox start */
 .custom-checkbox {
   margin-bottom: 10px;
+
+  .custom-control-input:checked~.custom-control-label::before {
+    background-color: #0A7C8E;
+  }
 }
 /* Custom checkbox end */
