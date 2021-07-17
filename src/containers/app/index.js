@@ -5,6 +5,7 @@ import Dashboard from '../dashboard';
 import StaffOnCall from '../staff-on-call';
 import Staff from '../staff';
 import Navigation from '../common/navigation';
+import Footer from '../common/Footer';
 
 const App = () => {
     const [activeLink, setActiveLink] = useState('dashboard');
@@ -13,11 +14,7 @@ const App = () => {
 
     return (
       <>
-        <Navigation
-          activeLink={activeLink}
-          setActiveLink={setActiveLink}
-          isStaffBookEnabled={isStaffBookEnabled}
-        />
+        <Navigation />
         <div className="container-fluid">
           <main>
             <Route exact path="/" component={Dashboard}/>
@@ -25,6 +22,7 @@ const App = () => {
             <Route exact path="/staff" component={Staff}/>
           </main>
         </div>
+        <Footer />
       </>
     );
 };
