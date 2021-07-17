@@ -5,6 +5,7 @@ import ProfileCard from '../common/profileCard';
 import Gallery from '../common/gallery';
 import Skills from '../common/skills';
 import SocialCard from '../common/socialCard';
+import CoreValueMatch from '../common/coreValueMatch';
 import {bindActionCreators} from 'redux';
 import { getUserProfiles } from '../../modules/profile';
 import { getStaffGallery } from '../../modules/staffGalleryImages';
@@ -49,6 +50,26 @@ class StaffOnCall extends Component {
                                 lastModified="28 Feb 2020"
                                 reviewCount={25}
                             />
+                        </div>
+                        <div className="col-md-12">
+                            <CoreValueMatch valueData={[
+                                { label: 'Community Driven', value: true},
+                                { label: 'Committed to Wellness', value: true},
+                                { label: 'Community Driven', value: true},
+                                { label: 'Community Driven', value: true},
+                                { label: 'Community Driven', value: false},
+                                { label: 'Community Driven', value: true},
+                                { label: 'Community Driven', value: false},
+                                { label: 'Community Driven', value: true},
+                                { label: 'Community Driven', value: true},
+                                { label: 'Community Driven', value: true},
+                                { label: 'Community Driven', value: false},
+                                { label: 'Community Driven', value: true},
+                                { label: 'Community Driven', value: true},
+                                { label: 'Community Driven', value: true},
+                                { label: 'Community Driven', value: true},
+                                { label: 'Community Driven', value: true}
+                            ]}/>
                         </div>
                         <div className="col-md-12">
                             <Skills skillSet={['Beauty', 'Salon', 'Social Media', 'Beauty', 'Salon', 'Social Media']}/>

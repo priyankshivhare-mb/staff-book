@@ -366,3 +366,36 @@ a.navbar-icon {
   font-weight: 600;
   margin-bottom: 16px;
 }
+
+/* Core value start */
+.core-value-wrapper {
+  background-color: #ffffff;
+  padding: 20px;
+  box-shadow: 0px 1px 3px rgba(45, 45, 45, 0.2);
+  border-radius: 3px;
+  margin-bottom: 12px;
+
+  h3 {
+    font-size: 20px;
+    font-weight: 600;
+
+    span {
+      font-size: 16px;
+      font-weight: 400;
+      color: rgba(0, 0, 0, 0.5);
+      margin-left: 20px;
+    }
+  }
+
+  .core-value {
+    margin-bottom: 12px;
+
+    span img {
+      max-width: 20px;
+      margin-right: 8px;
+      padding-bottom: 2px;
+    }
+  }
+
+}
+/* Core value end */
