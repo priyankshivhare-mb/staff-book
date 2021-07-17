@@ -87,16 +87,6 @@ const CoreValueMatch = ({ valueData }) => {
                                 <img src={valueData[13].value ? tick : cross} className="img-responsive" />
                             </span> {valueData[13].label}
                         </div>
-                        <div className="core-value">
-                            <span>
-                                <img src={valueData[14].value ? tick : cross} className="img-responsive" />
-                            </span> {valueData[14].label}
-                        </div>
-                        <div className="core-value">
-                            <span>
-                                <img src={valueData[15].value ? tick : cross} className="img-responsive" />
-                            </span> {valueData[15].label}
-                        </div>
                     </div>
                 </div>
             </div>

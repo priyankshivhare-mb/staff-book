@@ -54,21 +54,19 @@ class StaffOnCall extends Component {
                         <div className="col-md-12">
                             <CoreValueMatch valueData={[
                                 { label: 'Community Driven', value: true},
+                                { label: 'Respectful', value: true},
+                                { label: 'Proactive', value: true},
                                 { label: 'Committed to Wellness', value: true},
-                                { label: 'Community Driven', value: true},
-                                { label: 'Community Driven', value: true},
-                                { label: 'Community Driven', value: false},
-                                { label: 'Community Driven', value: true},
-                                { label: 'Community Driven', value: false},
-                                { label: 'Community Driven', value: true},
-                                { label: 'Community Driven', value: true},
-                                { label: 'Community Driven', value: true},
-                                { label: 'Community Driven', value: false},
-                                { label: 'Community Driven', value: true},
-                                { label: 'Community Driven', value: true},
-                                { label: 'Community Driven', value: true},
-                                { label: 'Community Driven', value: true},
-                                { label: 'Community Driven', value: true}
+                                { label: 'Humble', value: false},
+                                { label: 'Helpful', value: true},
+                                { label: 'Empathetic', value: false},
+                                { label: 'Consciously Evolving', value: true},
+                                { label: 'Service-oriented', value: true},
+                                { label: 'Team-player', value: true},
+                                { label: 'Creative', value: false},
+                                { label: 'Innovative', value: true},
+                                { label: 'Fun', value: true},
+                                { label: 'Energetic', value: true}
                             ]}/>
                         </div>
                         <div className="col-md-12">
