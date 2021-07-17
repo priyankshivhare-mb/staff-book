@@ -24,6 +24,7 @@
     "lodash": "^4.17.21",
     "node-sass": "4.13.1",
     "react": "16.14.0",
+    "react-calendar": "^3.4.0",
     "react-dom": "16.14.0",
     "react-redux": "5.1.2",
     "react-router": "4.4.0-beta.8",

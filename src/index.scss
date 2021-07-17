@@ -399,3 +399,88 @@ a.navbar-icon {
 
 }
 /* Core value end */
+
+/* Appointment card start */
+.appointment-wrapper {
+  background-color: #ffffff;
+  padding: 12px 0;
+  box-shadow: 0px 1px 3px rgba(45, 45, 45, 0.2);
+  border-radius: 3px;
+  margin-bottom: 12px;
+
+  h3 {
+    font-size: 20px;
+    font-weight: 600;
+    box-shadow: inset 0px -1px 0px rgba(213, 217, 222, 0.5);
+    padding-bottom: 12px;
+    padding-left: 12px;
+
+    span {
+      font-size: 14px;
+      font-weight: 400;
+      color: #0A7C8E;
+      cursor: pointer;
+      float: right;
+      padding-right: 20px;
+    }
+  }
+
+  .sec-heading {
+    color: rgba(0, 0, 0, 0.5);
+    font-weight: 400;
+    font-size: 16px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+
+  .calendar-wrapper {
+    display: flex;
+    justify-content: center;
+
+    .react-calendar__tile--active {
+      background-color: #0A7C8E;
+      border-radius: 24px;
+    }
+
+    .react-calendar {
+      width: 100%;
+      border: none;
+
+      .react-calendar__navigation__prev2-button, .react-calendar__navigation__next2-button {
+        display: none;
+      }
+      .react-calendar__navigation {
+        .react-calendar__navigation__arrow {
+          border: 1px solid #E5F2F4;
+          color: #696C74;
+          font-size: 30px;
+        }
+      }
+
+      .react-calendar__month-view__weekdays__weekday {
+        abbr {
+          text-transform: capitalize;
+          text-decoration: none;
+        }
+      }
+
+    }
+  }
+
+  .short-list-wrapper {
+    text-align: center;
+
+    button {
+      background-color: #0A7C8E;
+      text-transform: capitalize;
+      color: #ffffff;
+    }
+  }
+}
+/* Appointment card end */
+
+/* Custom checkbox start */
+.custom-checkbox {
+  margin-bottom: 10px;
+}
+/* Custom checkbox end */

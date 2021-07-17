@@ -6,6 +6,7 @@ import Gallery from '../common/gallery';
 import Skills from '../common/skills';
 import SocialCard from '../common/socialCard';
 import CoreValueMatch from '../common/coreValueMatch';
+import AppointmentCard from '../common/appointmentCard';
 import {bindActionCreators} from 'redux';
 import { getUserProfiles } from '../../modules/profile';
 import { getStaffGallery } from '../../modules/staffGalleryImages';
@@ -14,6 +15,9 @@ import { connect } from 'react-redux';
 class StaffOnCall extends Component {
     render() {
         const imageMap = this.props.staffGalleryImages;
+        const handleShortlist = (shortListData) => {
+            console.log(shortListData);
+        }
 
         return (
             <div className="staff-on-call-wrapper">
@@ -84,7 +88,7 @@ class StaffOnCall extends Component {
                     </div>
                     <div className="col-md-4">
                         <div className="col-md-12">
-                            <h3>Booking Request</h3>
+                            <AppointmentCard handleShortlist={handleShortlist}/>
                         </div>
                         <div className="col-md-12">
                             <h3 className="heading-3">Social Profile</h3>
