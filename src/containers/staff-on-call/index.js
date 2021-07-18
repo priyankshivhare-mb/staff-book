@@ -2,6 +2,8 @@ import React, {Component} from 'react';
 import profilePic from '../../assets/placeholder-image.png';
 import profilePic2 from '../../assets/placeholder-image-2.png';
 import twitter from '../../assets/icons/twitter.png';
+import thumbsUp from '../../assets/icons/thumbs-up.png';
+import thumbsDown from '../../assets/icons/thumbs-down.png';
 import ProfileCard from '../common/profileCard';
 import ConciseProfileCard from '../common/conciseProfileCard';
 import Gallery from '../common/gallery';
@@ -9,6 +11,7 @@ import Skills from '../common/skills';
 import SocialCard from '../common/socialCard';
 import CoreValueMatch from '../common/coreValueMatch';
 import AppointmentCard from '../common/appointmentCard';
+import ProfileBio from '../common/profileBio';
 import {bindActionCreators} from 'redux';
 import { getUserProfiles } from '../../modules/profile';
 import { getStaffGallery } from '../../modules/staffGalleryImages';
@@ -30,6 +33,10 @@ class StaffOnCall extends Component {
                     </div>
                     <div className="col-md-4">
                         <button className="btn btn-light pull-right">Download Resume</button>
+                        <div className="pull-right profile-selection-wrapper">
+                            <img src={thumbsUp} className="img-responsive thumbs-up"/>
+                            <img src={thumbsDown} className="img-responsive thumbs-down"/>
+                        </div>
                     </div>
                 </div>
                 <div className="row">
@@ -80,7 +87,12 @@ class StaffOnCall extends Component {
                             <Skills skillSet={['Beauty', 'Salon', 'Social Media', 'Beauty', 'Salon', 'Social Media']}/>
                         </div>
                         <div className="col-md-12">
-                            <h3>Profile</h3>
+                            <ProfileBio
+                                role="Personal Fitness Trainer, Yoga Instructor"
+                                fitnessVertical="Yoga"
+                                wage="$25 - $30"
+                                negotiable={true}
+                            />
                         </div>
                         <div className="col-md-12">
                             <h3>Education and Certification</h3>

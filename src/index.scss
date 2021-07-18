@@ -117,6 +117,16 @@ a.navbar-icon {
   padding: 0 25px 25px 25px;
 }
 
+.profile-selection-wrapper {
+  padding-top: 10px;
+
+  .thumbs-up, .thumbs-down {
+    max-width: 40px;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+}
+
 /* Profile view start */
 .profile-view-wrapper {
   background: #FFFFFF;
@@ -331,6 +341,7 @@ a.navbar-icon {
   padding: 20px;
   box-shadow: 0px 1px 3px rgba(45, 45, 45, 0.2);
   border-radius: 3px;
+  margin-bottom: 16px;
 
   h3 {
     font-size: 20px;
@@ -352,6 +363,26 @@ a.navbar-icon {
 }
 
 /* Skills end */
+
+/* Profile bio start */
+
+.profile-bio-wrapper {
+  background-color: #ffffff;
+  padding: 20px;
+  box-shadow: 0px 1px 3px rgba(45, 45, 45, 0.2);
+  border-radius: 3px;
+
+  h3 {
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  label {
+    color: rgba(0, 0, 0, 0.5);
+    width: 180px;
+  }
+}
+/* Profile bio end */
 
 /* Social card start */
 .social-wrapper {
