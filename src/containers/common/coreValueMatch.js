@@ -6,7 +6,7 @@ const CoreValueMatch = ({ valueData }) => {
     return (
         <div className="row">
             <div className="col-md-12 core-value-wrapper">
-                <h3>Profile Values
+                <h3>Core Values
                     <span>Matching {valueData.filter(data => data.value).length}/{valueData.length}</span>
                 </h3>
                 <div className="row">
