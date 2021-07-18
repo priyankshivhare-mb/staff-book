@@ -12,6 +12,7 @@ import SocialCard from '../common/socialCard';
 import CoreValueMatch from '../common/coreValueMatch';
 import AppointmentCard from '../common/appointmentCard';
 import ProfileBio from '../common/profileBio';
+import AcademicsCard from '../common/academicsCard';
 import {bindActionCreators} from 'redux';
 import { getUserProfiles } from '../../modules/profile';
 import { getStaffGallery } from '../../modules/staffGalleryImages';
@@ -95,7 +96,13 @@ class StaffOnCall extends Component {
                             />
                         </div>
                         <div className="col-md-12">
-                            <h3>Education and Certification</h3>
+                            <AcademicsCard
+                                graduation="Ph.D (Yoga)"
+                                certification={
+                                    ['National Academy of Sports Medicine',
+                                        '(ISSA) International Sports Science Association'
+                                    ]}
+                            />
                         </div>
                         <div className="col-md-12">
                             <Gallery imageData={imageMap}/>

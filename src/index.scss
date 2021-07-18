@@ -371,6 +371,7 @@ a.navbar-icon {
   padding: 20px;
   box-shadow: 0px 1px 3px rgba(45, 45, 45, 0.2);
   border-radius: 3px;
+  margin-bottom: 16px;
 
   h3 {
     font-size: 20px;
@@ -383,6 +384,36 @@ a.navbar-icon {
   }
 }
 /* Profile bio end */
+
+/* Academics card start */
+.academics-wrapper {
+  background-color: #ffffff;
+  padding: 20px;
+  box-shadow: 0px 1px 3px rgba(45, 45, 45, 0.2);
+  border-radius: 3px;
+  margin-bottom: 16px;
+
+  h3 {
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  label {
+    color: rgba(0, 0, 0, 0.5);
+    width: 180px;
+  }
+
+  .skill-tag {
+    span {
+      padding: 8px 16px;
+      border: 1px solid black;
+      border-radius: 20px;
+      margin-right: 8px;
+      line-height: 50px;
+    }
+  }
+}
+/* Academics card end */
 
 /* Social card start */
 .social-wrapper {
