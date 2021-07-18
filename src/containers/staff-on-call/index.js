@@ -1,7 +1,9 @@
 import React, {Component} from 'react';
 import profilePic from '../../assets/placeholder-image.png';
+import profilePic2 from '../../assets/placeholder-image-2.png';
 import twitter from '../../assets/icons/twitter.png';
 import ProfileCard from '../common/profileCard';
+import ConciseProfileCard from '../common/conciseProfileCard';
 import Gallery from '../common/gallery';
 import Skills from '../common/skills';
 import SocialCard from '../common/socialCard';
@@ -53,6 +55,7 @@ class StaffOnCall extends Component {
                                 lastActive="11 Mar 2020"
                                 lastModified="28 Feb 2020"
                                 reviewCount={25}
+                                isConcise={false}
                             />
                         </div>
                         <div className="col-md-12">
@@ -117,7 +120,47 @@ class StaffOnCall extends Component {
                     </div>
                 </div>
                 <div className="row">
-                    Profiles
+                    <div className="col-md-12">
+                        <h3 className="heading-3">Similar Profiles</h3>
+                    </div>
+                    <div className="col-md-6">
+                        <ConciseProfileCard
+                            profilePic={profilePic2}
+                            name="Marvin McKinney"
+                            profileRating={4.3}
+                            recommendation={8}
+                            wage="$12000 /yr"
+                            location="Philadelphia"
+                            currentJob="Salon Manager"
+                            jobsCompleted="98%"
+                            budgetPerc="85%"
+                            hireRate="60%"
+                            profileViews={10}
+                            profileDownloads={2}
+                            lastActive="11 Mar 2020"
+                            lastModified="28 Feb 2020"
+                            reviewCount={25}
+                        />
+                    </div>
+                    <div className="col-md-6">
+                        <ConciseProfileCard
+                            profilePic={profilePic2}
+                            name="Marvin McKinney"
+                            profileRating={4.3}
+                            recommendation={8}
+                            wage="$12000 /yr"
+                            location="Philadelphia"
+                            currentJob="Salon Manager"
+                            jobsCompleted="98%"
+                            budgetPerc="85%"
+                            hireRate="60%"
+                            profileViews={10}
+                            profileDownloads={2}
+                            lastActive="11 Mar 2020"
+                            lastModified="28 Feb 2020"
+                            reviewCount={25}
+                        />
+                    </div>
                 </div>
             </div>
         );

@@ -123,8 +123,15 @@ a.navbar-icon {
   box-shadow: 0 1px 3px rgba(45, 45, 45, 0.2);
   margin-bottom: 12px;
 
-  &.highlighted {
-    background-color: #F9F3D9;
+  .img-round {
+    max-width: 104px;
+    border-radius: 104px;
+  }
+
+  .concise-pic-wrapper {
+    img {
+      margin-top: 20px;
+    }
   }
 
   .profile-main {
@@ -158,6 +165,7 @@ a.navbar-icon {
 
     .candidate-specifics {
       margin-bottom: 23px;
+      padding-left: 0;
 
       span {
         &.bold {
@@ -168,22 +176,6 @@ a.navbar-icon {
       img {
         max-width: 24px;
         margin-right: 10px;
-      }
-    }
-
-    .candidate-highlight {
-      margin-bottom: 20px;
-
-      .bullet {
-        background-color: #E5F2F4;
-        padding: 8px 16px;
-        border-radius: 20px;
-        margin-right: 10px;
-
-        .highlight {
-          color: #00a60a;
-          font-weight: bold;
-        }
       }
     }
 
@@ -211,6 +203,13 @@ a.navbar-icon {
           }
         }
       }
+
+      &.concise-wrapper {
+        .profile-rating {
+          right: 20px;
+        }
+      }
+
       .profile-rating-sub-details {
         font-size: 12px;
         height: 18px;
@@ -252,6 +251,21 @@ a.navbar-icon {
       }
     }
   }
+  .candidate-highlight {
+    margin-bottom: 20px;
+
+    .bullet {
+      background-color: #E5F2F4;
+      padding: 8px 16px;
+      border-radius: 20px;
+      margin-right: 10px;
+
+      .highlight {
+        color: #00a60a;
+        font-weight: bold;
+      }
+    }
+  }
 }
 /* Profile view end */
 
@@ -261,6 +275,7 @@ a.navbar-icon {
   padding: 20px;
   box-shadow: 0px 1px 3px rgba(45, 45, 45, 0.2);
   border-radius: 3px;
+  margin-bottom: 30px;
 
   .justify-center {
     margin: 0 auto;
