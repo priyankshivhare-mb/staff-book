@@ -121,7 +121,7 @@ class StaffOnCall extends Component {
                 </div>
                 <div className="row">
                     <div className="col-md-12">
-                        <h3 className="heading-3">Similar Profiles</h3>
+                        <h3 className="heading-3">Similar Profiles <span className="pull-right">View All</span></h3>
                     </div>
                     <div className="col-md-6">
                         <ConciseProfileCard

@@ -13,7 +13,7 @@ import whatsapp from '../../assets/icons/whatsapp.png';
 const ProfileCard = (props) => {
     return (
         <div className="row">
-            <div className={`col-md-12 profile-view-wrapper ${props.isHighlighted && 'highlighted'}`}>
+            <div className="col-md-12 profile-view-wrapper">
                 <div className="row profile-main">
                     <div className="col-md-2">
                         <div className="row">

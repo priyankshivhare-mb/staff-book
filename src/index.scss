@@ -394,6 +394,14 @@ a.navbar-icon {
   font-size: 20px;
   font-weight: 600;
   margin-bottom: 16px;
+
+  span {
+    font-size: 14px;
+    color: #0A7C8E;
+    font-weight: 400;
+    text-transform: capitalize;
+    cursor: pointer;
+  }
 }
 
 /* Core value start */
