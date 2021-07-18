@@ -5,7 +5,7 @@ import Dashboard from '../dashboard';
 import StaffOnCall from '../staff-on-call';
 import Staff from '../staff';
 import Navigation from '../common/navigation';
-import Footer from '../common/Footer';
+import Footer from '../common/footer';
 
 const App = () => {
     const [activeLink, setActiveLink] = useState('dashboard');
