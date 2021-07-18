@@ -52,8 +52,9 @@ class StaffOnCall extends Component {
                                 location="Philadelphia"
                                 currentJob="Salon Manager"
                                 email="courtney@gmail.com"
+                                emailVerified={true}
                                 mobile="+1 (234) 234 567"
-                                whatsapp="+1 (234) 234 567"
+                                mobileVerified={true}
                                 jobsCompleted="98%"
                                 budgetPerc="85%"
                                 hireRate="60%"

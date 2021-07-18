@@ -8,7 +8,7 @@ import download from '../../assets/icons/download.png';
 import comment from '../../assets/icons/comment.png';
 import email from '../../assets/icons/email.png';
 import mobile from '../../assets/icons/mobile.png';
-import whatsapp from '../../assets/icons/whatsapp.png';
+import verified from '../../assets/icons/verified.png';
 
 const ProfileCard = (props) => {
     return (
@@ -54,11 +54,15 @@ const ProfileCard = (props) => {
                                 <span className="col">
                                     <img src={email} />
                                     {props.email}</span>
+                                { props.emailVerified && <span>
+                                    <img className="verified-icon" src={verified} />
+                                </span> }
                                 <span className="col">
                                     <img src={mobile} />
                                     {props.mobile}</span>
-                                <span className="col">
-                                    <img src={whatsapp} />{props.whatsapp} </span>
+                                {props.mobileVerified && <span>
+                                    <img className="verified-icon" src={verified} />
+                                </span> }
                             </div>
                         </div>
                         <div className="row">
