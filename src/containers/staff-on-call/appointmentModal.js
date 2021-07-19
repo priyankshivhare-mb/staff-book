@@ -10,7 +10,7 @@ const AppointmentModal = (props) => {
         <Modal
             title="Sending email for confirmation"
             handleCancel={props.handleCancel}
-            handleSend={() => null}
+            handleSend={props.handleSend}
         >
             <div className="container">
                 <div className="row">

@@ -14,6 +14,7 @@ import AppointmentCard from '../common/appointmentCard';
 import ProfileBio from '../common/profileBio';
 import AcademicsCard from '../common/academicsCard';
 import AppointmentModal from './appointmentModal';
+import SentModal from '../common/sentModal';
 import {bindActionCreators} from 'redux';
 import { getUserProfiles } from '../../modules/profile';
 import { getStaffGallery } from '../../modules/staffGalleryImages';
@@ -22,11 +23,15 @@ import { connect } from 'react-redux';
 class StaffOnCall extends Component {
     constructor(props) {
         super(props);
-        this.state = { showModal: false }
+        this.state = { showModal: false, showSentEmailModal: false }
     };
 
     handleCancel = () => {
         this.setState({ showModal: false });
+    }
+
+    handleSend = () => {
+        this.setState(({ showModal: false, showSentEmailModal: true }));
     }
 
     render() {
@@ -193,7 +198,12 @@ class StaffOnCall extends Component {
                         />
                     </div>
                 </div>
-                { this.state.showModal && <AppointmentModal handleCancel={this.handleCancel}/> }
+                { this.state.showModal && <AppointmentModal
+                    handleCancel={this.handleCancel}
+                    handleSend={this.handleSend}
+                /> }
+                { this.state.showSentEmailModal && <SentModal />
+                }
             </div>
         );
     }
