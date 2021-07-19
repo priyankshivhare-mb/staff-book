@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import profilePic from '../../assets/placeholder-image.png';
 import profilePic2 from '../../assets/placeholder-image-2.png';
 import twitter from '../../assets/icons/twitter.png';
@@ -13,16 +13,23 @@ import CoreValueMatch from '../common/coreValueMatch';
 import AppointmentCard from '../common/appointmentCard';
 import ProfileBio from '../common/profileBio';
 import AcademicsCard from '../common/academicsCard';
+import AppointmentModal from './appointmentModal';
 import {bindActionCreators} from 'redux';
 import { getUserProfiles } from '../../modules/profile';
 import { getStaffGallery } from '../../modules/staffGalleryImages';
 import { connect } from 'react-redux';
 
 class StaffOnCall extends Component {
+    constructor(props) {
+        super(props);
+        this.state = { showModal: false }
+    };
+
     render() {
         const imageMap = this.props.staffGalleryImages;
         const handleShortlist = (shortListData) => {
             console.log(shortListData);
+            this.setState({ showModal: true });
         }
 
         return (
@@ -182,6 +189,7 @@ class StaffOnCall extends Component {
                         />
                     </div>
                 </div>
+                { this.state.showModal && <AppointmentModal /> }
             </div>
         );
     }

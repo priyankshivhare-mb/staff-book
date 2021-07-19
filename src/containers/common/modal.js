@@ -11,13 +11,13 @@ const Modal = (props) => (
                     </button>
                 </div>
                 <div className="modal-body">
-                    <p>{props.content}</p>
+                    {props.children}
                 </div>
                 <div className="modal-footer">
-                    <button type="button" className="btn btn-primary" onClick={props.handleConfirm}>Confirm</button>
                     <button type="button" className="btn btn-secondary" onClick={props.handleCancel}
                             data-dismiss="modal">Cancel
                     </button>
+                    <button type="button" className="btn btn-primary" onClick={props.handleSend}>Send</button>
                 </div>
             </div>
         </div>

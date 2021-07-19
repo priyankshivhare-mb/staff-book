@@ -111,8 +111,12 @@ a.navbar-icon {
 /* Footer End */
 
 /* Modal */
+.modal-dialog {
+  max-width: 900px;
+}
 .modal-show {
   display: block;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 /* Modal End */
