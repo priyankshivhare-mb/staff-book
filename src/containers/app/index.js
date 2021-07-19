@@ -4,6 +4,7 @@ import Cookies from 'universal-cookie';
 import Dashboard from '../dashboard';
 import StaffOnCall from '../staff-on-call';
 import Staff from '../staff';
+import StaffListing from '../staff-listing';
 import Navigation from '../common/navigation';
 import Footer from '../common/footer';
 
@@ -20,6 +21,7 @@ const App = () => {
             <Route exact path="/" component={Dashboard}/>
             <Route exact path="/recommended-profiles" component={StaffOnCall}/>
             <Route exact path="/staff" component={Staff}/>
+            <Route exact path="/search-profiles" component={StaffListing} />
           </main>
         </div>
         <Footer />
