@@ -71,7 +71,7 @@ class ShortProfileCard extends React.Component {
           <div className="row">
             <div className="col-2 profile-pic pl-0">
               <div className="row">
-                <img src={profilePic} className="img-responsive rounded-circle profile-img" height="50px" />
+                <img src={profilePic} className="img-responsive rounded-circle profile-img" width="50px" />
               </div>
             </div>
             <div className="col-10 px-0">
