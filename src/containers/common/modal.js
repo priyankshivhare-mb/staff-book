@@ -1,7 +1,8 @@
 import React from 'react';
+import sendEmail from '../../assets/icons/send-email.png';
 
 const Modal = (props) => (
-    <div className="modal modal-show" tabIndex="-1" role="dialog">
+    <div className="staff-modal modal modal-show" tabIndex="-1" role="dialog">
         <div className="modal-dialog" role="document">
             <div className="modal-content">
                 <div className="modal-header">
@@ -17,7 +18,7 @@ const Modal = (props) => (
                     <button type="button" className="btn btn-secondary" onClick={props.handleCancel}
                             data-dismiss="modal">Cancel
                     </button>
-                    <button type="button" className="btn btn-primary" onClick={props.handleSend}>Send</button>
+                    <button type="button" className="btn btn-primary" onClick={props.handleSend}>Send<img src={sendEmail} className="send-email img-responsive"/></button>
                 </div>
             </div>
         </div>

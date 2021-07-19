@@ -111,14 +111,49 @@ a.navbar-icon {
 /* Footer End */
 
 /* Modal */
-.modal-dialog {
-  max-width: 900px;
-}
-.modal-show {
-  display: block;
-  background-color: rgba(0, 0, 0, 0.5);
-}
+.staff-modal {
+  .modal-dialog {
+    max-width: 900px;
+  }
+  &.modal-show {
+    display: block;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  .modal-header {
+    background-color: #EEEEEE;
 
+    h5 {
+      font-weight: 600;
+    }
+  }
+  .send-email {
+    max-width: 26.5px;
+  }
+  .btn-primary {
+    background-color: #0A7C8E;
+    text-transform: capitalize;
+    border: 1px solid #0A7C8E;
+    font-weight: 700;
+
+    img {
+      padding-bottom: 2px;
+      margin-left: 4px;
+    }
+  }
+  .btn-secondary {
+    background-color: #ffffff;
+    color: #0A7C8E;
+    text-transform: capitalize;
+    font-weight: 400;
+    border: 1px solid #0A7C8E;
+    margin-right: 8px;
+  }
+  .modal-label {
+    color: rgba(0,0,0,0.5);
+    font-weight: 700;
+    margin-bottom: 16px;
+  }
+}
 /* Modal End */
 
 .staff-on-call-wrapper {

@@ -25,6 +25,10 @@ class StaffOnCall extends Component {
         this.state = { showModal: false }
     };
 
+    handleCancel = () => {
+        this.setState({ showModal: false });
+    }
+
     render() {
         const imageMap = this.props.staffGalleryImages;
         const handleShortlist = (shortListData) => {
@@ -189,7 +193,7 @@ class StaffOnCall extends Component {
                         />
                     </div>
                 </div>
-                { this.state.showModal && <AppointmentModal /> }
+                { this.state.showModal && <AppointmentModal handleCancel={this.handleCancel}/> }
             </div>
         );
     }

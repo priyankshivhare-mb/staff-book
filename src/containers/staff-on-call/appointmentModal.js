@@ -9,13 +9,43 @@ const AppointmentModal = (props) => {
     return (
         <Modal
             title="Sending email for confirmation"
-            handleCancel={() => null}
+            handleCancel={props.handleCancel}
             handleSend={() => null}
         >
             <div className="container">
                 <div className="row">
-                    <div className="col-md-3">
-                        Selected time slots
+                    <div className="col-md-3 modal-label">
+                        From:
+                    </div>
+                    <div className="col-md-9">
+                        Abc
+                    </div>
+                    <div className="col-md-3 modal-label">
+                        To:
+                    </div>
+                    <div className="col-md-9">
+                        Abc
+                    </div>
+                    <div className="col-md-3 modal-label">
+                        Subject line:
+                    </div>
+                    <div className="col-md-9">
+                        Subject
+                    </div>
+                    <div className="col-md-3 modal-label">
+                        Body:
+                    </div>
+                    <div className="col-md-9">
+                        Some body
+                    </div>
+                    <div className="col-md-3 modal-label">
+                        Appointment on:
+                    </div>
+                    <div className="col-md-9">
+                        Some date
+                    </div>
+                    <div className="col-md-3 modal-label">
+                        Selected time slots:
                     </div>
                     <div className="col-md-9">
                         <div className="row">
