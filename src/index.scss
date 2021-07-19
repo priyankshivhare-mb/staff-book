@@ -43,6 +43,10 @@ body {
   background-color: #F9F9FA;
 }
 
+button, input, optgroup, select, textarea {
+  font-family: averta, "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+}
+
 button:disabled {
   opacity: 0.5;
 }

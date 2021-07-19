@@ -1,0 +1,30 @@
+.search-profiles {
+    padding-bottom: 25px;
+
+    & .row {
+        margin: unset
+    }
+
+    .section {
+        box-shadow: 0px 1px 3px rgba(45, 45, 45, 0.2);
+        background-color: white;
+        margin-bottom: 25px;
+
+        & .header {
+            padding: 10px;
+            box-shadow: inset 0px -1px 0px rgba(213, 217, 222, 0.5);
+            font-weight: bold;
+        }
+
+        & .body {
+            padding: 10px;
+            & .filter-section {
+                padding: 5px;
+                & .filter-title {
+                    color: #2D2D2D;
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}
