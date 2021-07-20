@@ -3,6 +3,8 @@ import React from 'react';
 import Sidebar from './sidebar';
 
 import './styles.scss';
+import profilePic2 from "../../assets/placeholder-image-2.png";
+import ConciseProfileCard from "../common/conciseProfileCard";
 
 class StaffListing extends React.Component {
   render() {
@@ -26,6 +28,42 @@ class StaffListing extends React.Component {
         <div className="row">
           <div className="col-3">
             <Sidebar />
+          </div>
+          <div className="col-9">
+            <ConciseProfileCard
+                profilePic={profilePic2}
+                name="Marvin McKinney"
+                profileRating={4.3}
+                recommendation={8}
+                wage="$12000 /yr"
+                location="Philadelphia"
+                currentJob="Salon Manager"
+                jobsCompleted="98%"
+                budgetPerc="85%"
+                hireRate="60%"
+                profileViews={10}
+                profileDownloads={2}
+                lastActive="11 Mar 2020"
+                lastModified="28 Feb 2020"
+                reviewCount={25}
+            />
+            <ConciseProfileCard
+                profilePic={profilePic2}
+                name="Marvin McKinney"
+                profileRating={4.3}
+                recommendation={8}
+                wage="$12000 /yr"
+                location="Philadelphia"
+                currentJob="Salon Manager"
+                jobsCompleted="98%"
+                budgetPerc="85%"
+                hireRate="60%"
+                profileViews={10}
+                profileDownloads={2}
+                lastActive="11 Mar 2020"
+                lastModified="28 Feb 2020"
+                reviewCount={25}
+            />
           </div>
         </div>
       </div>
