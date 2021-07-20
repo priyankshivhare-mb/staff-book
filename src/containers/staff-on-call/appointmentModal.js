@@ -1,6 +1,7 @@
 import React from 'react';
 import Modal from '../common/modal';
 import CustomCheckbox from '../common/customCheckbox';
+import calendar from '../../assets/icons/calendar.png';
 
 const AppointmentModal = (props) => {
     const selectedSlot = props.shortListData;
@@ -42,7 +43,24 @@ const AppointmentModal = (props) => {
                         Appointment on:
                     </div>
                     <div className="col-md-9">
-                        Some date
+                        <div className="input-group date-selector">
+                            <label>Start Date</label>
+                            <div className="input-group-prepend">
+                                <div className="input-group-text">
+                                    <img src={calendar} className="img-responsive img-calendar" />
+                                </div>
+                            </div>
+                            <input type="text" className="form-control" value={props.startDate}/>
+                        </div>
+                        <div className="input-group date-selector">
+                            <label>End Date</label>
+                            <div className="input-group-prepend">
+                                <div className="input-group-text">
+                                    <img src={calendar} className="img-responsive img-calendar" />
+                                </div>
+                            </div>
+                            <input type="text" className="form-control" value={props.endDate}/>
+                        </div>
                     </div>
                     <div className="col-md-3 modal-label">
                         Selected time slots:

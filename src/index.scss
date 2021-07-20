@@ -153,6 +153,24 @@ a.navbar-icon {
     font-weight: 700;
     margin-bottom: 16px;
   }
+  .date-selector {
+    width: 48%;
+    float: left;
+
+    label {
+      color: rgba(0,0,0,0.5);
+      padding-top: 2px;
+      margin-right: 8px;
+    }
+
+    .img-calendar {
+      max-width: 16px;
+    }
+
+    &:first-child {
+      margin-right: 8px;
+    }
+  }
   &.sent-modal {
     .modal-dialog {
       max-width: 510px;

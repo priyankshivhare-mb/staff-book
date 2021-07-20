@@ -206,6 +206,8 @@ class StaffOnCall extends Component {
                     to="Palak Shivhare <palak.shivhare@mindbodyonline.com"
                     subject="Some subject"
                     body="email body"
+                    startDate="12/07/2021"
+                    endDate="12/07/2021"
                     handleCancel={this.handleCancel}
                     handleSend={this.handleSend}
                     shortListData={this.state.shortListData}
