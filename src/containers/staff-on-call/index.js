@@ -34,6 +34,10 @@ class StaffOnCall extends Component {
         this.setState(({ showModal: false, showSentEmailModal: true }));
     }
 
+    handleSentModalClose = () => {
+        this.setState(({ showSentEmailModal: false }));
+    }
+
     render() {
         const imageMap = this.props.staffGalleryImages;
         const handleShortlist = (shortListData) => {
@@ -202,7 +206,9 @@ class StaffOnCall extends Component {
                     handleCancel={this.handleCancel}
                     handleSend={this.handleSend}
                 /> }
-                { this.state.showSentEmailModal && <SentModal />
+                { this.state.showSentEmailModal && <SentModal
+                handleClose={this.handleSentModalClose}
+                />
                 }
             </div>
         );

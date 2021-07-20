@@ -2,17 +2,11 @@ import React from 'react';
 import emailSent from '../../assets/email-sent.png';
 
 const SentModal = (props) => (
-    <div className="staff-modal modal modal-show" tabIndex="-1" role="dialog">
+    <div className="staff-modal modal modal-show sent-modal" tabIndex="-1" role="dialog">
         <div className="modal-dialog" role="document">
             <div className="modal-content">
-                <div className="modal-header">
-                    <h5 className="modal-title">{props.title}</h5>
-                    <button type="button" className="close" onClick={props.handleCancel} data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
                 <div className="modal-body mx-auto d-block">
-                    <img src={emailSent} className="img-responsive" />
+                    <img src={emailSent} className="img-responsive email-sent-img" />
                     <h4>Your request has been sent successfully</h4>
                 </div>
                 <div className="modal-footer">
