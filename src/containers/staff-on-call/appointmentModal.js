@@ -18,25 +18,25 @@ const AppointmentModal = (props) => {
                         From:
                     </div>
                     <div className="col-md-9">
-                        Abc
+                        {props.from}
                     </div>
                     <div className="col-md-3 modal-label">
                         To:
                     </div>
                     <div className="col-md-9">
-                        Abc
+                        {props.to}
                     </div>
                     <div className="col-md-3 modal-label">
                         Subject line:
                     </div>
                     <div className="col-md-9">
-                        Subject
+                        <input type="text" className="form-control" value={props.subject} />
                     </div>
                     <div className="col-md-3 modal-label">
                         Body:
                     </div>
                     <div className="col-md-9">
-                        Some body
+                        <input type="text" className="form-control" value={props.body} />
                     </div>
                     <div className="col-md-3 modal-label">
                         Appointment on:

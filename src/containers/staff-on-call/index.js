@@ -202,6 +202,10 @@ class StaffOnCall extends Component {
                     </div>
                 </div>
                 { this.state.showModal && <AppointmentModal
+                    from="Ganesh Borse <ganesh.borse@mindbodyonline.com"
+                    to="Palak Shivhare <palak.shivhare@mindbodyonline.com"
+                    subject="Some subject"
+                    body="email body"
                     handleCancel={this.handleCancel}
                     handleSend={this.handleSend}
                     shortListData={this.state.shortListData}
