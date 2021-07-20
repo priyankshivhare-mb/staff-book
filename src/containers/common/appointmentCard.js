@@ -27,6 +27,7 @@ const AppointmentCard = (props) => {
                     <div className="row">
                         <div className="col-md-6">
                             <CustomCheckbox
+                                id="schedule"
                                 label="06:00 AM"
                                 disabled={false}
                                 onChange={handleOnChange}
@@ -34,6 +35,7 @@ const AppointmentCard = (props) => {
                                 selectedSlot={selectedSlot}
                             />
                             <CustomCheckbox
+                                id="schedule"
                                 label="07:00 AM"
                                 disabled={false}
                                 onChange={handleOnChange}
@@ -41,6 +43,7 @@ const AppointmentCard = (props) => {
                                 selectedSlot={selectedSlot}
                             />
                             <CustomCheckbox
+                                id="schedule"
                                 label="08:00 AM"
                                 disabled={false}
                                 onChange={handleOnChange}
@@ -48,6 +51,7 @@ const AppointmentCard = (props) => {
                                 selectedSlot={selectedSlot}
                             />
                             <CustomCheckbox
+                                id="schedule"
                                 label="09:00 AM"
                                 disabled={false}
                                 onChange={handleOnChange}
@@ -55,6 +59,7 @@ const AppointmentCard = (props) => {
                                 selectedSlot={selectedSlot}
                             />
                             <CustomCheckbox
+                                id="schedule"
                                 label="10:00 AM"
                                 disabled={false}
                                 onChange={handleOnChange}
@@ -62,6 +67,7 @@ const AppointmentCard = (props) => {
                                 selectedSlot={selectedSlot}
                             />
                             <CustomCheckbox
+                                id="schedule"
                                 label="11:00 AM"
                                 disabled={false}
                                 onChange={handleOnChange}
@@ -69,6 +75,7 @@ const AppointmentCard = (props) => {
                                 selectedSlot={selectedSlot}
                             />
                             <CustomCheckbox
+                                id="schedule"
                                 label="12:00 PM"
                                 disabled={true}
                                 onChange={handleOnChange}
@@ -76,6 +83,7 @@ const AppointmentCard = (props) => {
                                 selectedSlot={selectedSlot}
                             />
                             <CustomCheckbox
+                                id="schedule"
                                 label="01:00 PM"
                                 disabled={true}
                                 onChange={handleOnChange}
@@ -85,6 +93,7 @@ const AppointmentCard = (props) => {
                         </div>
                         <div className="col-md-6">
                             <CustomCheckbox
+                                id="schedule"
                                 label="02:00 PM"
                                 disabled={false}
                                 onChange={handleOnChange}
@@ -92,6 +101,7 @@ const AppointmentCard = (props) => {
                                 selectedSlot={selectedSlot}
                             />
                             <CustomCheckbox
+                                id="schedule"
                                 label="03:00 PM"
                                 disabled={false}
                                 onChange={handleOnChange}
@@ -99,6 +109,7 @@ const AppointmentCard = (props) => {
                                 selectedSlot={selectedSlot}
                             />
                             <CustomCheckbox
+                                id="schedule"
                                 label="04:00 PM"
                                 disabled={false}
                                 onChange={handleOnChange}
@@ -106,6 +117,7 @@ const AppointmentCard = (props) => {
                                 selectedSlot={selectedSlot}
                             />
                             <CustomCheckbox
+                                id="schedule"
                                 label="05:00 PM"
                                 disabled={false}
                                 onChange={handleOnChange}
@@ -113,6 +125,7 @@ const AppointmentCard = (props) => {
                                 selectedSlot={selectedSlot}
                             />
                             <CustomCheckbox
+                                id="schedule"
                                 label="06:00 PM"
                                 disabled={false}
                                 onChange={handleOnChange}
@@ -120,6 +133,7 @@ const AppointmentCard = (props) => {
                                 selectedSlot={selectedSlot}
                             />
                             <CustomCheckbox
+                                id="schedule"
                                 label="07:00 PM"
                                 disabled={false}
                                 onChange={handleOnChange}
@@ -127,6 +141,7 @@ const AppointmentCard = (props) => {
                                 selectedSlot={selectedSlot}
                             />
                             <CustomCheckbox
+                                id="schedule"
                                 label="08:00 PM"
                                 disabled={true}
                                 onChange={handleOnChange}
@@ -134,6 +149,7 @@ const AppointmentCard = (props) => {
                                 selectedSlot={selectedSlot}
                             />
                             <CustomCheckbox
+                                id="schedule"
                                 label="09:00 PM"
                                 disabled={true}
                                 onChange={handleOnChange}

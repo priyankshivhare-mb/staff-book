@@ -10,9 +10,9 @@ const CustomCheckbox = (props) => {
                 disabled={props.disabled}
                 checked={checked}
                 onChange={() => props.onChange(!props.checked, props.label)}
-                id={props.label}
+                id={props.id+props.label}
             />
-            <label className="custom-control-label" for={props.label}>{props.label}</label>
+            <label className="custom-control-label" for={props.id+props.label}>{props.label}</label>
         </div>
     );
 };

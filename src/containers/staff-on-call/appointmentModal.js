@@ -3,7 +3,7 @@ import Modal from '../common/modal';
 import CustomCheckbox from '../common/customCheckbox';
 
 const AppointmentModal = (props) => {
-    const selectedSlot = {};
+    const selectedSlot = props.shortListData;
     const handleOnChange = () => null;
 
     return (
@@ -51,6 +51,7 @@ const AppointmentModal = (props) => {
                         <div className="row">
                             <div className="col-md-3">
                                 <CustomCheckbox
+                                    id="appointment"
                                     label="06:00 AM"
                                     disabled={false}
                                     onChange={handleOnChange}
@@ -58,6 +59,7 @@ const AppointmentModal = (props) => {
                                     selectedSlot={selectedSlot}
                                 />
                                 <CustomCheckbox
+                                    id="appointment"
                                     label="07:00 AM"
                                     disabled={false}
                                     onChange={handleOnChange}
@@ -65,6 +67,7 @@ const AppointmentModal = (props) => {
                                     selectedSlot={selectedSlot}
                                 />
                                 <CustomCheckbox
+                                    id="appointment"
                                     label="08:00 AM"
                                     disabled={false}
                                     onChange={handleOnChange}
@@ -72,6 +75,7 @@ const AppointmentModal = (props) => {
                                     selectedSlot={selectedSlot}
                                 />
                                 <CustomCheckbox
+                                    id="appointment"
                                     label="09:00 AM"
                                     disabled={false}
                                     onChange={handleOnChange}
@@ -81,6 +85,7 @@ const AppointmentModal = (props) => {
                             </div>
                             <div className="col-md-3">
                                 <CustomCheckbox
+                                    id="appointment"
                                     label="10:00 AM"
                                     disabled={false}
                                     onChange={handleOnChange}
@@ -88,6 +93,7 @@ const AppointmentModal = (props) => {
                                     selectedSlot={selectedSlot}
                                 />
                                 <CustomCheckbox
+                                    id="appointment"
                                     label="11:00 AM"
                                     disabled={false}
                                     onChange={handleOnChange}
@@ -95,6 +101,7 @@ const AppointmentModal = (props) => {
                                     selectedSlot={selectedSlot}
                                 />
                                 <CustomCheckbox
+                                    id="appointment"
                                     label="12:00 PM"
                                     disabled={true}
                                     onChange={handleOnChange}
@@ -102,6 +109,7 @@ const AppointmentModal = (props) => {
                                     selectedSlot={selectedSlot}
                                 />
                                 <CustomCheckbox
+                                    id="appointment"
                                     label="01:00 PM"
                                     disabled={true}
                                     onChange={handleOnChange}
@@ -111,6 +119,7 @@ const AppointmentModal = (props) => {
                             </div>
                             <div className="col-md-3">
                                 <CustomCheckbox
+                                    id="appointment"
                                     label="02:00 PM"
                                     disabled={false}
                                     onChange={handleOnChange}
@@ -118,6 +127,7 @@ const AppointmentModal = (props) => {
                                     selectedSlot={selectedSlot}
                                 />
                                 <CustomCheckbox
+                                    id="appointment"
                                     label="03:00 PM"
                                     disabled={false}
                                     onChange={handleOnChange}
@@ -125,6 +135,7 @@ const AppointmentModal = (props) => {
                                     selectedSlot={selectedSlot}
                                 />
                                 <CustomCheckbox
+                                    id="appointment"
                                     label="04:00 PM"
                                     disabled={false}
                                     onChange={handleOnChange}
@@ -132,6 +143,7 @@ const AppointmentModal = (props) => {
                                     selectedSlot={selectedSlot}
                                 />
                                 <CustomCheckbox
+                                    id="appointment"
                                     label="05:00 PM"
                                     disabled={false}
                                     onChange={handleOnChange}
@@ -141,6 +153,7 @@ const AppointmentModal = (props) => {
                             </div>
                             <div className="col-md-3">
                                 <CustomCheckbox
+                                    id="appointment"
                                     label="06:00 PM"
                                     disabled={false}
                                     onChange={handleOnChange}
@@ -148,6 +161,7 @@ const AppointmentModal = (props) => {
                                     selectedSlot={selectedSlot}
                                 />
                                 <CustomCheckbox
+                                    id="appointment"
                                     label="07:00 PM"
                                     disabled={false}
                                     onChange={handleOnChange}
@@ -155,6 +169,7 @@ const AppointmentModal = (props) => {
                                     selectedSlot={selectedSlot}
                                 />
                                 <CustomCheckbox
+                                    id="appointment"
                                     label="08:00 PM"
                                     disabled={true}
                                     onChange={handleOnChange}
@@ -162,6 +177,7 @@ const AppointmentModal = (props) => {
                                     selectedSlot={selectedSlot}
                                 />
                                 <CustomCheckbox
+                                    id="appointment"
                                     label="09:00 PM"
                                     disabled={true}
                                     onChange={handleOnChange}

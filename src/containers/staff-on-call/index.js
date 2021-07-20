@@ -23,7 +23,7 @@ import { connect } from 'react-redux';
 class StaffOnCall extends Component {
     constructor(props) {
         super(props);
-        this.state = { showModal: false, showSentEmailModal: false }
+        this.state = { showModal: false, showSentEmailModal: false, shortListData: {} }
     };
 
     handleCancel = () => {
@@ -41,8 +41,7 @@ class StaffOnCall extends Component {
     render() {
         const imageMap = this.props.staffGalleryImages;
         const handleShortlist = (shortListData) => {
-            console.log(shortListData);
-            this.setState({ showModal: true });
+            this.setState({ showModal: true, shortListData });
         }
 
         return (
@@ -205,6 +204,7 @@ class StaffOnCall extends Component {
                 { this.state.showModal && <AppointmentModal
                     handleCancel={this.handleCancel}
                     handleSend={this.handleSend}
+                    shortListData={this.state.shortListData}
                 /> }
                 { this.state.showSentEmailModal && <SentModal
                 handleClose={this.handleSentModalClose}
