@@ -4,7 +4,7 @@
     "hourly_rate": 10,
     "img_url": "https://randomuser.me/api/portraits/women/81.jpg",
     "name": "Jennifer Long",
-    "experience": "10 Years 4 Months",
+    "experience": "10y 4m",
     "salary": "68,000",
     "location": "Scottsdale, Arizona",
     "current_company": "Vellociti Fitness League",
@@ -17,14 +17,17 @@
     "active_date": "2021-06-11",
     "modified_date": "2021-05-18",
     "reviews": 13,
-    "rating": "4.1"
+    "rating": "4.1",
+    "booking_date": "2021-08-04",
+    "booking_time": "3:30 PM",
+    "recommended_for": "Pilates Instructor"
   },
   {
     "id": 2,
     "hourly_rate": 14,
     "img_url": "https://randomuser.me/api/portraits/women/23.jpg",
     "name": "Yogi Aileen",
-    "experience": "7 Years 3 Months",
+    "experience": "7y 3m",
     "salary": "25,040",
     "location": "Smithtown, NY",
     "current_company": "Rise by We",
@@ -37,14 +40,17 @@
     "active_date": "2021-07-12",
     "modified_date": "2021-06-30",
     "reviews": 15,
-    "rating": "4.0"
+    "rating": "4.0",
+    "booking_date": "2021-08-05",
+    "booking_time": "4:30 PM",
+    "recommended_for": "Yoga Instructor"
   },
   {
     "id": 3,
     "hourly_rate": 20,
     "img_url": "https://randomuser.me/api/portraits/women/20.jpg",
     "name": "Jessica Morgan",
-    "experience": "5 Years 8 Months",
+    "experience": "5y 8m",
     "salary": "47,800",
     "location": "Miami, Florida",
     "current_company": "Chelsea Piers Fitness",
@@ -57,7 +63,10 @@
     "active_date": "2021-07-16",
     "modified_date": "2021-07-01",
     "reviews": 19,
-    "rating": "3.8"
+    "rating": "3.8",
+    "booking_date": "2021-08-06",
+    "booking_time": "4:45 PM",
+    "recommended_for": "Dojo Manager"
   },
   {
     "id": 4,
@@ -77,14 +86,17 @@
     "active_date": "2021-07-27",
     "modified_date": "2021-07-20",
     "reviews": 5,
-    "rating": "4.9"
+    "rating": "4.9",
+    "booking_date": "2021-08-07",
+    "booking_time": "2:15 PM",
+    "recommended_for": "Physiotherapist"
   },
   {
     "id": 5,
     "hourly_rate": 12,
     "img_url": "https://randomuser.me/api/portraits/women/93.jpg",
     "name": "Aj Foley",
-    "experience": "14 Years 4 Months",
+    "experience": "14y 4m",
     "salary": "40,780",
     "location": "Hermosa Beach, CA",
     "current_company": "Form Fit KC",
@@ -97,14 +109,17 @@
     "active_date": "2021-07-30",
     "modified_date": "2021-07-24",
     "reviews": 12,
-    "rating": "4.8"
+    "rating": "4.8",
+    "booking_date": "2021-08-09",
+    "booking_time": "7:00 AM",
+    "recommended_for": "Abstract Wellness Consultant"
   },
   {
     "id": 6,
     "hourly_rate": 23,
     "img_url": "https://randomuser.me/api/portraits/women/65.jpg",
     "name": "Faith Wagner",
-    "experience": "9 Years 7 Months",
+    "experience": "9y 7m",
     "salary": "21,090",
     "location": "Lakeland, FL",
     "current_company": "Safety Harbor Resort & Spa",
@@ -117,13 +132,17 @@
     "active_date": "2021-06-21",
     "modified_date": "2021-05-18",
     "reviews": 17,
-    "rating": "2.9"
+    "rating": "2.9",
+    "booking_date": "2021-08-08",
+    "booking_time": "6:00 AM",
+    "recommended_for": "Sales Specialist"
   },
   {
     "id": 7,
     "img_url": "https://randomuser.me/api/portraits/men/23.jpg",
     "name": "Jamie Sanders",
-    "experience": "12 Years 11 Months",
+    "experience": "12y 11m",
+    "hourly_rate": 12,
     "salary": "46,829",
     "location": "Greater Houston",
     "current_company": "IFBB Fitness Pro",
@@ -136,6 +155,9 @@
     "active_date": "2021-06-15",
     "modified_date": "2021-06-12",
     "reviews": 6,
-    "rating": "5.0"
+    "rating": "5.0",
+    "booking_date": "2021-08-11",
+    "booking_time": "5:45 AM",
+    "recommended_for": "Gym Trainer"
   }
 ]

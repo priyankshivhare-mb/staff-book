@@ -57,7 +57,12 @@
         opacity: 0.5;
     }
 
-    & .icon {
-        stroke-opacity: 50%;
+    & .icon > * {
+        opacity: 30%;
+    }
+
+    & .footer {
+        font-size: 10px;
+        padding: 5px 0;
     }
 }
