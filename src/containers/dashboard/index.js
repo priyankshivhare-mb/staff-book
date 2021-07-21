@@ -51,20 +51,47 @@ const Home = props => {
             toLink="#"
             badgeText="20 Profiles"
           >
-            <ShortProfileCard {...profiles[4]} showMatchingScore={true} />
-            <ShortProfileCard {...profiles[5]} showMatchingScore={true} />
-            <ShortProfileCard {...profiles[6]} showMatchingScore={true} />
+            <ShortProfileCard
+              {...profiles[4]}
+              showMatchingScore={true}
+              footerIcons={['briefcase', 'wallet', 'location']}
+              description={true}
+            />
+            <ShortProfileCard
+              {...profiles[5]}
+              showMatchingScore={true}
+              footerIcons={['briefcase', 'wallet', 'location']}
+              description={true}
+            />
+            <ShortProfileCard
+              {...profiles[6]}
+              showMatchingScore={true}
+              footerIcons={['briefcase', 'wallet', 'location']}
+              description={true}
+            />
           </DashboardWidget>
         </div>
         <div className="col-sm">
           <DashboardWidget
             title="Book Staff-On-Call"
-            toLink="#"
+            toLink="/search-profiles"
             badgeText="20 Profiles"
           >
-            <ShortProfileCard {...profiles[4]} showRating={true} />
-            <ShortProfileCard {...profiles[5]} showRating={true} />
-            <ShortProfileCard {...profiles[6]} showRating={true} />
+            <ShortProfileCard
+              {...profiles[4]}
+              showRating={true}
+              footerIcons={['wallet', 'location', 'reviews']}
+            />
+            <ShortProfileCard
+              {...profiles[5]}
+              showRating={true}
+              footerIcons={['wallet', 'location', 'reviews']}
+            />
+            <ShortProfileCard
+              {...profiles[6]}
+              showRating={true}
+              footerIcons={['wallet', 'location', 'reviews']}
+            />
           </DashboardWidget>
         </div>
         <div className="col-sm-4">
@@ -73,9 +100,21 @@ const Home = props => {
             toLink="#"
             badgeText="20 Profiles"
           >
-            <ShortProfileCard {...profiles[4]} showMatchingScore={true} />
-            <ShortProfileCard {...profiles[5]} showMatchingScore={true} />
-            <ShortProfileCard {...profiles[6]} showMatchingScore={true} />
+            <ShortProfileCard
+              {...profiles[4]}
+              showMatchingScore={true}
+              footerIcons={['briefcase', 'wallet', 'location']}
+            />
+            <ShortProfileCard
+              {...profiles[5]}
+              showMatchingScore={true}
+              footerIcons={['briefcase', 'wallet', 'location']}
+            />
+            <ShortProfileCard
+              {...profiles[6]}
+              showMatchingScore={true}
+              footerIcons={['briefcase', 'wallet', 'location']}
+            />
           </DashboardWidget>
         </div>
 
@@ -89,9 +128,24 @@ const Home = props => {
             toLink="#"
             badgeText="20 Profiles"
           >
-            <ShortProfileCard {...profiles[4]} showRating={true} showVerified={true} />
-            <ShortProfileCard {...profiles[5]} showRating={true} showVerified={true} />
-            <ShortProfileCard {...profiles[6]} showRating={true} showVerified={true} />
+            <ShortProfileCard
+              {...profiles[4]}
+              showRating={true}
+              showVerified={true}
+              footerIcons={['wallet', 'calendar', 'time']}
+            />
+            <ShortProfileCard
+              {...profiles[5]}
+              showRating={true}
+              showVerified={true}
+              footerIcons={['wallet', 'calendar', 'time']}
+            />
+            <ShortProfileCard
+              {...profiles[6]}
+              showRating={true}
+              showVerified={true}
+              footerIcons={['wallet', 'calendar', 'time']}
+            />
           </DashboardWidget>
         </div>
       </div>

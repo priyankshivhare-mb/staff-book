@@ -67,7 +67,9 @@ class FunnelWidget extends React.Component {
             />
           </div>
           <div className="col-7">
-            <img src={currentFunnel} className="p-2" style={{height: 'inherit'}} />
+            <div style={{height: '271px', overflow: 'hidden'}}>
+              <img src={currentFunnel} className="p-2 img-responsive" />
+            </div>
           </div>
         </div>
       </DashboardWidget>
