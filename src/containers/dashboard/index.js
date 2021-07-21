@@ -52,19 +52,19 @@ const Home = props => {
             badgeText="20 Profiles"
           >
             <ShortProfileCard
+              {...profiles[2]}
+              showMatchingScore={true}
+              footerIcons={['briefcase', 'wallet', 'location']}
+              description={true}
+            />
+            <ShortProfileCard
+              {...profiles[3]}
+              showMatchingScore={true}
+              footerIcons={['briefcase', 'wallet', 'location']}
+              description={true}
+            />
+            <ShortProfileCard
               {...profiles[4]}
-              showMatchingScore={true}
-              footerIcons={['briefcase', 'wallet', 'location']}
-              description={true}
-            />
-            <ShortProfileCard
-              {...profiles[5]}
-              showMatchingScore={true}
-              footerIcons={['briefcase', 'wallet', 'location']}
-              description={true}
-            />
-            <ShortProfileCard
-              {...profiles[6]}
               showMatchingScore={true}
               footerIcons={['briefcase', 'wallet', 'location']}
               description={true}
@@ -78,7 +78,7 @@ const Home = props => {
             badgeText="20 Profiles"
           >
             <ShortProfileCard
-              {...profiles[4]}
+              {...profiles[1]}
               showRating={true}
               footerIcons={['wallet', 'location', 'reviews']}
             />
