@@ -6,6 +6,8 @@ import heart from '../../assets/icons/heart.png';
 import eye from '../../assets/icons/eye.png';
 import download from '../../assets/icons/download.png';
 import comment from '../../assets/icons/comment.png';
+import socialIcons from '../../assets/icons/social-icons.png';
+import briefcase from '../../assets/icons/briefcase.png';
 
 const SearchProfileCard = (props) => {
     return (
@@ -14,6 +16,9 @@ const SearchProfileCard = (props) => {
                 <div className="col-md-2">
                     <div className="row concise-pic-wrapper">
                         <img src={props.profilePic} className="mx-auto d-block img-responsive img-round"/>
+                    </div>
+                    <div className="social-icons">
+                        <img src={socialIcons} className="img-responsive" />
                     </div>
                 </div>
                 <div className="col-md-10">
@@ -34,6 +39,9 @@ const SearchProfileCard = (props) => {
                     </div>
                     <div className="row">
                         <div className="col-md-12 candidate-specifics">
+                            <span className="col">
+                                    <img src={briefcase}/>
+                                {props.experience}</span>
                                 <span className="col bold">
                                     <img src={wallet}/>
                                     {props.wage}</span>

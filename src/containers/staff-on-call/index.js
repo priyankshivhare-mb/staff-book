@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import profilePic from '../../assets/placeholder-image.png';
 import profilePic2 from '../../assets/placeholder-image-2.png';
-import twitter from '../../assets/icons/twitter.png';
+import instagram from '../../assets/icons/instagram-large.png';
 import thumbsUp from '../../assets/icons/thumbs-up.png';
 import thumbsDown from '../../assets/icons/thumbs-down.png';
 import ProfileCard from '../common/profileCard';
@@ -135,21 +135,21 @@ class StaffOnCall extends Component {
                         <div className="col-md-12">
                             <h3 className="heading-3">Social Profile</h3>
                             <SocialCard
-                                icon={twitter}
+                                icon={instagram}
                                 username="courtney_henry"
                                 attr1="200 posts"
                                 attr2="200 followers"
                                 attr3="20 following"
                             />
                             <SocialCard
-                                icon={twitter}
+                                icon={instagram}
                                 username="courtney_henry"
                                 attr1="200 posts"
                                 attr2="200 followers"
                                 attr3="20 following"
                             />
                             <SocialCard
-                                icon={twitter}
+                                icon={instagram}
                                 username="courtney_henry"
                                 attr1="200 posts"
                                 attr2="200 followers"
