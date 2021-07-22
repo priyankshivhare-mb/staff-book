@@ -363,6 +363,22 @@ a.navbar-icon {
       }
     }
   }
+
+  &.search-profile-wrapper {
+    .candidate-bio {
+      label {
+        font-weight: 700;
+        color: rgba(0, 0, 0, 0.3);
+      }
+
+      margin-bottom: 24px;
+    }
+    .profile-score-wrapper {
+      .profile-rating {
+        right: 148px !important;
+      }
+    }
+  }
 }
 /* Profile view end */
 

@@ -3,8 +3,8 @@ import React from 'react';
 import Sidebar from './sidebar';
 
 import './styles.scss';
-import profilePic2 from "../../assets/placeholder-image-2.png";
-import ConciseProfileCard from "../common/conciseProfileCard";
+import profilePic2 from '../../assets/placeholder-image-2.png';
+import SearchProfileCard from '../common/searchProfileCard';
 
 class StaffListing extends React.Component {
   render() {
@@ -30,7 +30,7 @@ class StaffListing extends React.Component {
             <Sidebar />
           </div>
           <div className="col-9">
-            <ConciseProfileCard
+            <SearchProfileCard
                 profilePic={profilePic2}
                 name="Marvin McKinney"
                 profileRating={4.3}
@@ -38,6 +38,8 @@ class StaffListing extends React.Component {
                 wage="$12000 /yr"
                 location="Philadelphia"
                 currentJob="Salon Manager"
+                keySkills="Beauty, Salon Managerstong, Back end operations, Client coordination Customer service, Team handling, Client servicing, Hair spa, Good communication skills, Safety regulations"
+                fitnessVertical="Beauty / Fitness / Spa Services"
                 jobsCompleted="98%"
                 budgetPerc="85%"
                 hireRate="60%"
@@ -47,7 +49,7 @@ class StaffListing extends React.Component {
                 lastModified="28 Feb 2020"
                 reviewCount={25}
             />
-            <ConciseProfileCard
+            <SearchProfileCard
                 profilePic={profilePic2}
                 name="Marvin McKinney"
                 profileRating={4.3}
@@ -55,6 +57,8 @@ class StaffListing extends React.Component {
                 wage="$12000 /yr"
                 location="Philadelphia"
                 currentJob="Salon Manager"
+                keySkills="Beauty, Salon Managerstong, Back end operations, Client coordination Customer service, Team handling, Client servicing, Hair spa, Good communication skills, Safety regulations"
+                fitnessVertical="Beauty / Fitness / Spa Services"
                 jobsCompleted="98%"
                 budgetPerc="85%"
                 hireRate="60%"
