@@ -1,13 +1,14 @@
 import React from 'react';
 
 import Sidebar from './sidebar';
-
-import './styles.scss';
+import SortByDropdown from '../../containers/common/sortByDropdown';
 import profilePic2 from '../../assets/placeholder-image-2.png';
 import SearchProfileCard from '../common/searchProfileCard';
+import './styles.scss';
 
 class StaffListing extends React.Component {
   render() {
+
     return (
       <div className="container-fluid search-profiles">
         <div className="row header">
@@ -18,8 +19,26 @@ class StaffListing extends React.Component {
                   <h1 className="heading-1">Book Staff On Call</h1>
                   <p className="staff-breadcrumb">Dashboard / Staff on Call / Book Staff-on call</p>
                 </div>
-                <div className="col-md-8">
-                  <input placeholder="Search" className="float-right vertical-center"></input>
+                <div className="col-md-2" />
+                <div className="col-md-6 p-0">
+                  <div className="float-right d-inline-block pt-3">
+
+                    <div className="form-inline">
+                      <div className="input-group">
+                        <div className="input-group-prepend">
+                          <span className="input-group-text"><i className="fa fa-search"/></span>
+                        </div>
+                        <input
+                          type="text"
+                          placeholder="Search"
+                          className="form-control"
+                          aria-label="Amount (to the nearest dollar)"
+                        />
+                      </div>
+
+                      <SortByDropdown />
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
