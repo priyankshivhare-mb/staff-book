@@ -124,7 +124,7 @@ const Home = props => {
 
         <div className="col-sm-4">
           <DashboardWidget
-            title="Booked Staff-On-Call"
+            title="Upcoming Staff-On-Call"
             toLink="#"
             badgeText="20 Profiles"
           >

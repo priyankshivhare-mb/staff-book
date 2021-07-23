@@ -8,7 +8,7 @@ const DashboardWidget = props => {
   return  (
     <div className="dashboard-widget">
       <div className="row header">
-        <div className="col-8">
+        <div className="col-9">
           <div className="d-inline-block title">
             {title}
           </div>
@@ -16,7 +16,7 @@ const DashboardWidget = props => {
             {badgeText}
           </span>
         </div>
-        <div className="col-4">
+        <div className="col-3">
           <div className="to-link float-right">
             <Link to={toLink}>View All</Link>
           </div>

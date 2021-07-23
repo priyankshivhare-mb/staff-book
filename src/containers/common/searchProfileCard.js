@@ -26,13 +26,13 @@ const SearchProfileCard = (props) => {
                 </div>
                 <div className="col-md-10">
                     <div className="row">
-                        <div className="col-md-6">
+                        <div className="col-md-8">
                             <h3><Link to={props.toLink}>{props.name}</Link>
                                 <span className="profile-score-main">Profile Score {props.profileScore}%</span>
                             </h3>
                             <h4>{props.currentJob}</h4>
                         </div>
-                        <div className="col-md-6 profile-score-wrapper concise-wrapper">
+                        <div className="col-md-4 profile-score-wrapper concise-wrapper">
                                 <span className="profile-rating">
                                     <span className="highlight-rating">
                                         <img className="star-icon" src={star} alt="star-icon"/>

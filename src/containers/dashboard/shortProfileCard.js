@@ -24,7 +24,7 @@ class ShortProfileCard extends React.Component {
     } = this.props;
 
     const iconMap = {
-      wallet: { icon: WalletIcon, data: `${hourlyRate}/hr`, col: 'col-sm-3' },
+      wallet: { icon: WalletIcon, data: `$ ${hourlyRate}/hr`, col: 'col-sm-3' },
       location: { icon: LocationIcon, data: location, col: 'col-sm-6' },
       reviews: { icon: ReviewsIcon, data: reviews, col: 'col-sm-3' },
       briefcase: { icon: BriefcaseIcon, data: experience, col: 'col-sm-3' },
