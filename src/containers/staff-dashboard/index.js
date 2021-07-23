@@ -15,6 +15,7 @@ import SocialCard from '../common/socialCard';
 import CoreValueMatch from '../common/coreValueMatch';
 import CompanySnapshot from '../common/companySnapshot';
 import EmployeeBenefitCard from '../common/employeeBenefitCard';
+import OtherLocationCards from '../common/otherLocationsCard';
 import SentModal from '../common/sentModal';
 import {bindActionCreators} from 'redux';
 import { getUserProfiles } from '../../modules/profile';
@@ -133,6 +134,9 @@ class StaffDashboard extends Component {
                         </div>
                         <div className="col-md-12">
                             <EmployeeBenefitCard />
+                        </div>
+                        <div className="col-md-12">
+                            <OtherLocationCards />
                         </div>
                         <div className="col-md-12">
                             <h3 className="heading-3">Social Profile</h3>
