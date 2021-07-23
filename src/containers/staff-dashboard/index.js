@@ -48,8 +48,8 @@ class StaffDashboard extends Component {
             <div className="staff-on-call-wrapper">
                 <div className="row staff-head-wrapper">
                     <div className="col-md-8">
-                        <h1 className="heading-1">Request Staff On Call</h1>
-                        <p className="staff-breadcrumb">Dashboard/Staff on Call/Request Staff on Call</p>
+                        <h1 className="heading-1">Studio Profile - Gold's Gym</h1>
+                        <p className="staff-breadcrumb">Dashboard/Employers/Gold's Gym</p>
                     </div>
                     <div className="col-md-4">
                         <button className="btn btn-light pull-right">Download Resume</button>
@@ -87,7 +87,9 @@ class StaffDashboard extends Component {
                             />
                         </div>
                         <div className="col-md-12">
-                            <CoreValueMatch valueData={[
+                            <CoreValueMatch
+                                label="Gold's Gym"
+                                valueData={[
                                 { label: 'Community Driven', value: true},
                                 { label: 'Respectful', value: true},
                                 { label: 'Proactive', value: true},
@@ -99,8 +101,8 @@ class StaffDashboard extends Component {
                                 { label: 'Service-oriented', value: true},
                                 { label: 'Team-player', value: true},
                                 { label: 'Creative', value: false},
-                                { label: 'Innovative', value: true},
-                                { label: 'Fun', value: true},
+                                { label: 'Innovative', value: false},
+                                { label: 'Fun', value: false},
                                 { label: 'Energetic', value: true}
                             ]}/>
                         </div>

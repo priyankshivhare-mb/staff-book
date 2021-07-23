@@ -2,12 +2,12 @@ import React from 'react';
 import tick from '../../assets/icons/tick.png';
 import cross from '../../assets/icons/cross.png';
 
-const CoreValueMatch = ({ valueData }) => {
+const CoreValueMatch = ({ label, valueData }) => {
     return (
         <div className="row">
             <div className="col-md-12 core-value-wrapper">
-                <h3>Core Values
-                    <span>Matching {valueData.filter(data => data.value).length}/{valueData.length}</span>
+                <h3>{label ? label+' Values' : 'Core Values'}
+                    <span>(Matching {valueData.filter(data => data.value).length}/{valueData.length})</span>
                 </h3>
                 <div className="row">
                     <div className="col-md-3">
