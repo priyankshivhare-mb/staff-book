@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import star from '../../assets/icons/star.png';
 import wallet from '../../assets/icons/wallet.png';
 import location from '../../assets/icons/location.png';
@@ -15,7 +16,9 @@ const SearchProfileCard = (props) => {
             <div className="row profile-main">
                 <div className="col-md-2">
                     <div className="row concise-pic-wrapper">
-                        <img src={props.profilePic} className="mx-auto d-block img-responsive img-round"/>
+                        <Link to={props.toLink}>
+                            <img src={props.profilePic} className="mx-auto d-block img-responsive img-round"/>
+                        </Link>
                     </div>
                     <div className="social-icons">
                         <img src={socialIcons} className="img-responsive" />
@@ -24,7 +27,7 @@ const SearchProfileCard = (props) => {
                 <div className="col-md-10">
                     <div className="row">
                         <div className="col-md-6">
-                            <h3>{props.name}</h3>
+                            <h3><Link to={props.toLink}>{props.name}</Link></h3>
                             <h4>{props.currentJob}</h4>
                         </div>
                         <div className="col-md-6 profile-score-wrapper concise-wrapper">
@@ -80,6 +83,7 @@ const SearchProfileCard = (props) => {
                     </div>
                 </div>
             </div>
+
             <div className="row profile-footer">
                 <div className="col-md-12">
                         <span className="label-emp footer-col">

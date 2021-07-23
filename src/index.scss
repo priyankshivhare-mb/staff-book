@@ -235,6 +235,10 @@ a.navbar-icon {
       font-size: 24px;
       margin-bottom: 6px;
       margin-top: 20px;
+
+      a {
+        color: inherit;
+      }
     }
 
     h4 {
@@ -393,6 +397,14 @@ a.navbar-icon {
     .profile-score-wrapper {
       .profile-rating {
         right: 148px !important;
+      }
+    }
+    .concise-pic-wrapper {
+      justify-content: center;
+      a {
+       img {
+         max-width: 116px;
+       }
       }
     }
   }
