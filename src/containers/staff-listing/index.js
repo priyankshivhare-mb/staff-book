@@ -32,6 +32,7 @@ class StaffListing extends React.Component {
           <div className="col-9">
             <SearchProfileCard
                 toLink="/recommended-profiles"
+                profileScore={90}
                 profilePic={profilePic2}
                 name="Marvin McKinney"
                 profileRating={4.3}
@@ -53,6 +54,7 @@ class StaffListing extends React.Component {
             />
             <SearchProfileCard
                 toLink="/recommended-profiles"
+                profileScore={92}
                 profilePic={profilePic2}
                 name="Marvin McKinney"
                 profileRating={4.3}

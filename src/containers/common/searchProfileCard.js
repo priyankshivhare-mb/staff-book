@@ -27,7 +27,9 @@ const SearchProfileCard = (props) => {
                 <div className="col-md-10">
                     <div className="row">
                         <div className="col-md-6">
-                            <h3><Link to={props.toLink}>{props.name}</Link></h3>
+                            <h3><Link to={props.toLink}>{props.name}</Link>
+                                <span className="profile-score-main">Profile Score {props.profileScore}%</span>
+                            </h3>
                             <h4>{props.currentJob}</h4>
                         </div>
                         <div className="col-md-6 profile-score-wrapper concise-wrapper">
