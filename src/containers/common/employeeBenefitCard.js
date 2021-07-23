@@ -12,27 +12,27 @@ const EmployeeBenefitCard = (props) => {
                             <span className="score pull-right">200</span>
                         </div>
                         <div className="benefit-row">
-                            <span className="highlight">99%</span> Work/Life Balance
+                            <span className="highlight">99%</span> Career Development
                             <span className="score pull-right">200</span>
                         </div>
                         <div className="benefit-row">
-                            <span className="highlight">99%</span> Work/Life Balance
+                            <span className="highlight">99%</span> Compensation, Benefits & Perks
                             <span className="score pull-right">200</span>
                         </div>
                         <div className="benefit-row">
-                            <span className="highlight">99%</span> Work/Life Balance
+                            <span className="highlight">99%</span> Working Environment
                             <span className="score pull-right">200</span>
                         </div>
                         <div className="benefit-row">
-                            <span className="highlight">99%</span> Work/Life Balance
+                            <span className="highlight">99%</span> Diversity and Equal Opportunity
                             <span className="score pull-right">200</span>
                         </div>
                         <div className="benefit-row">
-                            <span className="highlight">99%</span> Work/Life Balance
+                            <span className="highlight">99%</span> Culture Rating
                             <span className="score pull-right">200</span>
                         </div>
                         <div className="benefit-row">
-                            <span className="highlight">99%</span> Work/Life Balance
+                            <span className="highlight">99%</span> Job Security
                             <span className="score pull-right">200</span>
                         </div>
                     </div>
