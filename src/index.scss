@@ -977,3 +977,40 @@ a.navbar-icon {
   }
 }
 /* Other location card end */
+
+/* Staff nav start */
+.staff-nav-wrapper {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+  ul {
+    list-style: none;
+
+    li {
+      display: inline-block;
+      border-right: 1px solid rgba(0,0,0,0.3);
+      padding-left: 14px;
+      padding-right: 14px;
+
+      &:last-child {
+        border-right: none;
+      }
+
+      a {
+        color: inherit;
+      }
+
+      &.active {
+        font-weight: 700;
+        color: #0A7C8E;
+
+        a {
+          border-bottom: 3px solid #0A7C8E;
+          padding-bottom: 10px;
+        }
+      }
+    }
+  }
+}
+/* Staff nav end */

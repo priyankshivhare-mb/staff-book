@@ -23,7 +23,7 @@ import { connect } from 'react-redux';
 class StaffDashboard extends Component {
     constructor(props) {
         super(props);
-        this.state = { showSentEmailModal: false, shortListData: {} }
+        this.state = { showSentEmailModal: false, shortListData: {}, activeLink: 'overview' }
     };
 
     handleSend = () => {
@@ -34,11 +34,15 @@ class StaffDashboard extends Component {
         this.setState(({ showSentEmailModal: false }));
     }
 
+    handleNavClick = (e, link) => {
+        e.preventDefault();
+        this.setState({ activeLink: link });
+        window.location.href = '#'+link;
+    }
+
     render() {
         const imageMap = this.props.staffGalleryImages;
-        const handleShortlist = (shortListData) => {
-            this.setState({ showModal: true, shortListData });
-        }
+        const { activeLink } = this.state;
 
         return (
             <div className="staff-on-call-wrapper">
@@ -83,11 +87,24 @@ class StaffDashboard extends Component {
                             />
                         </div>
                         <div className="col-md-12">
+                            <div className="row staff-nav-wrapper">
+                                <div className="col-md-12">
+                                    <ul>
+                                        <li className={activeLink === 'overview' ? 'active' : ''}><a href="#" onClick={(e) => this.handleNavClick(e, 'overview')}>Overview</a></li>
+                                        <li className={activeLink === 'studio-values' ? 'active' : ''}><a href="#" onClick={(e) => this.handleNavClick(e, 'studio-values')}>Studio Values</a></li>
+                                        <li className={activeLink === 'about-studio' ? 'active' : ''}><a href="#" onClick={(e) => this.handleNavClick(e, 'about-studio')}>About Studio</a></li>
+                                        <li className={activeLink === 'gallery' ? 'active' : ''}><a href="#" onClick={(e) => this.handleNavClick(e, 'gallery')}>Gallery</a></li>
+                                        <li><a href="#" onClick={(e) => this.handleNavClick(e, '')}>Current Openings</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-md-12" id="overview">
                             <CompanySnapshot
                                 studioName="Gold's Gym"
                                 certification={[]}/>
                         </div>
-                        <div className="col-md-12">
+                        <div className="col-md-12" id="studio-values">
                             <CoreValueMatch
                                 label="Gold's Gym"
                                 valueData={[
@@ -107,7 +124,7 @@ class StaffDashboard extends Component {
                                 { label: 'Energetic', value: true}
                             ]}/>
                         </div>
-                        <div className="col-md-12">
+                        <div className="col-md-12" id="about-studio">
                             <AboutCompanyCard
                                 studioName="Gold's Gym"
                                 aboutStudio="Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet."
@@ -116,7 +133,7 @@ class StaffDashboard extends Component {
                                 jobSecurity="20%"
                             />
                         </div>
-                        <div className="col-md-12">
+                        <div className="col-md-12" id="gallery">
                             <Gallery imageData={imageMap}/>
                         </div>
                     </div>
