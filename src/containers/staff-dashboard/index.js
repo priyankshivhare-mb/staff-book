@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import goldGymLogo from '../../assets/gold-gym-logo.png';
 import profilePic2 from '../../assets/placeholder-image-2.png';
 import instagram from '../../assets/icons/instagram-large.png';
+import twitter from '../../assets/icons/twitter-large.png';
+import facebook from '../../assets/icons/facebook-large.png';
 import thumbsUp from '../../assets/icons/thumbs-up.png';
 import thumbsDown from '../../assets/icons/thumbs-down.png';
 import ProfileCard from '../common/profileCard';
@@ -52,7 +54,7 @@ class StaffDashboard extends Component {
                         <p className="staff-breadcrumb">Dashboard/Employers/Gold's Gym</p>
                     </div>
                     <div className="col-md-4">
-                        <button className="btn btn-light pull-right">Download Resume</button>
+                        <button className="btn btn-light pull-right">Share With Friends</button>
                         <div className="pull-right profile-selection-wrapper">
                             <img src={thumbsUp} className="img-responsive thumbs-up"/>
                             <img src={thumbsDown} className="img-responsive thumbs-down"/>
@@ -138,22 +140,22 @@ class StaffDashboard extends Component {
                             <h3 className="heading-3">Social Profile</h3>
                             <SocialCard
                                 icon={instagram}
-                                username="courtney_henry"
+                                username="@gold's_gym"
                                 attr1="200 posts"
                                 attr2="200 followers"
                                 attr3="20 following"
                             />
                             <SocialCard
-                                icon={instagram}
-                                username="courtney_henry"
-                                attr1="200 posts"
-                                attr2="200 followers"
-                                attr3="20 following"
+                                icon={facebook}
+                                username="gold's_gym"
+                                attr1="20M Likes"
+                                attr2="200 Followers"
+                                attr3="20 Posts"
                             />
                             <SocialCard
-                                icon={instagram}
-                                username="courtney_henry"
-                                attr1="200 posts"
+                                icon={twitter}
+                                username="@gold's_gym"
+                                attr1="20 Tweets"
                                 attr2="200 followers"
                                 attr3="20 following"
                             />

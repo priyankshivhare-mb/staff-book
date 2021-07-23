@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import profilePic from '../../assets/placeholder-image.png';
 import profilePic2 from '../../assets/placeholder-image-2.png';
 import instagram from '../../assets/icons/instagram-large.png';
+import facebook from '../../assets/icons/facebook-large.png';
+import twitter from '../../assets/icons/twitter-large.png';
 import thumbsUp from '../../assets/icons/thumbs-up.png';
 import thumbsDown from '../../assets/icons/thumbs-down.png';
 import ProfileCard from '../common/profileCard';
@@ -142,16 +144,16 @@ class StaffOnCall extends Component {
                                 attr3="20 following"
                             />
                             <SocialCard
-                                icon={instagram}
+                                icon={facebook}
                                 username="courtney_henry"
-                                attr1="200 posts"
-                                attr2="200 followers"
-                                attr3="20 following"
+                                attr1="20M Likes"
+                                attr2="200 Followers"
+                                attr3="20 Posts"
                             />
                             <SocialCard
-                                icon={instagram}
+                                icon={twitter}
                                 username="courtney_henry"
-                                attr1="200 posts"
+                                attr1="20 Tweets"
                                 attr2="200 followers"
                                 attr3="20 following"
                             />
