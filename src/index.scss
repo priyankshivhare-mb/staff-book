@@ -555,6 +555,70 @@ a.navbar-icon {
 }
 /* Academics card end */
 
+/* Company Snapshot card start */
+.company-snapshot-wrapper {
+  background-color: #ffffff;
+  padding: 20px;
+  box-shadow: 0px 1px 3px rgba(45, 45, 45, 0.2);
+  border-radius: 3px;
+  margin-bottom: 16px;
+
+  h3 {
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  .col {
+    border-right: 1px solid rgba(0,0,0,0.2);
+
+    &:last-child {
+      border-right: none;
+    }
+
+    &.star-rating-wrapper {
+      text-align: center;
+      h1 {
+        font-size: 64px;
+        color: #00AF08;
+        margin-bottom: 12px;
+        margin-top: 12px;
+        font-weight: 600;
+      }
+      img {
+        max-width: 165px;
+        margin-bottom: 12px;
+      }
+      p {
+        font-size: 12px;
+        color: rgba(0,0,0,0.5);
+      }
+      .sub-script {
+        font-size: 12px;
+        font-weight: 700;
+        color: #0A7C8E;
+        cursor: pointer;
+      }
+    }
+
+    &.donut-rating-wrapper {
+      .donut-container {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      p {
+        font-size: 14px;
+        text-align: center;
+      }
+      .great-place {
+        padding-left: 2px;
+        margin-top: 12px
+      }
+    }
+  }
+}
+/* Company Snapshot card end */
+
+
 /* Social card start */
 .social-wrapper {
   position: relative;

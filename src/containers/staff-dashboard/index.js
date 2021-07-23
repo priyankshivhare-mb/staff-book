@@ -15,6 +15,7 @@ import SocialCard from '../common/socialCard';
 import CoreValueMatch from '../common/coreValueMatch';
 import ProfileBio from '../common/profileBio';
 import AcademicsCard from '../common/academicsCard';
+import CompanySnapshot from '../common/companySnapshot';
 import SentModal from '../common/sentModal';
 import {bindActionCreators} from 'redux';
 import { getUserProfiles } from '../../modules/profile';
@@ -82,6 +83,11 @@ class StaffDashboard extends Component {
                                 lastModified="28 Feb 2020"
                                 reviewCount={25}
                             />
+                        </div>
+                        <div className="col-md-12">
+                            <CompanySnapshot
+                                studioName="Gold's Gym"
+                                certification={[]}/>
                         </div>
                         <div className="col-md-12">
                             <CoreValueMatch
