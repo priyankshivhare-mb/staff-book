@@ -9,6 +9,7 @@ import comment from '../../assets/icons/comment.png';
 import email from '../../assets/icons/email.png';
 import mobile from '../../assets/icons/mobile.png';
 import verified from '../../assets/icons/verified.png';
+import employees from '../../assets/icons/employees.png';
 
 const ProfileCard = (props) => {
     return (
@@ -26,7 +27,7 @@ const ProfileCard = (props) => {
                                 <h3>{props.name}</h3>
                                 <h4>{props.currentJob}</h4>
                             </div>
-                            <div className="col-md-6 profile-score-wrapper">
+                            {!props.isBrand && <div className="col-md-6 profile-score-wrapper">
                                 <span className="profile-rating">
                                     <span className="highlight-rating">
                                         <img className="star-icon" src={star} alt="star-icon"/>
@@ -34,23 +35,23 @@ const ProfileCard = (props) => {
                                     </span>/5</span>
                                 <span className="profile-rating-sub-details">
                                     Based on 200 ratings <br/> 20 times rated 5 stars</span>
-                            </div>
+                            </div>}
                         </div>
                         <div className="row">
-                            <div className="col-md-12 candidate-specifics">
-                                <span className="col bold">
+                            <div className={`col-md-12 candidate-specifics ${props.isBrand ? 'brand-details' : ''}`}>
+                                {!props.isBrand && <span className="col bold">
                                     <img src={wallet} />
-                                    {props.wage}</span>
+                                    {props.wage}</span> }
                                 <span className="col">
                                     <img src={location} />
                                     {props.location}</span>
-                                <span className="col">
+                                {!props.isBrand && <span className="col">
                                     <img src={heart} />
-                                    <span className="bold">{props.recommendation}</span> Recommendations</span>
+                                    <span className="bold">{props.recommendation}</span> Recommendations</span>}
                             </div>
                         </div>
                         <div className="row">
-                            <div className="col-md-12 candidate-specifics">
+                            <div className={`col-md-12 candidate-specifics ${props.isBrand ? 'brand-details' : ''}`}>
                                 <span className="col">
                                     <img src={email} />
                                     {props.email}</span>
@@ -65,7 +66,7 @@ const ProfileCard = (props) => {
                                 </span> }
                             </div>
                         </div>
-                        <div className="row">
+                        {!props.isBrand && <div className="row">
                             <div className="col-md-12 candidate-highlight">
                                 <span className="col bullet">
                                     <span className="highlight">{props.jobsCompleted}</span> Jobs Completed
@@ -77,30 +78,34 @@ const ProfileCard = (props) => {
                                     <span className="highlight">{props.hireRate}</span> Repeat Hire Rate
                                 </span>
                             </div>
-                        </div>
+                        </div>}
                     </div>
                 </div>
-                <div className="row">
+                {!props.isBrand && <div className="row">
                     <div className="col-md-12 bio-wrapper">
                         {props.bio}
                     </div>
-                </div>
+                </div>}
                 <div className="row profile-footer">
                     <div className="col-md-12">
+                        {props.isBrand && <span className="footer-col">
+                            <img src={employees} />
+                            300+ employees
+                        </span>}
                         <span className="label-emp footer-col">
                             <img src={eye} />
                             {props.profileViews}
                         </span>
-                        <span className="label-emp footer-col">
+                        {!props.isBrand && <span className="label-emp footer-col">
                             <img src={download} />
                             {props.profileDownloads}
-                        </span>
+                        </span>}
                         <span className="footer-col">
                             <span className="label-emp">Active:</span> {props.lastActive}
                         </span>
-                        <span className="footer-col">
+                        {!props.isBrand && <span className="footer-col">
                             <span className="label-emp">Modified: </span>{props.lastModified}
-                        </span>
+                        </span>}
                         <span className="pull-right review">
                             {props.reviewCount} Review
                             <img src={comment} />

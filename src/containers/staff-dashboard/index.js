@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import profilePic from '../../assets/placeholder-image.png';
+import goldGymLogo from '../../assets/gold-gym-logo.png';
 import profilePic2 from '../../assets/placeholder-image-2.png';
 import instagram from '../../assets/icons/instagram-large.png';
 import thumbsUp from '../../assets/icons/thumbs-up.png';
@@ -63,13 +63,14 @@ class StaffDashboard extends Component {
                     <div className="col-md-8">
                         <div className="col-md-12">
                             <ProfileCard
-                                profilePic={profilePic}
-                                name="Marvin McKinney"
+                                profilePic={goldGymLogo}
+                                name="Gold's gym"
                                 profileRating={4.3}
                                 recommendation={8}
+                                isBrand={true}
                                 wage="$12000 /yr"
-                                location="Philadelphia"
-                                currentJob="Salon Manager"
+                                location="Holly Street, East Walnut Street, Pasadena, Los Angeles, CA, United States"
+                                currentJob="The Fitness Institute"
                                 email="courtney@gmail.com"
                                 emailVerified={true}
                                 mobile="+1 (234) 234 567"
@@ -83,7 +84,6 @@ class StaffDashboard extends Component {
                                 lastActive="11 Mar 2020"
                                 lastModified="28 Feb 2020"
                                 reviewCount={25}
-                                isConcise={false}
                             />
                         </div>
                         <div className="col-md-12">
