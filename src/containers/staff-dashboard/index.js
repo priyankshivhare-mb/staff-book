@@ -10,11 +10,9 @@ import ProfileCard from '../common/profileCard';
 import ConciseProfileCard from '../common/conciseProfileCard';
 import AppointmentRequestCard from '../common/appointmentRequestCard';
 import Gallery from '../common/gallery';
-import Skills from '../common/skills';
+import AboutCompanyCard from '../common/aboutCompanyCard';
 import SocialCard from '../common/socialCard';
 import CoreValueMatch from '../common/coreValueMatch';
-import ProfileBio from '../common/profileBio';
-import AcademicsCard from '../common/academicsCard';
 import CompanySnapshot from '../common/companySnapshot';
 import SentModal from '../common/sentModal';
 import {bindActionCreators} from 'redux';
@@ -110,23 +108,12 @@ class StaffDashboard extends Component {
                             ]}/>
                         </div>
                         <div className="col-md-12">
-                            <Skills skillSet={['Beauty', 'Salon', 'Social Media', 'Beauty', 'Salon', 'Social Media']}/>
-                        </div>
-                        <div className="col-md-12">
-                            <ProfileBio
-                                role="Personal Fitness Trainer, Yoga Instructor"
-                                fitnessVertical="Yoga"
-                                wage="$25 - $30"
-                                negotiable={true}
-                            />
-                        </div>
-                        <div className="col-md-12">
-                            <AcademicsCard
-                                graduation="Ph.D (Yoga)"
-                                certification={
-                                    ['National Academy of Sports Medicine',
-                                        '(ISSA) International Sports Science Association'
-                                    ]}
+                            <AboutCompanyCard
+                                studioName="Gold's Gym"
+                                aboutStudio="Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet."
+                                workLifeBalance="99%"
+                                compensation="85%"
+                                jobSecurity="20%"
                             />
                         </div>
                         <div className="col-md-12">
@@ -212,17 +199,6 @@ class StaffDashboard extends Component {
                         />
                     </div>
                 </div>
-                {/*{ this.state.showModal && <AppointmentModal
-                    from="Ganesh Borse <ganesh.borse@mindbodyonline.com"
-                    to="Palak Shivhare <palak.shivhare@mindbodyonline.com"
-                    subject="Some subject"
-                    body="email body"
-                    startDate="12/07/2021"
-                    endDate="12/07/2021"
-                    handleCancel={this.handleCancel}
-                    handleSend={this.handleSend}
-                    shortListData={this.state.shortListData}
-                /> }*/}
                 { this.state.showSentEmailModal && <SentModal
                     handleClose={this.handleSentModalClose}
                 />
