@@ -1,13 +1,11 @@
 import React, { Component } from 'react';
 import goldGymLogo from '../../assets/gold-gym-logo.png';
-import profilePic2 from '../../assets/placeholder-image-2.png';
 import instagram from '../../assets/icons/instagram-large.png';
 import twitter from '../../assets/icons/twitter-large.png';
 import facebook from '../../assets/icons/facebook-large.png';
 import thumbsUp from '../../assets/icons/thumbs-up.png';
 import thumbsDown from '../../assets/icons/thumbs-down.png';
 import ProfileCard from '../common/profileCard';
-import ConciseProfileCard from '../common/conciseProfileCard';
 import AppointmentRequestCard from '../common/appointmentRequestCard';
 import Gallery from '../common/gallery';
 import AboutCompanyCard from '../common/aboutCompanyCard';
@@ -166,45 +164,7 @@ class StaffDashboard extends Component {
                 </div>
                 <div className="row">
                     <div className="col-md-12">
-                        <h3 className="heading-3">Similar Profiles <span className="pull-right">View All</span></h3>
-                    </div>
-                    <div className="col-md-6">
-                        <ConciseProfileCard
-                            profilePic={profilePic2}
-                            name="Marvin McKinney"
-                            profileRating={4.3}
-                            recommendation={8}
-                            wage="$12000 /yr"
-                            location="Philadelphia"
-                            currentJob="Salon Manager"
-                            jobsCompleted="98%"
-                            budgetPerc="85%"
-                            hireRate="60%"
-                            profileViews={10}
-                            profileDownloads={2}
-                            lastActive="11 Mar 2020"
-                            lastModified="28 Feb 2020"
-                            reviewCount={25}
-                        />
-                    </div>
-                    <div className="col-md-6">
-                        <ConciseProfileCard
-                            profilePic={profilePic2}
-                            name="Marvin McKinney"
-                            profileRating={4.3}
-                            recommendation={8}
-                            wage="$12000 /yr"
-                            location="Philadelphia"
-                            currentJob="Salon Manager"
-                            jobsCompleted="98%"
-                            budgetPerc="85%"
-                            hireRate="60%"
-                            profileViews={10}
-                            profileDownloads={2}
-                            lastActive="11 Mar 2020"
-                            lastModified="28 Feb 2020"
-                            reviewCount={25}
-                        />
+                        <h3 className="heading-3">Current Openings <span className="pull-right">View All</span></h3>
                     </div>
                 </div>
                 { this.state.showSentEmailModal && <SentModal
