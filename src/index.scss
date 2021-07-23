@@ -832,41 +832,50 @@ a.navbar-icon {
 /* Appointment Request card start */
 .appointment-request-wrapper {
   background-color: #FFE596;
-  padding: 20px;
-  box-shadow: inset 0px -1px 0px rgba(213, 217, 222, 0.5);
+  padding: 16px 0 0 0;
+  box-shadow: 0px 1px 3px rgba(45, 45, 45, 0.2);
   border-radius: 3px;
-  margin-bottom: 18px;
+  margin-bottom: 12px;
 
   h3 {
     font-size: 16px;
     font-weight: 600;
+    box-shadow: inset 0px -1px 0px rgba(213, 217, 222, 0.5);
+    padding-bottom: 16px;
+    padding-left: 20px;
+    margin-bottom: 0;
   }
 
-  .appointment-details {
-    label {
-      font-weight: 700;
-      color: rgba(0,0,0,0.5);
-      width: 140px;
+  .appointment-details-wrapper {
+    padding: 20px;
+    .appointment-details {
+
+      label {
+        font-weight: 700;
+        color: rgba(0,0,0,0.5);
+        width: 140px;
+      }
+    }
+
+    .appointment-cta {
+      .primary {
+        background-color: #0A7C8E;
+        color: #ffffff;
+        text-transform: capitalize;
+        border: 1px solid #0A7C8E;
+        padding: 8px 20px;
+      }
+
+      .secondary {
+        background-color: transparent;
+        color: #0A7C8E;
+        text-transform: capitalize;
+        border: 1px solid #0A7C8E;
+        padding: 8px 20px;
+        margin-left: 8px;
+      }
     }
   }
 
-  .appointment-cta {
-    .primary {
-      background-color: #0A7C8E;
-      color: #ffffff;
-      text-transform: capitalize;
-      border: 1px solid #0A7C8E;
-      padding: 8px 20px;
-    }
-
-    .secondary {
-      background-color: transparent;
-      color: #0A7C8E;
-      text-transform: capitalize;
-      border: 1px solid #0A7C8E;
-      padding: 8px 20px;
-      margin-left: 8px;
-    }
-  }
 }
 /* Appointment Request card end */

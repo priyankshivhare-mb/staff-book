@@ -5,7 +5,7 @@ const AppointmentRequestCard = (props) => {
         <div className="row">
             <div className="col-md-12 appointment-request-wrapper">
                 <h3>Staff-On Call Request Details</h3>
-                <div className="row">
+                <div className="row appointment-details-wrapper">
                     <div className="col-md-12 appointment-details">
                         <div>
                             <label>Studio Name</label><span>{props.studioName}</span>
