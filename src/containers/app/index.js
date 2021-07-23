@@ -3,7 +3,7 @@ import {Route} from 'react-router-dom';
 import Cookies from 'universal-cookie';
 import Dashboard from '../dashboard';
 import StaffOnCall from '../staff-on-call';
-import Staff from '../staff';
+import Staff from '../staff-dashboard';
 import StaffListing from '../staff-listing';
 import Navigation from '../common/navigation';
 import Footer from '../common/footer';
