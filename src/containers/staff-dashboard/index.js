@@ -14,6 +14,7 @@ import AboutCompanyCard from '../common/aboutCompanyCard';
 import SocialCard from '../common/socialCard';
 import CoreValueMatch from '../common/coreValueMatch';
 import CompanySnapshot from '../common/companySnapshot';
+import EmployeeBenefitCard from '../common/employeeBenefitCard';
 import SentModal from '../common/sentModal';
 import {bindActionCreators} from 'redux';
 import { getUserProfiles } from '../../modules/profile';
@@ -129,6 +130,9 @@ class StaffDashboard extends Component {
                                 time="2:00 PM - 3:00 PM"
                                 onClick={this.handleSend}
                             />
+                        </div>
+                        <div className="col-md-12">
+                            <EmployeeBenefitCard />
                         </div>
                         <div className="col-md-12">
                             <h3 className="heading-3">Social Profile</h3>

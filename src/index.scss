@@ -835,7 +835,7 @@ a.navbar-icon {
   padding: 16px 0 0 0;
   box-shadow: 0px 1px 3px rgba(45, 45, 45, 0.2);
   border-radius: 3px;
-  margin-bottom: 12px;
+  margin-bottom: 16px;
 
   h3 {
     font-size: 16px;
@@ -879,3 +879,52 @@ a.navbar-icon {
 
 }
 /* Appointment Request card end */
+
+
+/* Employee benefit card start */
+.employee-benefit-card-wrapper {
+  box-shadow: 0px 1px 3px rgba(45, 45, 45, 0.2);
+  background-color: #ffffff;
+  padding: 16px 0 0 0;
+  border-radius: 3px;
+  margin-bottom: 12px;
+
+  h3 {
+    font-size: 16px;
+    font-weight: 600;
+    box-shadow: inset 0px -1px 0px rgba(213, 217, 222, 0.5);
+    padding-bottom: 16px;
+    padding-left: 20px;
+    margin-bottom: 0;
+
+    span {
+      font-size: 14px;
+      font-weight: 400;
+      color: #696C74;
+      margin-right: 24px;
+    }
+  }
+
+  .benefit-container {
+    padding: 20px 40px;
+
+    .benefit-row {
+      margin-bottom: 20px;
+
+      .highlight {
+        color: #00AF08;
+        font-weight: 700;
+      }
+
+      .score {
+        color: #006FBB;
+        font-weight: 700;
+        background-color: #E6F5FF;
+        padding: 2px 10px;
+        border-radius: 20px;
+        clear: both;
+      }
+    }
+  }
+}
+/* Employee benefit card end */
