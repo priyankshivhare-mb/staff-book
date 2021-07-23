@@ -8,14 +8,13 @@ import thumbsUp from '../../assets/icons/thumbs-up.png';
 import thumbsDown from '../../assets/icons/thumbs-down.png';
 import ProfileCard from '../common/profileCard';
 import ConciseProfileCard from '../common/conciseProfileCard';
+import AppointmentRequestCard from '../common/appointmentRequestCard';
 import Gallery from '../common/gallery';
 import Skills from '../common/skills';
 import SocialCard from '../common/socialCard';
 import CoreValueMatch from '../common/coreValueMatch';
-import AppointmentCard from '../common/appointmentCard';
 import ProfileBio from '../common/profileBio';
 import AcademicsCard from '../common/academicsCard';
-//import AppointmentModal from './appointmentModal';
 import SentModal from '../common/sentModal';
 import {bindActionCreators} from 'redux';
 import { getUserProfiles } from '../../modules/profile';
@@ -25,15 +24,11 @@ import { connect } from 'react-redux';
 class StaffDashboard extends Component {
     constructor(props) {
         super(props);
-        this.state = { showModal: false, showSentEmailModal: false, shortListData: {} }
+        this.state = { showSentEmailModal: false, shortListData: {} }
     };
 
-    handleCancel = () => {
-        this.setState({ showModal: false });
-    }
-
     handleSend = () => {
-        this.setState(({ showModal: false, showSentEmailModal: true }));
+        this.setState(({ showSentEmailModal: true }));
     }
 
     handleSentModalClose = () => {
@@ -134,7 +129,13 @@ class StaffDashboard extends Component {
                     </div>
                     <div className="col-md-4">
                         <div className="col-md-12">
-                            <AppointmentCard handleShortlist={handleShortlist}/>
+                            <AppointmentRequestCard
+                                studioName="Gold's Gym"
+                                location="Los Angeles, CA"
+                                date="Friday, July 5, 2021"
+                                time="2:00 PM - 3:00 PM"
+                                onClick={this.handleSend}
+                            />
                         </div>
                         <div className="col-md-12">
                             <h3 className="heading-3">Social Profile</h3>
