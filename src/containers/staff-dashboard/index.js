@@ -15,6 +15,7 @@ import CompanySnapshot from '../common/companySnapshot';
 import EmployeeBenefitCard from '../common/employeeBenefitCard';
 import OtherLocationCards from '../common/otherLocationsCard';
 import SentModal from '../common/sentModal';
+import CurrentOpenings from '../common/currentOpenings';
 import {bindActionCreators} from 'redux';
 import { getUserProfiles } from '../../modules/profile';
 import { getStaffGallery } from '../../modules/staffGalleryImages';
@@ -71,7 +72,7 @@ class StaffDashboard extends Component {
                                 wage="$12000 /yr"
                                 location="Holly Street, East Walnut Street, Pasadena, Los Angeles, CA, United States"
                                 currentJob="The Fitness Institute"
-                                email="courtney@gmail.com"
+                                email="gold_gym@gmail.com"
                                 emailVerified={true}
                                 mobile="+1 (234) 234 567"
                                 mobileVerified={true}
@@ -94,7 +95,7 @@ class StaffDashboard extends Component {
                                         <li className={activeLink === 'studio-values' ? 'active' : ''}><a href="#" onClick={(e) => this.handleNavClick(e, 'studio-values')}>Studio Values</a></li>
                                         <li className={activeLink === 'about-studio' ? 'active' : ''}><a href="#" onClick={(e) => this.handleNavClick(e, 'about-studio')}>About Studio</a></li>
                                         <li className={activeLink === 'gallery' ? 'active' : ''}><a href="#" onClick={(e) => this.handleNavClick(e, 'gallery')}>Gallery</a></li>
-                                        <li><a href="#" onClick={(e) => this.handleNavClick(e, '')}>Current Openings</a></li>
+                                        <li className={activeLink === 'current-openings' ? 'active' : ''}><a href="#" onClick={(e) => this.handleNavClick(e, 'current-openings')}>Current Openings</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -102,7 +103,7 @@ class StaffDashboard extends Component {
                         <div className="col-md-12" id="overview">
                             <CompanySnapshot
                                 studioName="Gold's Gym"
-                                certification={[]}/>
+                            />
                         </div>
                         <div className="col-md-12" id="studio-values">
                             <CoreValueMatch
@@ -127,7 +128,7 @@ class StaffDashboard extends Component {
                         <div className="col-md-12" id="about-studio">
                             <AboutCompanyCard
                                 studioName="Gold's Gym"
-                                aboutStudio="Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet."
+                                aboutStudio="Gold's Gym International, Inc. is an American chain of international co-ed fitness centers originally started by Joe Gold in Venice Beach, California. Each gym offers a variety of cardio and strength training equipment as well as group exercise programs. Its headquarters have since relocated to Dallas."
                                 workLifeBalance="99%"
                                 compensation="85%"
                                 jobSecurity="20%"
@@ -180,8 +181,37 @@ class StaffDashboard extends Component {
                     </div>
                 </div>
                 <div className="row">
-                    <div className="col-md-12">
+                    <div className="col-md-12" id="current-openings">
                         <h3 className="heading-3">Current Openings <span className="pull-right">View All</span></h3>
+                        <div className="row">
+                            <div className="col-md-4">
+                                <CurrentOpenings
+                                    position="Salon Manager"
+                                    experience="5-8 Years"
+                                    wage="$200,000 PA"
+                                    location="Philadelphia"
+                                    keySkills="Beauty, Salon Managerstong, Back end operations, Client coordination Customer service, Team handling"
+                                />
+                            </div>
+                            <div className="col-md-4">
+                                <CurrentOpenings
+                                    position="Salon and Beauty Expert"
+                                    experience="5-8 Years"
+                                    wage="$200,000 PA"
+                                    location="Philadelphia"
+                                    keySkills="Beauty, Salon Managerstong, Back end operations, Client coordination Customer service, Team handling"
+                                />
+                            </div>
+                            <div className="col-md-4">
+                                <CurrentOpenings
+                                    position="Hair Spa Expert"
+                                    experience="5-8 Years"
+                                    wage="$200,000 PA"
+                                    location="Philadelphia"
+                                    keySkills="Beauty, Salon Managerstong, Back end operations, Client coordination Customer service, Team handling"
+                                />
+                            </div>
+                        </div>
                     </div>
                 </div>
                 { this.state.showSentEmailModal && <SentModal

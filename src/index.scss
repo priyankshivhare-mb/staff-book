@@ -1059,6 +1059,55 @@ a.navbar-icon {
 }
 /** Bookings Calendar end */
 
+/* Current Openings card start */
+.current-openings-wrapper {
+  background-color: #ffffff;
+  padding: 20px;
+  box-shadow: 0px 1px 3px rgba(45, 45, 45, 0.2);
+  border-radius: 3px;
+  margin-bottom: 16px;
+
+  h3 {
+    font-size: 24px;
+    font-weight: 600;
+
+    .hot-job {
+      line-height: 24px;
+      font-size: 12px;
+      padding: 0 8px;
+      background-color: #FFBDAE;
+      border-radius: 12px;
+    }
+  }
+
+  .profile-specifics {
+    margin-bottom: 23px;
+    padding-left: 0;
+
+    .col {
+      img {
+        max-width: 24px;
+        margin-right: 10px;
+        padding-bottom: 4px;
+      }
+
+      &:first-child {
+        padding-left: 0;
+      }
+    }
+  }
+
+  .candidate-skills {
+    padding-left: 0;
+
+    label {
+      color: rgba(0, 0, 0, 0.5);
+      width: 180px;
+    }
+  }
+}
+/* Current Openings end */
+
 /** */
 .header {
     & .input-group-prepend, & input {
