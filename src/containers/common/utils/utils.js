@@ -1,7 +1,11 @@
 export const getProfileColor = (score) => {
+    let colorClass = 'red';
+
     if (score <= 100 && score >= 80) {
-        return 'green';
+        colorClass = 'green';
     } else if (score <= 80 && score >= 50) {
-        return 'yellow';
+        colorClass = 'yellow';
     }
+
+    return colorClass;
 }

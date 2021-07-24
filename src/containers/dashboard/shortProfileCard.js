@@ -1,5 +1,6 @@
 import React from 'react';
 import Moment from 'react-moment';
+import { getProfileColor } from '../common/utils/utils';
 
 import './shortProfileCard.scss';
 
@@ -88,15 +89,8 @@ class ShortProfileCard extends React.Component {
       showMatchingScore=false,
     } = this.props;
 
-    let colorClass = 'red';
-    if (score <= 100 && score >= 80) {
-      colorClass = 'green';
-    } else if (score <= 80 && score >= 50) {
-      colorClass = 'yellow';
-    }
-
     return showMatchingScore && (
-      <div className={`matching-score ${colorClass}`}>{score}% Matching</div>
+      <div className={`matching-score ${getProfileColor(score)}`}>{score}% Matching</div>
     );
   }
 
