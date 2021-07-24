@@ -6,6 +6,7 @@ import heart from '../../assets/icons/heart.png';
 import eye from '../../assets/icons/eye.png';
 import download from '../../assets/icons/download.png';
 import comment from '../../assets/icons/comment.png';
+import Moment from 'react-moment';
 
 const ConciseProfileCard = (props) => {
     return (
@@ -69,10 +70,10 @@ const ConciseProfileCard = (props) => {
                         {props.profileDownloads}
                         </span>
                     <span className="footer-col">
-                            <span className="label-emp">Active:</span> {props.lastActive}
+                            <span className="label-emp">Active:</span> {<Moment date={props.lastActive} format={'ddd, Do MMM'}/>}
                         </span>
                     <span className="footer-col">
-                            <span className="label-emp">Modified: </span>{props.lastModified}
+                            <span className="label-emp">Modified: </span>{<Moment date={props.lastModified} format={'ddd, Do MMM'}/>}
                         </span>
                     <span className="pull-right review">
                             {props.reviewCount} Review

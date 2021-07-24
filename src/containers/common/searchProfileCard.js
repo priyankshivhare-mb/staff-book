@@ -9,6 +9,7 @@ import download from '../../assets/icons/download.png';
 import comment from '../../assets/icons/comment.png';
 import socialIcons from '../../assets/icons/social-icons.png';
 import briefcase from '../../assets/icons/briefcase.png';
+import Moment from 'react-moment';
 
 const SearchProfileCard = (props) => {
     return (
@@ -97,10 +98,10 @@ const SearchProfileCard = (props) => {
                         {props.profileDownloads}
                         </span>
                     <span className="footer-col">
-                            <span className="label-emp">Active:</span> {props.lastActive}
+                            <span className="label-emp">Active:</span> {<Moment date={props.lastActive} format={'ddd, Do MMM'}/>}
                         </span>
                     <span className="footer-col">
-                            <span className="label-emp">Modified: </span>{props.lastModified}
+                            <span className="label-emp">Modified: </span>{<Moment date={props.lastModified} format={'ddd, Do MMM'}/>}
                         </span>
                     <span className="pull-right review">
                             {props.reviewCount} Review

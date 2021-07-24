@@ -10,6 +10,7 @@ import email from '../../assets/icons/email.png';
 import mobile from '../../assets/icons/mobile.png';
 import verified from '../../assets/icons/verified.png';
 import employees from '../../assets/icons/employees.png';
+import Moment from 'react-moment';
 
 const ProfileCard = (props) => {
     return (
@@ -101,10 +102,10 @@ const ProfileCard = (props) => {
                             {props.profileDownloads}
                         </span>}
                         <span className="footer-col">
-                            <span className="label-emp">Active:</span> {props.lastActive}
+                            <span className="label-emp">Active:</span> {<Moment date={props.lastActive} format={'ddd, Do MMM'}/>}
                         </span>
                         {!props.isBrand && <span className="footer-col">
-                            <span className="label-emp">Modified: </span>{props.lastModified}
+                            <span className="label-emp">Modified: </span>{<Moment date={props.lastModified} format={'ddd, Do MMM'}/>}
                         </span>}
                         <span className="pull-right review">
                             {props.reviewCount} Review
