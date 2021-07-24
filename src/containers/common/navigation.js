@@ -1,11 +1,15 @@
 import React from 'react';
+import { connect } from 'react-redux';
 import { NavLink, Link } from "react-router-dom";
+
+import { getCurrentUser } from '../../modules/businessCurrentUser';
+
 import StaffBookLogo from '../../assets/staff-book-logo.png';
 import staffProfiles from '../../fixtures/staffProfiles.json';
 
-const currentUser = staffProfiles[0];
-
 const Navigation = (props) => {
+  const { businessCurrentUser: currentUser } = props;
+
   return (
     <nav className="navbar navbar-expand-lg">
       <NavLink className="navbar-brand" to="/">
@@ -57,4 +61,10 @@ const Navigation = (props) => {
   );
 };
 
-export default Navigation;
+const mapStateToProps = ({businessCurrentUser}) => ({
+  businessCurrentUser
+});
+
+export default connect(
+    mapStateToProps,
+)(Navigation);

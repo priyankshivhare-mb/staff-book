@@ -1,6 +1,7 @@
 import React from 'react';
 import { bindActionCreators } from 'redux';
 import { getUserProfiles } from '../../modules/profile';
+import { getCurrentUser } from '../../modules/businessCurrentUser';
 import { connect } from 'react-redux';
 
 import DashboardWidget from './dashboardWidget';
@@ -17,14 +18,14 @@ import { ReactComponent as InvoiceDollar } from '../../assets/icons/file-invoice
 
 
 const Home = props => {
-  const { profiles, getUserProfiles } = props;
+  const { profiles, businessCurrentUser: currentUser } = props;
 
   return(
     <div className="container-fluid">
       <div className="row dashboard-heading">
         <div className="col-sm-6">
           <div className="welcome">
-            Welcome John!
+            <img src={currentUser.company_logo} height="50px" /> {currentUser.company}
           </div>
         </div>
         <div className="col-sm-6">
@@ -153,14 +154,16 @@ const Home = props => {
   );
 };
 
-const mapStateToProps = ({profile}) => ({
+const mapStateToProps = ({profile, businessCurrentUser}) => ({
     profiles: profile,
+    businessCurrentUser
 });
 
 const mapDispatchToProps = dispatch =>
     bindActionCreators(
         {
-            getUserProfiles
+          getUserProfiles,
+          getCurrentUser
         },
         dispatch
     );
