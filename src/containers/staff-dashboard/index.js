@@ -33,6 +33,7 @@ class StaffDashboard extends Component {
 
     handleSentModalClose = () => {
         this.setState(({ showSentEmailModal: false }));
+        localStorage.setItem('showNotification', true);
     }
 
     handleNavClick = (e, link) => {
