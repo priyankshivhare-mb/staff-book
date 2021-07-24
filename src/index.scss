@@ -386,6 +386,9 @@ a.navbar-icon {
   }
 
   &.search-profile-wrapper {
+    padding-left: 0;
+    padding-right: 0;
+
     .candidate-bio {
       label {
         font-weight: 700;
