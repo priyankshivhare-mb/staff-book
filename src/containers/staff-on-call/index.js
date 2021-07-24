@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import profilePic from '../../assets/placeholder-image.png';
+import profilePic from '../../assets/jennifer-profile-pic.jpg';
 import profilePic2 from '../../assets/placeholder-image-2.png';
 import instagram from '../../assets/icons/instagram-large.png';
 import facebook from '../../assets/icons/facebook-large.png';
@@ -45,6 +45,9 @@ class StaffOnCall extends Component {
         const handleShortlist = (shortListData) => {
             this.setState({ showModal: true, shortListData });
         }
+        const { profile } = this.props;
+        const activeProfile = profile[0];
+
 
         return (
             <div className="staff-on-call-wrapper">
@@ -66,26 +69,25 @@ class StaffOnCall extends Component {
                         <div className="col-md-12">
                             <ProfileCard
                                 profilePic={profilePic}
-                                name="Marvin McKinney"
-                                profileRating={4.3}
+                                name={activeProfile.name}
+                                profileRating={activeProfile.rating}
                                 recommendation={8}
-                                wage="$12000 /yr"
-                                location="Philadelphia"
-                                currentJob="Salon Manager"
-                                email="courtney@gmail.com"
+                                wage={'$'+activeProfile.hourly_rate + '/hr'}
+                                location={activeProfile.location}
+                                currentJob={activeProfile.recommended_for}
+                                email="jennifer_long@gmail.com"
                                 emailVerified={true}
                                 mobile="+1 (234) 234 567"
                                 mobileVerified={true}
                                 jobsCompleted="98%"
                                 budgetPerc="85%"
                                 hireRate="60%"
-                                bio="Beauty, Salon Managerstong, Back end operations, Client coordination Customer service, Team handling, Client servicing, Hair spa, Good communication skills, Safety regulations"
-                                profileViews={10}
+                                bio={activeProfile.about_me}
+                                profileViews={activeProfile.views}
                                 profileDownloads={2}
-                                lastActive="11 Mar 2020"
+                                lastActive={activeProfile.active_date}
                                 lastModified="28 Feb 2020"
                                 reviewCount={25}
-                                isConcise={false}
                             />
                         </div>
                         <div className="col-md-12">
@@ -138,21 +140,21 @@ class StaffOnCall extends Component {
                             <h3 className="heading-3">Social Profile</h3>
                             <SocialCard
                                 icon={instagram}
-                                username="courtney_henry"
+                                username="@jennifer_long"
                                 attr1="200 posts"
                                 attr2="200 followers"
                                 attr3="20 following"
                             />
                             <SocialCard
                                 icon={facebook}
-                                username="courtney_henry"
+                                username="jennifer_long"
                                 attr1="20M Likes"
                                 attr2="200 Followers"
                                 attr3="20 Posts"
                             />
                             <SocialCard
                                 icon={twitter}
-                                username="courtney_henry"
+                                username="@jennifer_long"
                                 attr1="20 Tweets"
                                 attr2="200 followers"
                                 attr3="20 following"

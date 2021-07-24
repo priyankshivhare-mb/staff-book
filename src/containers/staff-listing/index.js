@@ -62,7 +62,7 @@ class StaffListing extends React.Component {
                       name={profileData.name}
                       profileRating={profileData.rating}
                       recommendation={8}
-                      wage={profileData.salary + '/yr'}
+                      wage={'$'+profileData.hourly_rate + '/hr'}
                       location={profileData.location}
                       currentJob={profileData.recommended_for}
                       experience={profileData.experience}
