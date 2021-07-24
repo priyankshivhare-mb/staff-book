@@ -1,11 +1,11 @@
 import { combineReducers } from 'redux'
-import counter from './counter'
+import notification from './notificationStore'
 import profile from './profile'
 import staffGalleryImages from './staffGalleryImages'
 import businessCurrentUser from './businessCurrentUser'
 
 export default combineReducers({
-  counter,
+  notification,
   profile,
   staffGalleryImages,
   businessCurrentUser

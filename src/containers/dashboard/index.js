@@ -2,6 +2,7 @@ import React from 'react';
 import { bindActionCreators } from 'redux';
 import { getUserProfiles } from '../../modules/profile';
 import { getCurrentUser } from '../../modules/businessCurrentUser';
+import { getNotification } from '../../modules/notificationStore';
 import { connect } from 'react-redux';
 
 import DashboardWidget from './dashboardWidget';
@@ -18,24 +19,24 @@ import { ReactComponent as InvoiceDollar } from '../../assets/icons/file-invoice
 
 
 const Home = props => {
-  const { profiles, businessCurrentUser: currentUser, displayNotification=false } = props;
+  const { profiles, businessCurrentUser: currentUser, notification: { showNotification } } = props;
 
   return(
     <div className="container-fluid">
 
       {
-        displayNotification ? (
+        showNotification && (
           <div className="row notification">
             <div className="col-2" />
             <div className="col-8">
               <div className="accepted-notification">
                 <div className="row">
                   <div className="col-1 pr-0">
-                    <img src={profiles[1].img_url} className="rounded-circle"/>
+                    <img src={profiles[0].img_url} className="rounded-circle"/>
                   </div>
                   <div className="col-6">
                     <div className="notification-title">
-                      {profiles[1].name} accepted staff-on-call request.
+                      {profiles[0].name} accepted staff-on-call request.
                     </div>
                     <div className="notification-description">
                       for Friday, July 5, 2021 at 2:00 - 3:00 PM
@@ -43,7 +44,7 @@ const Home = props => {
 
                   </div>
                   <div className="col-5">
-                    <div className="button-cont float-right">
+                    <div className="button-cont float-right notification-cta">
                       <button className="btn btn-primary book-appointment d-inline-block">
                         Book Appointment
                       </button>
@@ -55,8 +56,7 @@ const Home = props => {
             </div>
             <div className="col-2" />
           </div>
-        ) : <></>
-      }
+        )}
 
       <div className="row dashboard-heading">
         <div className="col-sm-6">
@@ -190,16 +190,18 @@ const Home = props => {
   );
 };
 
-const mapStateToProps = ({profile, businessCurrentUser}) => ({
-    profiles: profile,
-    businessCurrentUser
+const mapStateToProps = ({profile, businessCurrentUser, notification}) => ({
+  profiles: profile,
+  businessCurrentUser,
+  notification
 });
 
 const mapDispatchToProps = dispatch =>
     bindActionCreators(
         {
           getUserProfiles,
-          getCurrentUser
+          getCurrentUser,
+          getNotification,
         },
         dispatch
     );
