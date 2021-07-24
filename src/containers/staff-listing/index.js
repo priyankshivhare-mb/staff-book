@@ -57,7 +57,7 @@ class StaffListing extends React.Component {
               profile.map(profileData => (
                   <SearchProfileCard
                       toLink="/recommended-profiles"
-                      profileScore={90}
+                      profileScore={profileData.profile_score}
                       profilePic={profileData.img_url}
                       name={profileData.name}
                       profileRating={profileData.rating}

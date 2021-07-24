@@ -2,6 +2,7 @@
   {
     "id": 1,
     "hourly_rate": 10,
+    "profile_score": 92,
     "img_url": "profile-pics/small/profile-5.jpg",
     "name": "Jennifer Long",
     "experience": "10y 4m",
@@ -26,6 +27,7 @@
   {
     "id": 2,
     "hourly_rate": 14,
+    "profile_score": 75,
     "img_url": "profile-pics/small/profile-1.jpg",
     "name": "Yogi Aileen",
     "experience": "7y 3m",
@@ -49,6 +51,7 @@
   {
     "id": 3,
     "hourly_rate": 20,
+    "profile_score": 70,
     "img_url": "profile-pics/small/profile-2.jpg",
     "name": "Jessica Morgan",
     "experience": "5y 8m",
@@ -72,6 +75,7 @@
   {
     "id": 4,
     "hourly_rate": 19,
+    "profile_score": 83,
     "img_url": "profile-pics/small/profile-3.jpg",
     "name": "Mysti Sherwood",
     "experience": "6 Years ",
@@ -95,6 +99,7 @@
   {
     "id": 5,
     "hourly_rate": 12,
+    "profile_score": 55,
     "img_url": "profile-pics/small/profile-4.jpg",
     "name": "Aj Foley",
     "experience": "14y 4m",
@@ -118,6 +123,7 @@
   {
     "id": 6,
     "hourly_rate": 23,
+    "profile_score": 86,
     "img_url": "profile-pics/small/profile-6.jpg",
     "name": "Faith Wagner",
     "experience": "9y 7m",
@@ -141,6 +147,7 @@
   {
     "id": 7,
     "img_url": "profile-pics/small/profile-7.jpg",
+    "profile_score": 90,
     "name": "Jamie Sanders",
     "experience": "12y 11m",
     "hourly_rate": 12,
