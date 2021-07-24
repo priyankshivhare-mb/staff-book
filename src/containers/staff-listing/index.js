@@ -3,11 +3,16 @@ import React from 'react';
 import Sidebar from './sidebar';
 
 import './styles.scss';
-import profilePic2 from '../../assets/placeholder-image-2.png';
 import SearchProfileCard from '../common/searchProfileCard';
+import { bindActionCreators } from 'redux';
+import { getUserProfiles } from '../../modules/profile';
+import { connect } from "react-redux";
 
 class StaffListing extends React.Component {
   render() {
+    const { profile } = this.props;
+    console.log(profile);
+
     return (
       <div className="container-fluid search-profiles">
         <div className="row header">
@@ -30,50 +35,32 @@ class StaffListing extends React.Component {
             <Sidebar />
           </div>
           <div className="col-9">
-            <SearchProfileCard
-                toLink="/recommended-profiles"
-                profileScore={90}
-                profilePic={profilePic2}
-                name="Marvin McKinney"
-                profileRating={4.3}
-                recommendation={8}
-                wage="$12000 /yr"
-                location="Philadelphia"
-                currentJob="Salon Manager"
-                experience="6yr 2m"
-                keySkills="Beauty, Salon Managerstong, Back end operations, Client coordination Customer service, Team handling, Client servicing, Hair spa, Good communication skills, Safety regulations"
-                fitnessVertical="Beauty / Fitness / Spa Services"
-                jobsCompleted="98%"
-                budgetPerc="85%"
-                hireRate="60%"
-                profileViews={10}
-                profileDownloads={2}
-                lastActive="11 Mar 2020"
-                lastModified="28 Feb 2020"
-                reviewCount={25}
-            />
-            <SearchProfileCard
-                toLink="/recommended-profiles"
-                profileScore={92}
-                profilePic={profilePic2}
-                name="Marvin McKinney"
-                profileRating={4.3}
-                recommendation={8}
-                wage="$12000 /yr"
-                location="Philadelphia"
-                currentJob="Salon Manager"
-                experience="6yr 2m"
-                keySkills="Beauty, Salon Managerstong, Back end operations, Client coordination Customer service, Team handling, Client servicing, Hair spa, Good communication skills, Safety regulations"
-                fitnessVertical="Beauty / Fitness / Spa Services"
-                jobsCompleted="98%"
-                budgetPerc="85%"
-                hireRate="60%"
-                profileViews={10}
-                profileDownloads={2}
-                lastActive="11 Mar 2020"
-                lastModified="28 Feb 2020"
-                reviewCount={25}
-            />
+            {
+              profile.map(profileData => (
+                  <SearchProfileCard
+                      toLink="/recommended-profiles"
+                      profileScore={90}
+                      profilePic={profileData.img_url}
+                      name={profileData.name}
+                      profileRating={profileData.rating}
+                      recommendation={8}
+                      wage={profileData.salary + '/yr'}
+                      location={profileData.location}
+                      currentJob={profileData.recommended_for}
+                      experience={profileData.experience}
+                      keySkills={profileData.key_skills}
+                      fitnessVertical="Beauty / Fitness / Spa Services"
+                      jobsCompleted="98%"
+                      budgetPerc="85%"
+                      hireRate="60%"
+                      profileViews={profileData.views}
+                      profileDownloads={2}
+                      lastActive={profileData.active_date}
+                      lastModified="28 Feb 2020"
+                      reviewCount={profileData.reviews}
+                  />
+              ))
+            }
           </div>
         </div>
       </div>
@@ -81,4 +68,20 @@ class StaffListing extends React.Component {
   }
 };
 
-export default StaffListing;
+const mapStateToProps = ({ profile, staffGalleryImages }) => ({
+  profile,
+  staffGalleryImages
+})
+
+const mapDispatchToProps = dispatch =>
+    bindActionCreators(
+        {
+          getUserProfiles,
+        },
+        dispatch
+    )
+
+export default connect(
+    mapStateToProps,
+    mapDispatchToProps
+)(StaffListing);
