@@ -7,7 +7,10 @@ const SentModal = (props) => (
             <div className="modal-content">
                 <div className="modal-body mx-auto d-block">
                     <img src={emailSent} className="img-responsive email-sent-img" />
-                    <h4>Your request has been sent successfully</h4>
+                    <h4>{props.primaryMessage}</h4>
+                    { props.secondaryMessage && <h5>
+                        {props.secondaryMessage}
+                    </h5>}
                 </div>
                 <div className="modal-footer">
                     <button type="button" className="btn btn-secondary" onClick={props.handleClose}

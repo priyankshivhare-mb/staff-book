@@ -173,15 +173,20 @@ a.navbar-icon {
   }
   &.sent-modal {
     .modal-dialog {
-      max-width: 510px;
+      max-width: 570px;
 
       .email-sent-img {
-        max-width: 244px;
+        max-width: 235px;
+        margin-top: 66px;
       }
 
       h4 {
         font-size: 24px;
         font-weight: 600;
+      }
+
+      h5 {
+        font-size: 24px;
       }
 
       .modal-body {

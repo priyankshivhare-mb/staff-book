@@ -217,6 +217,7 @@ class StaffOnCall extends Component {
                 /> }
                 { this.state.showSentEmailModal && <SentModal
                 handleClose={this.handleSentModalClose}
+                primaryMessage="Your request has been sent successfully"
                 />
                 }
             </div>

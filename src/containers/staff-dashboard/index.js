@@ -186,6 +186,8 @@ class StaffDashboard extends Component {
                 </div>
                 { this.state.showSentEmailModal && <SentModal
                     handleClose={this.handleSentModalClose}
+                    primaryMessage="Your confirmation has been successfully sent!"
+                    secondaryMessage="You will receive meeting invite soon."
                 />
                 }
             </div>
