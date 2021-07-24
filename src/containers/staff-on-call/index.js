@@ -109,22 +109,21 @@ class StaffOnCall extends Component {
                             ]}/>
                         </div>
                         <div className="col-md-12">
-                            <Skills skillSet={['Beauty', 'Salon', 'Social Media', 'Beauty', 'Salon', 'Social Media']}/>
+                            <Skills skillSet={['Beauty', 'Salon', 'Pedicure', 'Salon Manager']}/>
                         </div>
                         <div className="col-md-12">
                             <ProfileBio
-                                role="Personal Fitness Trainer, Yoga Instructor"
-                                fitnessVertical="Yoga"
+                                role={activeProfile.key_skills}
+                                fitnessVertical="Beauty / Fitness / Spa Services"
                                 wage="$25 - $30"
                                 negotiable={true}
                             />
                         </div>
                         <div className="col-md-12">
                             <AcademicsCard
-                                graduation="Ph.D (Yoga)"
+                                graduation="BA (Fashion)"
                                 certification={
-                                    ['National Academy of Sports Medicine',
-                                        '(ISSA) International Sports Science Association'
+                                    ['(FIDM) Fashion Institute of Design and Merchandising'
                                     ]}
                             />
                         </div>
@@ -168,40 +167,40 @@ class StaffOnCall extends Component {
                     </div>
                     <div className="col-md-6">
                         <ConciseProfileCard
-                            profilePic={profilePic2}
-                            name="Marvin McKinney"
-                            profileRating={4.3}
+                            profilePic={profile[1].img_url}
+                            name={profile[1].name}
+                            profileRating={profile[1].rating}
                             recommendation={8}
-                            wage="$12000 /yr"
-                            location="Philadelphia"
-                            currentJob="Salon Manager"
+                            wage={'$'+profile[1].hourly_rate+'/hr'}
+                            location={profile[1].location}
+                            currentJob={profile[1].recommended_for}
                             jobsCompleted="98%"
                             budgetPerc="85%"
                             hireRate="60%"
-                            profileViews={10}
-                            profileDownloads={2}
-                            lastActive="11 Mar 2020"
+                            profileViews={profile[1].views}
+                            profileDownloads={profile[1].downloads}
+                            lastActive={profile[1].active_date}
                             lastModified="28 Feb 2020"
-                            reviewCount={25}
+                            reviewCount={profile[1].reviews}
                         />
                     </div>
                     <div className="col-md-6">
                         <ConciseProfileCard
-                            profilePic={profilePic2}
-                            name="Marvin McKinney"
-                            profileRating={4.3}
+                            profilePic={profile[2].img_url}
+                            name={profile[2].name}
+                            profileRating={profile[2].rating}
                             recommendation={8}
-                            wage="$12000 /yr"
-                            location="Philadelphia"
-                            currentJob="Salon Manager"
+                            wage={'$'+profile[2].hourly_rate+'/hr'}
+                            location={profile[2].location}
+                            currentJob={profile[2].recommended_for}
                             jobsCompleted="98%"
                             budgetPerc="85%"
                             hireRate="60%"
-                            profileViews={10}
-                            profileDownloads={2}
-                            lastActive="11 Mar 2020"
+                            profileViews={profile[2].views}
+                            profileDownloads={profile[2].downloads}
+                            lastActive={profile[2].active_date}
                             lastModified="28 Feb 2020"
-                            reviewCount={25}
+                            reviewCount={profile[2].reviews}
                         />
                     </div>
                 </div>
