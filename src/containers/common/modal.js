@@ -18,7 +18,7 @@ const Modal = (props) => (
                     <button type="button" className="btn btn-secondary" onClick={props.handleCancel}
                             data-dismiss="modal">Cancel
                     </button>
-                    <button type="button" className="btn btn-primary" onClick={props.handleSend}>Send<img src={sendEmail} className="send-email img-responsive"/></button>
+                    <button type="button" className="btn btn-primary" onClick={props.handleSend}>Send Invite<img src={sendEmail} className="send-email img-responsive"/></button>
                 </div>
             </div>
         </div>

@@ -1,8 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { bindActionCreators } from 'redux';
 import { getUserProfiles } from '../../modules/profile';
 import { getCurrentUser } from '../../modules/businessCurrentUser';
 import { getNotification } from '../../modules/notificationStore';
+import SentModal from '../common/sentModal';
+import AppointmentModal from '../common/appointmentModal';
 import { connect } from 'react-redux';
 
 import DashboardWidget from './dashboardWidget';
@@ -17,9 +19,23 @@ import { ReactComponent as UserScan } from '../../assets/icons/user-scan.svg';
 import { ReactComponent as UserBag } from '../../assets/icons/user-bag.svg';
 import { ReactComponent as InvoiceDollar } from '../../assets/icons/file-invoice-dollar.svg';
 
-
 const Home = props => {
   const { profiles, businessCurrentUser: currentUser, notification: { showNotification } } = props;
+  const [ showModal, handleModal ] = useState(false);
+  const [ showConfirmationModal, handleConfirmationModal ] = useState(false);
+
+  const handleCancel = () => {
+    handleModal(false);
+  };
+
+  const showAppointmentModal = () => {
+    handleModal(true);
+  };
+
+  const handleSend = () => {
+    handleModal(false);
+    handleConfirmationModal(true);
+  };
 
   return(
     <div className="container-fluid">
@@ -45,7 +61,7 @@ const Home = props => {
                   </div>
                   <div className="col-5">
                     <div className="button-cont float-right notification-cta">
-                      <button className="btn btn-primary book-appointment d-inline-block">
+                      <button className="btn btn-primary book-appointment d-inline-block" onClick={showAppointmentModal}>
                         Book Appointment
                       </button>
                       <i className="fa fa-times cancel"/>
@@ -186,6 +202,15 @@ const Home = props => {
           </DashboardWidget>
         </div>
       </div>
+      { showModal && <AppointmentModal
+          handleCancel={handleCancel}
+          handleSend={handleSend}
+      /> }
+      { showConfirmationModal && <SentModal
+          handleClose={() => handleConfirmationModal(false)}
+          primaryMessage="Appointment invite sent successfully!"
+      />
+      }
     </div>
   );
 };
