@@ -2,7 +2,7 @@
   {
     "id": 1,
     "hourly_rate": 10,
-    "img_url": "https://randomuser.me/api/portraits/women/81.jpg",
+    "img_url": "profile-pics/small/profile-5.jpg",
     "name": "Jennifer Long",
     "experience": "10y 4m",
     "salary": "68,000",
@@ -20,12 +20,12 @@
     "rating": "4.1",
     "booking_date": "2021-08-04",
     "booking_time": "3:30 PM",
-    "recommended_for": "Pilates Instructor"
+    "recommended_for": "Salon Manager"
   },
   {
     "id": 2,
     "hourly_rate": 14,
-    "img_url": "https://randomuser.me/api/portraits/women/23.jpg",
+    "img_url": "profile-pics/small/profile-1.jpg",
     "name": "Yogi Aileen",
     "experience": "7y 3m",
     "salary": "25,040",
@@ -48,7 +48,7 @@
   {
     "id": 3,
     "hourly_rate": 20,
-    "img_url": "https://randomuser.me/api/portraits/women/20.jpg",
+    "img_url": "profile-pics/small/profile-2.jpg",
     "name": "Jessica Morgan",
     "experience": "5y 8m",
     "salary": "47,800",
@@ -71,7 +71,7 @@
   {
     "id": 4,
     "hourly_rate": 19,
-    "img_url": "https://randomuser.me/api/portraits/women/56.jpg",
+    "img_url": "profile-pics/small/profile-3.jpg",
     "name": "Mysti Sherwood",
     "experience": "6 Years ",
     "salary": "80,600",
@@ -94,7 +94,7 @@
   {
     "id": 5,
     "hourly_rate": 12,
-    "img_url": "https://randomuser.me/api/portraits/women/93.jpg",
+    "img_url": "profile-pics/small/profile-4.jpg",
     "name": "Aj Foley",
     "experience": "14y 4m",
     "salary": "40,780",
@@ -117,7 +117,7 @@
   {
     "id": 6,
     "hourly_rate": 23,
-    "img_url": "https://randomuser.me/api/portraits/women/65.jpg",
+    "img_url": "profile-pics/small/profile-6.jpg",
     "name": "Faith Wagner",
     "experience": "9y 7m",
     "salary": "21,090",
@@ -139,7 +139,7 @@
   },
   {
     "id": 7,
-    "img_url": "https://randomuser.me/api/portraits/men/23.jpg",
+    "img_url": "profile-pics/small/profile-7.jpg",
     "name": "Jamie Sanders",
     "experience": "12y 11m",
     "hourly_rate": 12,
