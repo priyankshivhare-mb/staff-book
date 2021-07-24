@@ -18,10 +18,46 @@ import { ReactComponent as InvoiceDollar } from '../../assets/icons/file-invoice
 
 
 const Home = props => {
-  const { profiles, businessCurrentUser: currentUser } = props;
+  const { profiles, businessCurrentUser: currentUser, displayNotification=false } = props;
 
   return(
     <div className="container-fluid">
+
+      {
+        displayNotification ? (
+          <div className="row notification">
+            <div className="col-2" />
+            <div className="col-8">
+              <div className="accepted-notification">
+                <div className="row">
+                  <div className="col-1 pr-0">
+                    <img src={profiles[1].img_url} className="rounded-circle"/>
+                  </div>
+                  <div className="col-6">
+                    <div className="notification-title">
+                      {profiles[1].name} accepted staff-on-call request.
+                    </div>
+                    <div className="notification-description">
+                      for Friday, July 5, 2021 at 2:00 - 3:00 PM
+                    </div>
+
+                  </div>
+                  <div className="col-5">
+                    <div className="button-cont float-right">
+                      <button className="btn btn-primary book-appointment d-inline-block">
+                        Book Appointment
+                      </button>
+                      <i className="fa fa-times cancel"/>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="col-2" />
+          </div>
+        ) : <></>
+      }
+
       <div className="row dashboard-heading">
         <div className="col-sm-6">
           <div className="welcome">

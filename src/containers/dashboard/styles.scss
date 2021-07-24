@@ -101,3 +101,32 @@ $color-mindbody-primary: #0A7C8E;
         }
     }
 }
+
+.notification {
+    padding-bottom: 25px;
+
+    & .accepted-notification {
+        background: #E5F2F4;
+        border: 2px solid #FFFFFF;
+        box-sizing: border-box;
+        box-shadow: 0px 4px 12px rgba(35, 35, 41, 0.2);
+        border-radius: 5px;
+        padding: 10px;
+    }
+    & .notification-title {
+        font-size: 20px;
+        font-weight: bold;
+    }
+    & .notification-description {
+        opacity: 0.5;
+        font-size: 16px;
+    }
+    & .book-appointment {
+        background: #0A7C8E;
+        margin-right: 40px;
+    }
+    & .cancel {
+        opacity: 50%;
+        padding-right: 20px;
+    }
+}
