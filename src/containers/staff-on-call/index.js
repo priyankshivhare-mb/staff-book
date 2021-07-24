@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import profilePic from '../../assets/jennifer-profile-pic.jpg';
-import profilePic2 from '../../assets/placeholder-image-2.png';
 import instagram from '../../assets/icons/instagram-large.png';
 import facebook from '../../assets/icons/facebook-large.png';
 import twitter from '../../assets/icons/twitter-large.png';
@@ -15,7 +14,6 @@ import CoreValueMatch from '../common/coreValueMatch';
 import AppointmentCard from '../common/appointmentCard';
 import ProfileBio from '../common/profileBio';
 import AcademicsCard from '../common/academicsCard';
-import AppointmentModal from './appointmentModal';
 import SentModal from '../common/sentModal';
 import {bindActionCreators} from 'redux';
 import { getUserProfiles } from '../../modules/profile';
@@ -25,7 +23,7 @@ import { connect } from 'react-redux';
 class StaffOnCall extends Component {
     constructor(props) {
         super(props);
-        this.state = { showModal: false, showSentEmailModal: false, shortListData: {} }
+        this.state = { showModal: false, shortListData: {} }
     };
 
     handleCancel = () => {
@@ -33,11 +31,7 @@ class StaffOnCall extends Component {
     }
 
     handleSend = () => {
-        this.setState(({ showModal: false, showSentEmailModal: true }));
-    }
-
-    handleSentModalClose = () => {
-        this.setState(({ showSentEmailModal: false }));
+        this.setState(({ showModal: false }));
     }
 
     render() {
@@ -204,19 +198,8 @@ class StaffOnCall extends Component {
                         />
                     </div>
                 </div>
-                { this.state.showModal && <AppointmentModal
-                    from="Ganesh Borse <ganesh.borse@mindbodyonline.com"
-                    to="Palak Shivhare <palak.shivhare@mindbodyonline.com"
-                    subject="Some subject"
-                    body="email body"
-                    startDate="12/07/2021"
-                    endDate="12/07/2021"
-                    handleCancel={this.handleCancel}
-                    handleSend={this.handleSend}
-                    shortListData={this.state.shortListData}
-                /> }
-                { this.state.showSentEmailModal && <SentModal
-                handleClose={this.handleSentModalClose}
+                { this.state.showModal && <SentModal
+                handleClose={this.handleSend}
                 primaryMessage="Your request has been sent successfully"
                 />
                 }
