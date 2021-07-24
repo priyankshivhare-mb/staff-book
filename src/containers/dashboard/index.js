@@ -20,9 +20,10 @@ import { ReactComponent as UserBag } from '../../assets/icons/user-bag.svg';
 import { ReactComponent as InvoiceDollar } from '../../assets/icons/file-invoice-dollar.svg';
 
 const Home = props => {
-  const { profiles, businessCurrentUser: currentUser, notification: { showNotification } } = props;
+  const { profiles, businessCurrentUser: currentUser } = props;
   const [ showModal, handleModal ] = useState(false);
   const [ showConfirmationModal, handleConfirmationModal ] = useState(false);
+  const showNotification = (window.location.search).includes('true');
 
   const handleCancel = () => {
     handleModal(false);
