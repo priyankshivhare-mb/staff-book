@@ -153,6 +153,34 @@ a.navbar-icon {
     font-weight: 700;
     margin-bottom: 16px;
   }
+
+  .schedule-button {
+    button {
+      border: 1px solid #0A7C8E;
+      background-color: #fff;
+      color: #0A7C8E;
+      text-transform: capitalize;
+
+      svg {
+        margin-right: 4px;
+        padding-bottom: 4px;
+      }
+    }
+  }
+
+  textarea {
+    padding: 2px;
+  }
+
+  .zoom-link {
+    padding-top: 8px;
+    font-size: 16px;
+    color: rgba(0,0,0,0.5);
+
+    svg {
+      margin-left: 8px;
+    }
+  }
   .date-selector {
     width: 48%;
     float: left;

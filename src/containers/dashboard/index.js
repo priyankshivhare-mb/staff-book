@@ -203,8 +203,14 @@ const Home = props => {
         </div>
       </div>
       { showModal && <AppointmentModal
+          from="Eva Longbottom <eva.longbottom@gold_gym.com>"
+          to="Jennifer Long <jennifer_long@gmail.com>"
+          subject="Invite from Gold’s Gym for staff booking"
+          startDate="12/20/21"
+          time="2:00 PM - 3:00 PM"
           handleCancel={handleCancel}
           handleSend={handleSend}
+          zoomLink="https://mindbodyonline.zoom.us/j/9486000"
       /> }
       { showConfirmationModal && <SentModal
           handleClose={() => handleConfirmationModal(false)}
