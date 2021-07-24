@@ -10,6 +10,7 @@ import comment from '../../assets/icons/comment.png';
 import socialIcons from '../../assets/icons/social-icons.png';
 import briefcase from '../../assets/icons/briefcase.png';
 import Moment from 'react-moment';
+import { getProfileColor } from './utils/utils';
 
 const SearchProfileCard = (props) => {
     return (
@@ -29,7 +30,7 @@ const SearchProfileCard = (props) => {
                     <div className="row">
                         <div className="col-md-8">
                             <h3><Link to={props.toLink}>{props.name}</Link>
-                                <span className="profile-score-main">Profile Score {props.profileScore}%</span>
+                                <span className={`profile-score-main ${getProfileColor(props.profileScore)}`}>Profile Score {props.profileScore}%</span>
                             </h3>
                             <h4>{props.currentJob}</h4>
                         </div>

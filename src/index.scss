@@ -410,10 +410,17 @@ a.navbar-icon {
     .profile-score-main {
       margin-left: 20px;
       padding: 4px 14px;
-      background-color: #6CBB11;
       color: #ffffff;
       font-size: 16px;
       border-radius: 27px;
+
+      &.green {
+        background-color: #6CBB11;
+      }
+
+      &.yellow {
+        background-color: #FFBA35;
+      }
     }
   }
 }
