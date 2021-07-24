@@ -2,6 +2,7 @@ import React from 'react';
 import { bindActionCreators } from 'redux';
 import { getUserProfiles } from '../../modules/profile';
 import { getCurrentUser } from '../../modules/businessCurrentUser';
+import { getNotification } from '../../modules/notificationStore';
 import { connect } from 'react-redux';
 
 import DashboardWidget from './dashboardWidget';
@@ -18,9 +19,7 @@ import { ReactComponent as InvoiceDollar } from '../../assets/icons/file-invoice
 
 
 const Home = props => {
-  const showNotification = localStorage.getItem('showNotification');
-
-  const { profiles, businessCurrentUser: currentUser } = props;
+  const { profiles, businessCurrentUser: currentUser, notification: { showNotification } } = props;
 
   return(
     <div className="container-fluid">
@@ -191,16 +190,18 @@ const Home = props => {
   );
 };
 
-const mapStateToProps = ({profile, businessCurrentUser}) => ({
+const mapStateToProps = ({profile, businessCurrentUser, notification}) => ({
   profiles: profile,
-  businessCurrentUser
+  businessCurrentUser,
+  notification
 });
 
 const mapDispatchToProps = dispatch =>
     bindActionCreators(
         {
           getUserProfiles,
-          getCurrentUser
+          getCurrentUser,
+          getNotification,
         },
         dispatch
     );
