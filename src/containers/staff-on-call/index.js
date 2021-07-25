@@ -35,7 +35,7 @@ class StaffOnCall extends Component {
     }
 
     render() {
-        const imageMap = this.props.staffGalleryImages;
+        const imageMap = this.props.staffGalleryImages.filter(img => img.includes('yoga'));
         const handleShortlist = (shortListData) => {
             this.setState({ showModal: true, shortListData });
         }

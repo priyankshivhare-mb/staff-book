@@ -42,7 +42,7 @@ class StaffDashboard extends Component {
     }
 
     render() {
-        const imageMap = this.props.staffGalleryImages;
+        const imageMap = this.props.staffGalleryImages.filter(img => img.includes('gym'));
         const { activeLink } = this.state;
 
         return (
