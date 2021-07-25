@@ -23,7 +23,8 @@ import { connect } from 'react-redux';
 class StaffOnCall extends Component {
     constructor(props) {
         super(props);
-        this.state = { showModal: false, shortListData: {} }
+        this.state = { showModal: false, shortListData: {} };
+        window.scrollTo(0, 0);
     };
 
     handleCancel = () => {
