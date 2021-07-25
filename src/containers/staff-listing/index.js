@@ -67,7 +67,7 @@ class StaffListing extends React.Component {
                       currentJob={profileData.recommended_for}
                       experience={profileData.experience}
                       keySkills={profileData.key_skills}
-                      fitnessVertical="Beauty / Fitness / Spa Services"
+                      fitnessVertical="Yoga / Fitness / Wellness"
                       jobsCompleted="98%"
                       budgetPerc="85%"
                       hireRate="60%"

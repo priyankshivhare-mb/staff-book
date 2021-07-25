@@ -103,21 +103,23 @@ class StaffOnCall extends Component {
                             ]}/>
                         </div>
                         <div className="col-md-12">
-                            <Skills skillSet={['Beauty', 'Salon', 'Pedicure', 'Salon Manager']}/>
+                            <Skills skillSet={['Yoga', 'Vikram Yoga', 'Wellness', 'Studio Manager']}/>
                         </div>
                         <div className="col-md-12">
                             <ProfileBio
                                 role={activeProfile.key_skills}
-                                fitnessVertical="Beauty / Fitness / Spa Services"
+                                fitnessVertical="Yoga / Fitness / Wellness"
                                 wage="$25 - $30"
                                 negotiable={true}
                             />
                         </div>
                         <div className="col-md-12">
                             <AcademicsCard
-                                graduation="BA (Fashion)"
+                                graduation="Ph.D (Yoga)"
                                 certification={
-                                    ['(FIDM) Fashion Institute of Design and Merchandising'
+                                    [
+                                        'National Academy of Sports Medicine',
+                                        '(ISSA) International Sports Science Association'
                                     ]}
                             />
                         </div>
