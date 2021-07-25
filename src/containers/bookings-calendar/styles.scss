@@ -166,8 +166,8 @@
 
         &--info {
             border-left-color: #4786ff;
-            grid-column: 3 / span 5;
-            grid-row: 5;
+            grid-column: 2 / span 5;
+            grid-row: 6;
             margin-top: 15px;
             background: rgba(#dae7ff, 0.7);
             align-self: end;
@@ -188,7 +188,7 @@
         &__detail {
             position: absolute;
             left: 0;
-            top: calc(100% + 10px);
+            bottom: calc(100% + 10px);
             background: #fff;
             border: 1px solid rgba(166, 168, 179, 0.2);
             color: #000;
@@ -200,7 +200,7 @@
 
             &:after,
             &:before {
-                bottom: 100%;
+                top: 100%;
                 left: 30%;
                 border: solid transparent;
                 content: " ";
@@ -211,13 +211,13 @@
             }
 
             &:before {
-                border-bottom-color: rgba(166, 168, 179, 0.2);
+                border-top-color: rgba(166, 168, 179, 0.2);
                 border-width: 8px;
                 margin-left: -8px;
             }
 
             &:after {
-                border-bottom-color: #fff;
+                border-top-color: #fff;
                 border-width: 6px;
                 margin-left: -6px;
             }

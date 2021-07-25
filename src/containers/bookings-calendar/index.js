@@ -136,7 +136,7 @@ const BookingsCalendar = () => {
                 <section className="task task--info">New Yoga Trainer Appointment
                   <div className="task__detail">
                     <h2>Jennifer Long</h2>
-                    <p>21-25th July</p>
+                    <p>27-31st July</p>
                   </div></section>
               </div>
             </div>
