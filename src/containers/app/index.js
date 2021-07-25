@@ -1,6 +1,5 @@
 import React, {useState} from 'react';
 import {Route} from 'react-router-dom';
-import Cookies from 'universal-cookie';
 import Dashboard from '../dashboard';
 import StaffOnCall from '../staff-on-call';
 import Staff from '../staff-dashboard';
@@ -10,13 +9,11 @@ import Navigation from '../common/navigation';
 import Footer from '../common/footer';
 
 const App = () => {
-    const [activeLink, setActiveLink] = useState('dashboard');
-    const cookies = new Cookies();
-    const isStaffBookEnabled = cookies && cookies.get('isStaffBookEnabled');
+    const isStaff = window.location.pathname === '/staff';
 
     return (
       <>
-        <Navigation />
+        <Navigation isStaff={isStaff}/>
         <div className="container-fluid">
           <main>
             <Route exact path="/" component={Dashboard}/>

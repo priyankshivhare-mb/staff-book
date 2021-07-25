@@ -11,7 +11,6 @@ import { connect } from "react-redux";
 class StaffListing extends React.Component {
   render() {
     const { profile } = this.props;
-    console.log(profile);
 
     return (
       <div className="container-fluid search-profiles">
