@@ -90,7 +90,7 @@ class ShortProfileCard extends React.Component {
     } = this.props;
 
     return showMatchingScore && (
-      <div className={`matching-score ${getProfileColor(score)}`}>{score}% Matching</div>
+      <div className={`matching-score ${getProfileColor(score)}`}>{score}% Profile Match</div>
     );
   }
 

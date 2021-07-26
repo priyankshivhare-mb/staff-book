@@ -78,7 +78,7 @@ const Home = props => {
       <div className="row dashboard-heading">
         <div className="col-sm-6">
           <div className="welcome">
-            <img src={currentUser.company_logo} height="50px" /> {currentUser.company}
+            <img src={currentUser.company_logo} height="50px" /> Welcome {currentUser.company}!
           </div>
         </div>
         <div className="col-sm-6">
