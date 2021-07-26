@@ -11,6 +11,7 @@ import mobile from '../../assets/icons/mobile.png';
 import verified from '../../assets/icons/verified.png';
 import employees from '../../assets/icons/employees.png';
 import Moment from 'react-moment';
+import { getRangeBasedRandomVal } from './utils/utils';
 
 const ProfileCard = (props) => {
     return (
@@ -35,7 +36,7 @@ const ProfileCard = (props) => {
                                         {props.profileRating}
                                     </span>/5</span>
                                 <span className="profile-rating-sub-details">
-                                    Based on 200 ratings <br/> 20 times rated 5 stars</span>
+                                    Based on {getRangeBasedRandomVal(100, 500)} ratings <br/> {getRangeBasedRandomVal(1, 50)} times rated 5 stars</span>
                             </div>}
                         </div>
                         <div className="row">

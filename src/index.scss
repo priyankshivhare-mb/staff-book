@@ -334,7 +334,7 @@ a.navbar-icon {
         color: rgba(0, 0, 0, 0.5);
         font-size: 16px;
         position: absolute;
-        top: 0;
+        top: -5px;
         right: 148px;
 
         .highlight-rating {
@@ -357,9 +357,14 @@ a.navbar-icon {
       }
 
       .profile-rating-sub-details {
+        display: block;
         font-size: 12px;
         height: 18px;
         color: rgba(0, 0, 0, 0.5);
+
+        &:first-child {
+          padding-top: 81px;
+        }
       }
     }
 
@@ -441,7 +446,7 @@ a.navbar-icon {
     }
     .profile-score-wrapper {
       .profile-rating {
-        right: 148px !important;
+        right: 144px !important;
       }
     }
     .concise-pic-wrapper {

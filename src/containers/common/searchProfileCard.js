@@ -40,8 +40,8 @@ const SearchProfileCard = (props) => {
                                         <img className="star-icon" src={star} alt="star-icon"/>
                                         {props.profileRating}
                                     </span>/5</span>
-                            <span className="profile-rating-sub-details">
-                                    Based on {getRangeBasedRandomVal(100, 500)} ratings <br/> {getRangeBasedRandomVal(1, 50)} times rated 5 stars</span>
+                            <span className="profile-rating-sub-details">Based on {getRangeBasedRandomVal(100, 500)} ratings</span>
+                            <span className="profile-rating-sub-details">{getRangeBasedRandomVal(1, 50)} times rated 5 stars</span>
                         </div>
                     </div>
                     <div className="row">
