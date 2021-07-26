@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import goldGymLogo from '../../assets/gold-gym-logo.png';
+import powerFitnessLogo from '../../assets/power-fitness-logo.png';
 import instagram from '../../assets/icons/instagram-large.png';
 import twitter from '../../assets/icons/twitter-large.png';
 import facebook from '../../assets/icons/facebook-large.png';
@@ -65,7 +65,7 @@ class StaffDashboard extends Component {
                     <div className="col-md-8">
                         <div className="col-md-12">
                             <ProfileCard
-                                profilePic={goldGymLogo}
+                                profilePic={powerFitnessLogo}
                                 name="Power Fitness"
                                 profileRating={4.3}
                                 recommendation={8}
@@ -130,9 +130,9 @@ class StaffDashboard extends Component {
                             <AboutCompanyCard
                                 studioName="Power Fitness"
                                 aboutStudio="Power Fitness International, Inc. is an American chain of international co-ed fitness centers originally started by Joe Gold in Venice Beach, California. Each gym offers a variety of cardio and strength training equipment as well as group exercise programs. Its headquarters have since relocated to Dallas."
-                                workLifeBalance="99%"
-                                compensation="85%"
-                                jobSecurity="20%"
+                                workLifeBalance="82%"
+                                compensation="89%"
+                                jobSecurity="99%"
                             />
                         </div>
                         <div className="col-md-12" id="gallery">
@@ -160,23 +160,23 @@ class StaffDashboard extends Component {
                             <SocialCard
                                 icon={instagram}
                                 username="@power_fitness"
-                                attr1="200 posts"
-                                attr2="200 followers"
-                                attr3="20 following"
+                                attr1="1.2K posts"
+                                attr2="1M followers"
+                                attr3="231 following"
                             />
                             <SocialCard
                                 icon={facebook}
                                 username="power_fitness"
-                                attr1="20M Likes"
-                                attr2="200 Followers"
-                                attr3="20 Posts"
+                                attr1="10M Likes"
+                                attr2="1.2M Followers"
+                                attr3="681 Posts"
                             />
                             <SocialCard
                                 icon={twitter}
                                 username="@power_fitness"
-                                attr1="20 Tweets"
-                                attr2="200 followers"
-                                attr3="20 following"
+                                attr1="125 Tweets"
+                                attr2="12K followers"
+                                attr3="110 following"
                             />
                         </div>
                     </div>
@@ -189,26 +189,29 @@ class StaffDashboard extends Component {
                                 <CurrentOpenings
                                     position="Salon Manager"
                                     experience="5-8 Years"
-                                    wage="$200,000 PA"
-                                    location="Philadelphia"
-                                    keySkills="Beauty, Salon Managerstong, Back end operations, Client coordination Customer service, Team handling"
+                                    wage="$82,000 PA"
+                                    location="L.A."
+                                    isHot={false}
+                                    keySkills="Beauty, Salon Managerstong, Back end operations, Team handling"
                                 />
                             </div>
                             <div className="col-md-4">
                                 <CurrentOpenings
                                     position="Salon and Beauty Expert"
                                     experience="5-8 Years"
-                                    wage="$200,000 PA"
-                                    location="Philadelphia"
-                                    keySkills="Beauty, Salon Managerstong, Back end operations, Client coordination Customer service, Team handling"
+                                    wage="$75,000 PA"
+                                    location="L.A."
+                                    isHot={true}
+                                    keySkills="Beauty, Salon Managerstong, Client coordination Customer service, Team handling"
                                 />
                             </div>
                             <div className="col-md-4">
                                 <CurrentOpenings
                                     position="Hair Spa Expert"
                                     experience="5-8 Years"
-                                    wage="$200,000 PA"
-                                    location="Philadelphia"
+                                    wage="$50,000 PA"
+                                    location="L.A."
+                                    isHot={true}
                                     keySkills="Beauty, Salon Managerstong, Back end operations, Client coordination Customer service, Team handling"
                                 />
                             </div>

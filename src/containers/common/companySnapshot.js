@@ -11,7 +11,7 @@ const CompanySnapshot = (props) => {
                     <div className="col star-rating-wrapper">
                         <h1>4.5</h1>
                         <img src={starRating} className="img-responsive"/>
-                        <p>Based on 200 ratings | 20 times rated 5 star</p>
+                        <p>Based on 390 ratings | 52 times rated 5 star</p>
                         <div className="sub-script">
                             View review <svg width="11" height="6" viewBox="0 0 11 6" fill="none"
                                              xmlns="http://www.w3.org/2000/svg">
@@ -37,7 +37,7 @@ const CompanySnapshot = (props) => {
                             </svg>
                         </div>
                         <p>
-                            62% employees recommend this employer to friends
+                            Employees recommend this employer to friends
                         </p>
                     </div>
                     <div className="col donut-rating-wrapper">
@@ -51,7 +51,7 @@ const CompanySnapshot = (props) => {
                                     </svg>
                                 </div>
                                 <p>
-                                    90% employees say this is a great place to work’s
+                                    Employees say this is a great place to work’s
                                 </p>
                             </div>
                             <div className="col-md-3 great-place">

@@ -8,9 +8,9 @@ const CurrentOpenings = (props) => {
         <div className="col-md-12 current-openings-wrapper">
             <h3>
                 {props.position}
-                <span className="hot-job pull-right">
+                {props.isHot && <span className="hot-job pull-right">
                     Hot Job
-                </span>
+                </span>}
             </h3>
             <div className="col-md-12 profile-specifics">
                             <span className="col">

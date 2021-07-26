@@ -9,20 +9,20 @@ const OtherLocationCards = (props) => {
                 <div className="row">
                     <div className="col-md-12 location-container">
                         <div className="location-row">
-                            Gold’s Gym, Austin
+                            Power Fitness, Austin
+                            <span className="score pull-right"><img src={star} className="img-responsive"/> 4.8</span>
+                        </div>
+                        <div className="location-row">
+                            Power Fitness, Jacksonville
                             <span className="score pull-right"><img src={star} className="img-responsive"/> 4.4</span>
                         </div>
                         <div className="location-row">
-                            Gold’s Gym, Jacksonville
-                            <span className="score pull-right"><img src={star} className="img-responsive"/> 4.4</span>
+                            Power Fitness, Chicago
+                            <span className="score pull-right"><img src={star} className="img-responsive"/> 4.1</span>
                         </div>
                         <div className="location-row">
-                            Gold’s Gym, Chicago
-                            <span className="score pull-right"><img src={star} className="img-responsive"/> 4.4</span>
-                        </div>
-                        <div className="location-row">
-                            Gold’s Gym, San Diego
-                            <span className="score pull-right"><img src={star} className="img-responsive"/> 4.4</span>
+                            Power Fitness, San Diego
+                            <span className="score pull-right"><img src={star} className="img-responsive"/> 3.2</span>
                         </div>
                     </div>
                 </div>
