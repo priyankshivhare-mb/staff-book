@@ -93,7 +93,7 @@ const Home = props => {
       <div className="row dashboard-metrics">
         <DashboardSmallWidget title="10K" copy="Active Staff Profiles" icon={ThreeUsers} />
         <DashboardSmallWidget title="300" copy="New profile in last 30 days" icon={GraphUp} />
-        <DashboardSmallWidget title="21" copy="Recommended staff profiles" icon={UserScan} />
+        <DashboardSmallWidget title="29" copy="Staff on-call services availed" icon={UserScan} />
         <DashboardSmallWidget title="$4,600" copy="Staff on-call savings" icon={UserBag} />
         <DashboardSmallWidget title="$3,800" copy="Permanent hiring savings" icon={InvoiceDollar} />
       </div>
@@ -204,7 +204,7 @@ const Home = props => {
         </div>
       </div>
       { showModal && <AppointmentModal
-          from="Eva Longbottom <eva.longbottom@gold_gym.com>"
+          from="Eva Longbottom <eva.longbottom@power_fitness.com>"
           to="Jennifer Long <jennifer_long@gmail.com>"
           subject="Invite from Gold’s Gym for staff booking"
           startDate="12/20/21"

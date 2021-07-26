@@ -36,7 +36,8 @@ class StaffOnCall extends Component {
     }
 
     render() {
-        const imageMap = this.props.staffGalleryImages.filter(img => img.includes('yoga'));
+        // Change slice max limit to display more images
+        const imageMap = this.props.staffGalleryImages.filter(img => img.includes('yoga')).slice(0,10);
         const handleShortlist = (shortListData) => {
             this.setState({ showModal: true, shortListData });
         }
@@ -91,16 +92,16 @@ class StaffOnCall extends Component {
                                 { label: 'Respectful', value: true},
                                 { label: 'Proactive', value: true},
                                 { label: 'Committed to Wellness', value: true},
-                                { label: 'Humble', value: false},
+                                { label: 'Humble', value: true},
                                 { label: 'Helpful', value: true},
-                                { label: 'Empathetic', value: false},
+                                { label: 'Energetic', value: true},
+                                { label: 'Empathetic', value: true},
                                 { label: 'Consciously Evolving', value: true},
                                 { label: 'Service-oriented', value: true},
                                 { label: 'Team-player', value: true},
                                 { label: 'Creative', value: false},
-                                { label: 'Innovative', value: true},
-                                { label: 'Fun', value: true},
-                                { label: 'Energetic', value: true}
+                                { label: 'Innovative', value: false},
+                                { label: 'Fun', value: false},
                             ]}/>
                         </div>
                         <div className="col-md-12">

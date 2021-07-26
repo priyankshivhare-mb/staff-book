@@ -42,15 +42,16 @@ class StaffDashboard extends Component {
     }
 
     render() {
-        const imageMap = this.props.staffGalleryImages.filter(img => img.includes('gym'));
+        // Change slice max limit to display more images
+        const imageMap = this.props.staffGalleryImages.filter(img => img.includes('gym')).slice(0,10);
         const { activeLink } = this.state;
 
         return (
             <div className="staff-on-call-wrapper">
                 <div className="row staff-head-wrapper">
                     <div className="col-md-8">
-                        <h1 className="heading-1">Studio Profile - Gold's Gym</h1>
-                        <p className="staff-breadcrumb">Dashboard/Employers/Gold's Gym</p>
+                        <h1 className="heading-1">Studio Profile - Power Fitness</h1>
+                        <p className="staff-breadcrumb">Dashboard/Employers/Power Fitness</p>
                     </div>
                     <div className="col-md-4">
                         <button className="btn btn-light pull-right">Share With Friends</button>
@@ -65,14 +66,14 @@ class StaffDashboard extends Component {
                         <div className="col-md-12">
                             <ProfileCard
                                 profilePic={goldGymLogo}
-                                name="Gold's gym"
+                                name="Power Fitness"
                                 profileRating={4.3}
                                 recommendation={8}
                                 isBrand={true}
                                 wage="$12000 /yr"
                                 location="Holly Street, East Walnut Street, Pasadena, Los Angeles, CA, United States"
                                 currentJob="The Fitness Institute"
-                                email="gold_gym@gmail.com"
+                                email="power_fitness@gmail.com"
                                 emailVerified={true}
                                 mobile="+1 (234) 234 567"
                                 mobileVerified={true}
@@ -102,33 +103,33 @@ class StaffDashboard extends Component {
                         </div>
                         <div className="col-md-12" id="overview">
                             <CompanySnapshot
-                                studioName="Gold's Gym"
+                                studioName="Power Fitness"
                             />
                         </div>
                         <div className="col-md-12" id="studio-values">
                             <CoreValueMatch
-                                label="Gold's Gym"
+                                label="Power Fitness"
                                 valueData={[
                                 { label: 'Community Driven', value: true},
                                 { label: 'Respectful', value: true},
                                 { label: 'Proactive', value: true},
                                 { label: 'Committed to Wellness', value: true},
-                                { label: 'Humble', value: false},
+                                { label: 'Humble', value: true},
                                 { label: 'Helpful', value: true},
-                                { label: 'Empathetic', value: false},
+                                { label: 'Empathetic', value: true},
                                 { label: 'Consciously Evolving', value: true},
                                 { label: 'Service-oriented', value: true},
                                 { label: 'Team-player', value: true},
                                 { label: 'Creative', value: false},
                                 { label: 'Innovative', value: false},
                                 { label: 'Fun', value: false},
-                                { label: 'Energetic', value: true}
+                                { label: 'Energetic', value: false}
                             ]}/>
                         </div>
                         <div className="col-md-12" id="about-studio">
                             <AboutCompanyCard
-                                studioName="Gold's Gym"
-                                aboutStudio="Gold's Gym International, Inc. is an American chain of international co-ed fitness centers originally started by Joe Gold in Venice Beach, California. Each gym offers a variety of cardio and strength training equipment as well as group exercise programs. Its headquarters have since relocated to Dallas."
+                                studioName="Power Fitness"
+                                aboutStudio="Power Fitness International, Inc. is an American chain of international co-ed fitness centers originally started by Joe Gold in Venice Beach, California. Each gym offers a variety of cardio and strength training equipment as well as group exercise programs. Its headquarters have since relocated to Dallas."
                                 workLifeBalance="99%"
                                 compensation="85%"
                                 jobSecurity="20%"
@@ -141,7 +142,7 @@ class StaffDashboard extends Component {
                     <div className="col-md-4">
                         <div className="col-md-12">
                             <AppointmentRequestCard
-                                studioName="Gold's Gym"
+                                studioName="Power Fitness"
                                 location="Los Angeles, CA"
                                 date="Friday, July 5, 2021"
                                 time="2:00 PM - 3:00 PM"
@@ -158,21 +159,21 @@ class StaffDashboard extends Component {
                             <h3 className="heading-3">Social Profile</h3>
                             <SocialCard
                                 icon={instagram}
-                                username="@gold's_gym"
+                                username="@power_fitness"
                                 attr1="200 posts"
                                 attr2="200 followers"
                                 attr3="20 following"
                             />
                             <SocialCard
                                 icon={facebook}
-                                username="gold's_gym"
+                                username="power_fitness"
                                 attr1="20M Likes"
                                 attr2="200 Followers"
                                 attr3="20 Posts"
                             />
                             <SocialCard
                                 icon={twitter}
-                                username="@gold's_gym"
+                                username="@power_fitness"
                                 attr1="20 Tweets"
                                 attr2="200 followers"
                                 attr3="20 following"
