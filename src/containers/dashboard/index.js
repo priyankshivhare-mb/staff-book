@@ -106,19 +106,19 @@ const Home = props => {
             badgeText="21 Profiles"
           >
             <ShortProfileCard
-              {...profiles[3]}
-              showMatchingScore={true}
-              footerIcons={['briefcase', 'wallet', 'location']}
-              description={true}
-            />
-            <ShortProfileCard
-              {...profiles[4]}
+              {...profiles[6]}
               showMatchingScore={true}
               footerIcons={['briefcase', 'wallet', 'location']}
               description={true}
             />
             <ShortProfileCard
               {...profiles[5]}
+              showMatchingScore={true}
+              footerIcons={['briefcase', 'wallet', 'location']}
+              description={true}
+            />
+            <ShortProfileCard
+              {...profiles[3]}
               showMatchingScore={true}
               footerIcons={['briefcase', 'wallet', 'location']}
               description={true}
@@ -155,17 +155,17 @@ const Home = props => {
             badgeText="11 Profiles"
           >
             <ShortProfileCard
-              {...profiles[6]}
+              {...profiles[8]}
               showMatchingScore={true}
               footerIcons={['briefcase', 'wallet', 'location']}
             />
             <ShortProfileCard
-              {...profiles[1]}
+              {...profiles[4]}
               showMatchingScore={true}
               footerIcons={['briefcase', 'wallet', 'location']}
             />
             <ShortProfileCard
-              {...profiles[5]}
+              {...profiles[7]}
               showMatchingScore={true}
               footerIcons={['briefcase', 'wallet', 'location']}
             />
@@ -183,19 +183,19 @@ const Home = props => {
             badgeText="4 Profiles"
           >
             <ShortProfileCard
-              {...profiles[4]}
+              {...profiles[9]}
               showRating={true}
               showVerified={true}
               footerIcons={['wallet', 'calendar', 'time']}
             />
             <ShortProfileCard
-              {...profiles[5]}
+              {...profiles[10]}
               showRating={true}
               showVerified={true}
               footerIcons={['wallet', 'calendar', 'time']}
             />
             <ShortProfileCard
-              {...profiles[6]}
+              {...profiles[11]}
               showRating={true}
               showVerified={true}
               footerIcons={['wallet', 'calendar', 'time']}

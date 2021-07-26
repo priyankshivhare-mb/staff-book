@@ -83,14 +83,13 @@ class ShortProfileCard extends React.Component {
   }
 
   renderMatchingScore() {
-    const score = this.randomIntFromInterval(60, 100);
-
     const {
       showMatchingScore=false,
+      profile_score: profileScore
     } = this.props;
 
     return showMatchingScore && (
-      <div className={`matching-score ${getProfileColor(score)}`}>{score}% Profile Match</div>
+      <div className={`matching-score ${getProfileColor(profileScore)}`}>{profileScore}% Profile Match</div>
     );
   }
 
