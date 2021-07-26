@@ -8,4 +8,8 @@ export const getProfileColor = (score) => {
     }
 
     return colorClass;
-}
+};
+
+export const getRangeBasedRandomVal = (min, max) => {
+    return Math.floor(Math.random() * (max - min) + min);
+};

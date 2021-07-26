@@ -10,7 +10,7 @@ import comment from '../../assets/icons/comment.png';
 import socialIcons from '../../assets/icons/social-icons.png';
 import briefcase from '../../assets/icons/briefcase.png';
 import Moment from 'react-moment';
-import { getProfileColor } from './utils/utils';
+import { getProfileColor, getRangeBasedRandomVal } from './utils/utils';
 
 const SearchProfileCard = (props) => {
     return (
@@ -41,7 +41,7 @@ const SearchProfileCard = (props) => {
                                         {props.profileRating}
                                     </span>/5</span>
                             <span className="profile-rating-sub-details">
-                                    Based on 200 ratings <br/> 20 times rated 5 stars</span>
+                                    Based on {getRangeBasedRandomVal(100, 500)} ratings <br/> {getRangeBasedRandomVal(1, 50)} times rated 5 stars</span>
                         </div>
                     </div>
                     <div className="row">
