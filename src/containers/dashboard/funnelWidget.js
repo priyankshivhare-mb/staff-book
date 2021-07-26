@@ -39,7 +39,7 @@ class FunnelWidget extends React.Component {
               title="Gym Consultant"
               applicants="14"
               shortlisted="2"
-              rejected="5"
+              screening="5"
               trending={true}
               onClick={() => this.selectFunnelGraph(1)}
             />
@@ -47,14 +47,14 @@ class FunnelWidget extends React.Component {
               title="HR Associate"
               applicants="9"
               shortlisted="1"
-              rejected="3"
+              screening="3"
               onClick={() => this.selectFunnelGraph(2)}
             />
             <JobProfile
               title="Front-Desk Coordinator"
               applicants="3"
               shortlisted="3"
-              rejected="0"
+              screening="0"
               trending={true}
               onClick={() => this.selectFunnelGraph(3)}
             />
@@ -62,7 +62,7 @@ class FunnelWidget extends React.Component {
               title="Markets Facilitator"
               applicants="5"
               shortlisted="1"
-              rejected="4"
+              screening="4"
               onClick={() => this.selectFunnelGraph(4)}
             />
           </div>

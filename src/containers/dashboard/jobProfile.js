@@ -7,7 +7,7 @@ const JobProfile = props => {
     title,
     applicants,
     shortlisted,
-    rejected,
+    screening,
     onClick,
     trending=false,
   } = props;
@@ -26,7 +26,7 @@ const JobProfile = props => {
             {shortlisted} Shortlisted
           </div>
           <div className="col-4 px-1 stat text-center no-border">
-            {rejected} Rejected
+            {screening} Screening
           </div>
         </div>
       </div>

@@ -91,26 +91,20 @@ const Home = props => {
       </div>
 
       <div className="row dashboard-metrics">
-        <DashboardSmallWidget title="200K" copy="Active Staff Profiles" icon={ThreeUsers} />
+        <DashboardSmallWidget title="10K" copy="Active Staff Profiles" icon={ThreeUsers} />
         <DashboardSmallWidget title="300" copy="New profile in last 30 days" icon={GraphUp} />
-        <DashboardSmallWidget title="500" copy="Recommended staff profiles" icon={UserScan} />
-        <DashboardSmallWidget title="$20,000" copy="Saved on staff-on-call" icon={UserBag} />
-        <DashboardSmallWidget title="$6,000" copy="Saved on hiring staff" icon={InvoiceDollar} />
+        <DashboardSmallWidget title="21" copy="Recommended staff profiles" icon={UserScan} />
+        <DashboardSmallWidget title="$4,600" copy="Staff on-call savings" icon={UserBag} />
+        <DashboardSmallWidget title="$3,800" copy="Permanent hiring savings" icon={InvoiceDollar} />
       </div>
 
       <div className="row widgets">
         <div className="col-sm-4">
           <DashboardWidget
-            title="Recommended Staff"
+            title="Staff Recommendations"
             toLink="#"
-            badgeText="20 Profiles"
+            badgeText="21 Profiles"
           >
-            <ShortProfileCard
-              {...profiles[2]}
-              showMatchingScore={true}
-              footerIcons={['briefcase', 'wallet', 'location']}
-              description={true}
-            />
             <ShortProfileCard
               {...profiles[3]}
               showMatchingScore={true}
@@ -123,26 +117,32 @@ const Home = props => {
               footerIcons={['briefcase', 'wallet', 'location']}
               description={true}
             />
+            <ShortProfileCard
+              {...profiles[5]}
+              showMatchingScore={true}
+              footerIcons={['briefcase', 'wallet', 'location']}
+              description={true}
+            />
           </DashboardWidget>
         </div>
         <div className="col-sm">
           <DashboardWidget
-            title="Book Staff-On-Call"
+            title="Book Staff On-Call"
             toLink="/search-profiles"
             badgeText="20 Profiles"
           >
+            <ShortProfileCard
+              {...profiles[0]}
+              showRating={true}
+              footerIcons={['wallet', 'location', 'reviews']}
+            />
             <ShortProfileCard
               {...profiles[1]}
               showRating={true}
               footerIcons={['wallet', 'location', 'reviews']}
             />
             <ShortProfileCard
-              {...profiles[5]}
-              showRating={true}
-              footerIcons={['wallet', 'location', 'reviews']}
-            />
-            <ShortProfileCard
-              {...profiles[6]}
+              {...profiles[2]}
               showRating={true}
               footerIcons={['wallet', 'location', 'reviews']}
             />
@@ -152,20 +152,20 @@ const Home = props => {
           <DashboardWidget
             title="Staff Waitlist"
             toLink="#"
-            badgeText="20 Profiles"
+            badgeText="11 Profiles"
           >
             <ShortProfileCard
-              {...profiles[4]}
+              {...profiles[6]}
+              showMatchingScore={true}
+              footerIcons={['briefcase', 'wallet', 'location']}
+            />
+            <ShortProfileCard
+              {...profiles[1]}
               showMatchingScore={true}
               footerIcons={['briefcase', 'wallet', 'location']}
             />
             <ShortProfileCard
               {...profiles[5]}
-              showMatchingScore={true}
-              footerIcons={['briefcase', 'wallet', 'location']}
-            />
-            <ShortProfileCard
-              {...profiles[6]}
               showMatchingScore={true}
               footerIcons={['briefcase', 'wallet', 'location']}
             />
@@ -178,9 +178,9 @@ const Home = props => {
 
         <div className="col-sm-4">
           <DashboardWidget
-            title="Upcoming Staff-On-Call"
+            title="Upcoming Staff On-Call"
             toLink="#"
-            badgeText="20 Profiles"
+            badgeText="4 Profiles"
           >
             <ShortProfileCard
               {...profiles[4]}
