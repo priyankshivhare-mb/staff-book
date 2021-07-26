@@ -70,10 +70,10 @@ const ConciseProfileCard = (props) => {
                         {props.profileDownloads}
                         </span>
                     <span className="footer-col">
-                            <span className="label-emp">Active:</span> {<Moment date={props.lastActive} format={'ddd, Do MMM'}/>}
+                            <span className="label-emp">Active:</span> {<Moment date={props.lastActive} format={'DD MMM YYYY'}/>}
                         </span>
                     <span className="footer-col">
-                            <span className="label-emp">Modified: </span>{<Moment date={props.lastModified} format={'ddd, Do MMM'}/>}
+                            <span className="label-emp">Modified: </span>{<Moment date={props.lastModified} format={'DD MMM YYYY'}/>}
                         </span>
                     <span className="pull-right review">
                             {props.reviewCount} Review

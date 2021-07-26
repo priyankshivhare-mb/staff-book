@@ -19,8 +19,8 @@ class StaffListing extends React.Component {
             <div className="staff-on-call-wrapper p-0">
               <div className="row staff-head-wrapper">
                 <div className="col-md-4 p-0">
-                  <h1 className="heading-1">Book Staff On Call</h1>
-                  <p className="staff-breadcrumb">Dashboard / Staff on Call / Book Staff-on call</p>
+                  <h1 className="heading-1">Book Staff On-Call</h1>
+                  <p className="staff-breadcrumb">Dashboard / Book Staff on Call / Book Staff-on call</p>
                 </div>
                 <div className="col-md-2" />
                 <div className="col-md-6 p-0">
@@ -33,7 +33,7 @@ class StaffListing extends React.Component {
                         </div>
                         <input
                           type="text"
-                          placeholder="Search"
+                          placeholder="Search by Name, Skills"
                           className="form-control"
                           aria-label="Amount (to the nearest dollar)"
                         />
@@ -70,6 +70,7 @@ class StaffListing extends React.Component {
                       jobsCompleted="98%"
                       budgetPerc="85%"
                       hireRate="60%"
+                      coreValues="78%"
                       profileViews={profileData.views}
                       profileDownloads={2}
                       lastActive={profileData.active_date}

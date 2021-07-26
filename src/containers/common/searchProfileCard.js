@@ -61,13 +61,16 @@ const SearchProfileCard = (props) => {
                         </div>
                         <div className="col-md-12 candidate-highlight">
                                 <span className="col bullet">
-                                    <span className="highlight">{props.jobsCompleted}</span> Jobs Completed
+                                    <span className="highlight">{props.jobsCompleted}</span> On Time
                                 </span>
                             <span className="col bullet">
                                     <span className="highlight">{props.budgetPerc}</span> On Budget
                                 </span>
                             <span className="col bullet">
-                                    <span className="highlight">{props.hireRate}</span> Repeat Hire Rate
+                                    <span className="highlight">{props.hireRate}</span> Repeated Hiring
+                                </span>
+                            <span className="col bullet">
+                                    <span className="highlight">{props.coreValues}</span> Core Values
                                 </span>
                         </div>
                     </div>
@@ -99,10 +102,10 @@ const SearchProfileCard = (props) => {
                         {props.profileDownloads}
                         </span>
                     <span className="footer-col">
-                            <span className="label-emp">Active:</span> {<Moment date={props.lastActive} format={'ddd, Do MMM'}/>}
+                            <span className="label-emp">Active:</span> {<Moment date={props.lastActive} format={'DD MMM YYYY'}/>}
                         </span>
                     <span className="footer-col">
-                            <span className="label-emp">Modified: </span>{<Moment date={props.lastModified} format={'ddd, Do MMM'}/>}
+                            <span className="label-emp">Modified: </span>{<Moment date={props.lastModified} format={'DD MMM YYYY'}/>}
                         </span>
                     <span className="pull-right review">
                             {props.reviewCount} Review

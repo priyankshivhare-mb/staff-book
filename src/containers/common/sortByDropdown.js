@@ -31,7 +31,7 @@ const SortByDropdown = () => {
     <Select
       className="ml-3 sort-by"
       styles={customStyles}
-      defaultInputValue={'Sort by "Date"'}
+      defaultInputValue={'Sort by "Active"'}
     />
   );
 };

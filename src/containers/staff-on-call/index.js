@@ -137,23 +137,23 @@ class StaffOnCall extends Component {
                             <SocialCard
                                 icon={instagram}
                                 username="@jennifer_long"
-                                attr1="200 posts"
-                                attr2="200 followers"
-                                attr3="20 following"
+                                attr1="180 posts"
+                                attr2="20K followers"
+                                attr3="168 following"
                             />
                             <SocialCard
                                 icon={facebook}
                                 username="jennifer_long"
-                                attr1="20M Likes"
-                                attr2="200 Followers"
-                                attr3="20 Posts"
+                                attr1="1.8K Likes"
+                                attr2="1K Followers"
+                                attr3="118 Posts"
                             />
                             <SocialCard
                                 icon={twitter}
                                 username="@jennifer_long"
-                                attr1="20 Tweets"
-                                attr2="200 followers"
-                                attr3="20 following"
+                                attr1="112 Tweets"
+                                attr2="981 followers"
+                                attr3="65 following"
                             />
                         </div>
                     </div>

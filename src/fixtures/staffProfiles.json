@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "hourly_rate": 10,
+    "hourly_rate": 28,
     "profile_score": 92,
     "img_url": "profile-pics/small/profile-5.jpg",
     "name": "Jennifer Long",
@@ -9,7 +9,7 @@
     "salary": "68,000",
     "location": "Scottsdale, Arizona",
     "current_company": "Vellociti Fitness League",
-    "key_skills": "Vikram Yoga, Karma Yoga, Swara Yoga",
+    "key_skills": "Vikram Yoga, Karma Yoga",
     "may_also_know": "Back End Operations, Client Coordination",
     "verified": true,
     "followers": 456788,

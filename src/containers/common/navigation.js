@@ -73,7 +73,7 @@ const Navigation = (props) => {
           </li>
           <li className="nav-item">
             <NavLink className="nav-link" to="/recommended-profiles" activeClassName="active">
-              Staff-On-Call
+              Staff On-Call
             </NavLink>
           </li>
           <li className="nav-item">
