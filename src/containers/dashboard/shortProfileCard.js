@@ -26,7 +26,7 @@ class ShortProfileCard extends React.Component {
 
     const iconMap = {
       wallet: { icon: WalletIcon, data: `$ ${hourlyRate}/hr`, col: 'col-sm-3' },
-      location: { icon: LocationIcon, data: location, col: 'col-sm-6' },
+      location: { icon: LocationIcon, data: location, col: 'col-sm-5' },
       reviews: { icon: ReviewsIcon, data: reviews, col: 'col-sm-3' },
       briefcase: { icon: BriefcaseIcon, data: experience, col: 'col-sm-3' },
       calendar: { icon: CalendarIcon, data: <Moment date={bookingDate} format={'ddd, Do MMM'}/>, col: 'col-sm-4' },
@@ -44,10 +44,10 @@ class ShortProfileCard extends React.Component {
         <div className={`${col0} pl-0`}>
           <Icon0 className="icon"/> {data0}
         </div>
-        <div className={`${col1} pl-1`}>
+        <div className={`${col1} pl-1 pr-0`}>
           <Icon1 className="icon"/> {data1}
         </div>
-        <div className={`${col2} pl-1`}>
+        <div className={`${col2} pl-0`}>
           <Icon2 className="icon"/> {data2}
         </div>
       </>

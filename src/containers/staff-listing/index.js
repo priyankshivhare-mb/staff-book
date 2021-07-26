@@ -58,6 +58,7 @@ class StaffListing extends React.Component {
                   profile_score, img_url, name, rating, hourly_rate,
                   elocation, recommended_for, experience, key_skills,
                   views, active_date, reviews, location,
+                  modified_date = "28 Feb 2020",
                   jobs_completed = "98",
                   budget_perc = "82",
                   hire_rate = "79",
@@ -84,7 +85,7 @@ class StaffListing extends React.Component {
                     profileViews={views}
                     profileDownloads={2}
                     lastActive={active_date}
-                    lastModified="28 Feb 2020"
+                    lastModified={modified_date}
                     reviewCount={reviews}
                   />
                 );

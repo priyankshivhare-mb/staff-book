@@ -207,7 +207,7 @@ const Home = props => {
           from="Eva Longbottom <eva.longbottom@power_fitness.com>"
           to="Jennifer Long <jennifer_long@gmail.com>"
           subject="Invite from Power Fitness Gym for staff booking"
-          startDate="12/20/21"
+          startDate="02 Aug 2021"
           time="2:00 PM - 3:00 PM"
           handleCancel={handleCancel}
           handleSend={handleSend}
