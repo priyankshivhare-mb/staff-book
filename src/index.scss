@@ -75,6 +75,12 @@ button:disabled {
     text-align: left;
     color: #252733 !important;
     text-transform: capitalize !important;
+
+  &.active {
+    color: #0A7C8E !important;
+    box-shadow: 0px 1px 0px #0A7C8E;
+    border-radius: 0 !important;
+  }
 }
 a.navbar-icon {
     float: left;

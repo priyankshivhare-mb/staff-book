@@ -18,7 +18,7 @@ const Navigation = (props) => {
         </NavLink>
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav ml-auto">
-            <li className="nav-item active">
+            <li className="nav-item">
               <NavLink className="nav-link" to="/staff" activeClassName="active">
                 Dashboard
               </NavLink>
@@ -56,8 +56,8 @@ const Navigation = (props) => {
       </NavLink>
       <div className="collapse navbar-collapse" id="navbarNav">
         <ul className="navbar-nav ml-auto">
-          <li className="nav-item active">
-            <NavLink className="nav-link" to="/" activeClassName="active">
+          <li className="nav-item">
+            <NavLink className="nav-link" exact to="/" activeClassName="active">
               Dashboard
             </NavLink>
           </li>
