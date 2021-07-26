@@ -119,7 +119,7 @@ const AppointmentModal = (props) => {
           <div className="col-md-3 modal-label">
           </div>
           <div className="col-md-9 schedule-button">
-            <button className="btn"><svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <button className="btn mt-0"><svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path fillRule="evenodd" clipRule="evenodd" d="M13 6.68571C13 10.09 10.09 13 6.68571 13C2.91002 13 0 10.09 0 6.68571C0 2.91002 2.91002 0 6.68571 0C10.09 0 13 2.91002 13 6.68571ZM6 3H7V6H10V7H7V10H6V7H3V6H6V3Z" fill="#0A7C8E"/>
                           </svg>
               Add Schedule</button>
