@@ -206,7 +206,7 @@ const Home = props => {
       { showModal && <AppointmentModal
           from="Eva Longbottom <eva.longbottom@power_fitness.com>"
           to="Jennifer Long <jennifer_long@gmail.com>"
-          subject="Invite from Gold’s Gym for staff booking"
+          subject="Invite from Power Fitness Gym for staff booking"
           startDate="12/20/21"
           time="2:00 PM - 3:00 PM"
           handleCancel={handleCancel}

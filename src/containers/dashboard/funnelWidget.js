@@ -36,7 +36,7 @@ class FunnelWidget extends React.Component {
         <div className="row">
           <div className="col-5 px-0 job-profiles">
             <JobProfile
-              title="Gym Consultant"
+              title="Gym Trainer"
               applicants="14"
               shortlisted="2"
               screening="5"
@@ -44,7 +44,7 @@ class FunnelWidget extends React.Component {
               onClick={() => this.selectFunnelGraph(1)}
             />
             <JobProfile
-              title="HR Associate"
+              title="Sales Specialist"
               applicants="9"
               shortlisted="1"
               screening="3"
@@ -59,7 +59,7 @@ class FunnelWidget extends React.Component {
               onClick={() => this.selectFunnelGraph(3)}
             />
             <JobProfile
-              title="Markets Facilitator"
+              title="Physiotherapist"
               applicants="5"
               shortlisted="1"
               screening="4"

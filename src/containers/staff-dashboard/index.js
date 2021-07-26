@@ -129,7 +129,7 @@ class StaffDashboard extends Component {
                         <div className="col-md-12" id="about-studio">
                             <AboutCompanyCard
                                 studioName="Power Fitness"
-                                aboutStudio="Power Fitness International, Inc. is an American chain of international co-ed fitness centers originally started by Joe Gold in Venice Beach, California. Each gym offers a variety of cardio and strength training equipment as well as group exercise programs. Its headquarters have since relocated to Dallas."
+                                aboutStudio="Power Fitness International, Inc. is an American chain of international co-ed fitness centers originally started by Joe Paul in Venice Beach, California. Each gym offers a variety of cardio and strength training equipment as well as group exercise programs. Its headquarters have since relocated to Dallas."
                                 workLifeBalance="82%"
                                 compensation="89%"
                                 jobSecurity="99%"
