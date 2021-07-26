@@ -53,31 +53,42 @@ class StaffListing extends React.Component {
           </div>
           <div className="col-9">
             {
-              profile.map(profileData => (
+              profile.map(profileData => {
+                const {
+                  profile_score, img_url, name, rating, hourly_rate,
+                  elocation, recommended_for, experience, key_skills,
+                  views, active_date, reviews, location,
+                  jobs_completed = "98",
+                  budget_perc = "82",
+                  hire_rate = "79",
+                  core_values = "93",
+                } = profileData;
+                return (
                   <SearchProfileCard
-                      toLink="/recommended-profiles"
-                      profileScore={profileData.profile_score}
-                      profilePic={profileData.img_url}
-                      name={profileData.name}
-                      profileRating={profileData.rating}
-                      recommendation={8}
-                      wage={'$'+profileData.hourly_rate + '/hr'}
-                      location={profileData.location}
-                      currentJob={profileData.recommended_for}
-                      experience={profileData.experience}
-                      keySkills={profileData.key_skills}
-                      fitnessVertical="Yoga / Fitness / Wellness"
-                      jobsCompleted="98%"
-                      budgetPerc="85%"
-                      hireRate="60%"
-                      coreValues="78%"
-                      profileViews={profileData.views}
-                      profileDownloads={2}
-                      lastActive={profileData.active_date}
-                      lastModified="28 Feb 2020"
-                      reviewCount={profileData.reviews}
+                    toLink="/recommended-profiles"
+                    profileScore={profile_score}
+                    profilePic={img_url}
+                    name={name}
+                    profileRating={rating}
+                    recommendation={8}
+                    wage={'$'+hourly_rate + '/hr'}
+                    location={location}
+                    currentJob={recommended_for}
+                    experience={experience}
+                    keySkills={key_skills}
+                    fitnessVertical="Yoga / Fitness / Wellness"
+                    jobsCompleted={`${jobs_completed}%`}
+                    budgetPerc={`${budget_perc}%`}
+                    hireRate={`${hire_rate}%`}
+                    coreValues={`${core_values}%`}
+                    profileViews={views}
+                    profileDownloads={2}
+                    lastActive={active_date}
+                    lastModified="28 Feb 2020"
+                    reviewCount={reviews}
                   />
-              ))
+                );
+              })
             }
           </div>
         </div>

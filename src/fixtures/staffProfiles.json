@@ -22,7 +22,11 @@
     "rating": "4.1",
     "booking_date": "2021-08-04",
     "booking_time": "3:30 PM",
-    "recommended_for": "Yoga Instructor"
+    "recommended_for": "Yoga Instructor",
+    "jobs_completed": "98",
+    "budget_perc": "75",
+    "hire_rate": "89",
+    "core_values": "95"
   },
   {
     "id": 2,
@@ -46,7 +50,11 @@
     "rating": "4.0",
     "booking_date": "2021-08-05",
     "booking_time": "4:30 PM",
-    "recommended_for": "Yoga Instructor"
+    "recommended_for": "Yoga Instructor",
+    "jobs_completed": "85",
+    "budget_perc": "79",
+    "hire_rate": "83",
+    "core_values": "60"
   },
   {
     "id": 3,
@@ -70,7 +78,11 @@
     "rating": "3.8",
     "booking_date": "2021-08-06",
     "booking_time": "4:45 PM",
-    "recommended_for": "Dojo Manager"
+    "recommended_for": "Dojo Manager",
+    "jobs_completed": "94",
+    "budget_perc": "75",
+    "hire_rate": "64",
+    "core_values": "84"
   },
   {
     "id": 4,
@@ -94,7 +106,11 @@
     "rating": "4.9",
     "booking_date": "2021-08-07",
     "booking_time": "2:15 PM",
-    "recommended_for": "Physiotherapist"
+    "recommended_for": "Physiotherapist",
+    "jobs_completed": "98",
+    "budget_perc": "75",
+    "hire_rate": "89",
+    "core_values": "95"
   },
   {
     "id": 5,
