@@ -4,7 +4,7 @@ import DashboardWidget from './dashboardWidget';
 import JobProfile from './jobProfile';
 
 import FunnelAggPng from '../../assets/icons/funnel-graphs/1.png';
-import Funnel1Png from '../../assets/dashboard-cta.png';
+import Funnel1Png from '../../assets/icons/funnel-graphs/gym-trainer.png';
 
 class FunnelWidget extends React.Component {
   constructor(props){

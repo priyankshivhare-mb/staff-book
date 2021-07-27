@@ -25,6 +25,21 @@ const Navigation = (props) => {
             </li>
             <li className="nav-item">
               <NavLink className="nav-link" to="/recommended-profiles" activeClassName="active">
+                Tools
+              </NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink className="nav-link" to="/recommended-profiles" activeClassName="active">
+                Studios
+              </NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink className="nav-link" to="/recommended-profiles" activeClassName="active">
+                Services
+              </NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink className="nav-link" to="/recommended-profiles" activeClassName="active">
                 Edit Profile
               </NavLink>
             </li>

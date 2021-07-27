@@ -26,7 +26,7 @@ const JobProfile = props => {
             {shortlisted} Shortlisted
           </div>
           <div className="col-4 px-1 stat text-center no-border">
-            {screening} Screening
+            {screening} Others
           </div>
         </div>
       </div>
