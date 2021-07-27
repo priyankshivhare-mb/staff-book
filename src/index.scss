@@ -63,6 +63,9 @@ button:disabled {
 }
 
 /* Navbar */
+.navbar .navbar-brand img {
+    padding-left: 25px;
+}
 .navbar {
     background-color: white;
 }
@@ -93,9 +96,9 @@ a.navbar-icon {
 .navbar-divider {
     width: 0;
     border: none;
-    box-shadow: 0 0 0 1pt #DFE0EB;
-    margin: 0px 15px;
-    height: 40px;
+    box-shadow: 0 0 0 1px #dfe0eb;
+    margin: 5px 15px;
+    height: 30px;
 }
 .current-user-name {
     padding: 0 15px 0 0;
@@ -411,7 +414,7 @@ a.navbar-icon {
   }
 
   .profile-footer {
-    border-top: 1px solid #c4c4c4;
+    border-top: 1px solid #cccccc6b;
     padding: 10px 8px;
 
     .footer-col {
@@ -456,9 +459,15 @@ a.navbar-icon {
     }
   }
 
+  &.search-profile-wrapper:hover {
+      box-shadow: 0px 10px 10px 0px #00000014;
+      margin-top: -2px;
+  }
+
   &.search-profile-wrapper {
     padding-left: 0;
     padding-right: 0;
+    transition: all;
 
     .candidate-bio {
       .col-md-2 {

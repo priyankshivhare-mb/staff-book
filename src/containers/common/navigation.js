@@ -50,7 +50,7 @@ const Navigation = (props) => {
         </div>
       </nav>
   ) : (
-    <nav className="navbar navbar-expand-lg">
+    <nav className="navbar staff-nav navbar-expand-lg">
       <NavLink className="navbar-brand" to="/">
         <img src={StaffBookLogo} height="65" alt="" />
       </NavLink>
