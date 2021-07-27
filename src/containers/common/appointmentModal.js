@@ -72,17 +72,18 @@ const AppointmentModal = (props) => {
             Subject line:
           </div>
           <div className="col-md-9">
-            <input type="text" className="form-control" value={props.subject} />
+            <input type="text" className="form-control form-input" value={props.subject} />
           </div>
         </div>
-        <div className="row">
+        <div className="row appointment-row">
           <div className="col-md-3 modal-label">
             Appointment:
           </div>
           <div className="col-md-9">
             <Select
-              styles={customStyles}
-              defaultInputValue="Surya Yoga 101"
+                className="form-input"
+                styles={customStyles}
+                defaultInputValue="Surya Yoga 101"
             />
           </div>
         </div>

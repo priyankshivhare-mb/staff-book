@@ -181,8 +181,26 @@ a.navbar-icon {
     }
   }
 
+  .form-input {
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    >div {
+      min-height: 40px;
+
+      >div:first-child {
+        padding-top: 4px;
+      }
+    }
+  }
+
+  .appointment-row {
+    .modal-label {
+      padding-top: 10px;
+    }
+  }
   textarea {
-    padding: 2px;
+    padding: 10px 2px 20px 18px;
   }
 
   .zoom-link {
@@ -191,7 +209,9 @@ a.navbar-icon {
     color: rgba(0,0,0,0.5);
 
     svg {
-      margin-left: 8px;
+      margin-left: 10px;
+      max-width: 36px;
+      padding-bottom: 4px;
     }
   }
   .date-selector {
