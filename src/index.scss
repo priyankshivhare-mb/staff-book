@@ -66,6 +66,9 @@ button:disabled {
 .navbar .navbar-brand img {
     padding-left: 25px;
 }
+.navbar.staff-nav {
+    background-color: #E5F2F4;
+}
 .navbar {
     background-color: white;
 }
@@ -928,7 +931,7 @@ a.navbar-icon {
 
 /* Appointment Request card start */
 .appointment-request-wrapper {
-  background-color: #FFE596;
+  background-color: #FCEED6;
   padding: 16px 0 0 0;
   box-shadow: 0px 1px 3px rgba(45, 45, 45, 0.2);
   border-radius: 3px;

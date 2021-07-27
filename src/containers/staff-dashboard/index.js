@@ -144,7 +144,7 @@ class StaffDashboard extends Component {
                             <AppointmentRequestCard
                                 studioName="Power Fitness"
                                 location="Los Angeles, CA"
-                                date="Friday, July 5, 2021"
+                                date="Monday, August 2, 2021"
                                 time="2:00 PM - 3:00 PM"
                                 onClick={this.handleSend}
                             />

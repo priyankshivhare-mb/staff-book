@@ -58,6 +58,7 @@ class StaffListing extends React.Component {
                   profile_score, img_url, name, rating, hourly_rate,
                   elocation, recommended_for, experience, key_skills,
                   views, active_date, reviews, location,
+                  recommendations = 8,
                   modified_date = "28 Feb 2020",
                   jobs_completed = "98",
                   budget_perc = "82",
@@ -71,7 +72,7 @@ class StaffListing extends React.Component {
                     profilePic={img_url}
                     name={name}
                     profileRating={rating}
-                    recommendation={8}
+                    recommendation={recommendations}
                     wage={'$'+hourly_rate + '/hr'}
                     location={location}
                     currentJob={recommended_for}

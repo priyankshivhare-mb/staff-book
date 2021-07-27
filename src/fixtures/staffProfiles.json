@@ -15,7 +15,7 @@
     "followers": 456788,
     "views": 47,
     "downloads": 23,
-    "active_date": "2021-06-11",
+    "active_date": "2021-07-30",
     "modified_date": "2021-05-18",
     "about_me": "Passionate yoga teacher with multiple years of professional experience in designing and leading flow and vinyasa yoga classes. In June 2018, completed an Advanced 300-Hour Yoga Teacher Training in Bali, Indonesia, and acquired an in-depth knowledge about postures, breathing techniques, and spiritual elements of yoga teaching. At VinYoga Studio in New York worked as a support teacher during a 200-hour yoga teacher training. Eager to share my expertise and passion with students at Mind&Soul Yoga Studio. ",
     "reviews": 13,
@@ -26,7 +26,8 @@
     "jobs_completed": "98",
     "budget_perc": "75",
     "hire_rate": "89",
-    "core_values": "95"
+    "core_values": "95",
+    "recommendations": 8
   },
   {
     "id": 2,
@@ -44,7 +45,7 @@
     "followers": 1004560,
     "views": 34,
     "downloads": 21,
-    "active_date": "2021-07-12",
+    "active_date": "2021-07-29",
     "modified_date": "2021-06-30",
     "reviews": 15,
     "rating": "4.0",
@@ -54,7 +55,8 @@
     "jobs_completed": "85",
     "budget_perc": "79",
     "hire_rate": "83",
-    "core_values": "60"
+    "core_values": "60",
+    "recommendations": 3
   },
   {
     "id": 3,
@@ -72,7 +74,7 @@
     "followers": 654900,
     "views": 21,
     "downloads": 14,
-    "active_date": "2021-07-16",
+    "active_date": "2021-07-22",
     "modified_date": "2021-07-01",
     "reviews": 19,
     "rating": "3.8",
@@ -82,7 +84,8 @@
     "jobs_completed": "94",
     "budget_perc": "75",
     "hire_rate": "64",
-    "core_values": "84"
+    "core_values": "84",
+    "recommendations": 6
   },
   {
     "id": 4,
