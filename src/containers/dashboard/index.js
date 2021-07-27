@@ -23,6 +23,7 @@ const Home = props => {
   const { profiles, businessCurrentUser: currentUser } = props;
   const [ showModal, handleModal ] = useState(false);
   const [ showConfirmationModal, handleConfirmationModal ] = useState(false);
+  const [ showUpdatedStaffOnCall, updateStaffOnCall ] = useState(false);
   const showNotification = (window.location.search).includes('true');
 
   const handleCancel = () => {
@@ -37,6 +38,11 @@ const Home = props => {
     handleModal(false);
     handleConfirmationModal(true);
   };
+
+  const handleSentModal = () => {
+    handleConfirmationModal(false);
+    updateStaffOnCall(true);
+  }
 
   return(
     <div className="container-fluid">
@@ -131,11 +137,17 @@ const Home = props => {
             toLink="/search-profiles"
             badgeText="20 Profiles"
           >
-            <ShortProfileCard
-              {...profiles[0]}
-              showRating={true}
-              footerIcons={['wallet', 'location', 'reviews']}
-            />
+            {
+              showUpdatedStaffOnCall ? <ShortProfileCard
+                  {...profiles[3]}
+                  showRating={true}
+                  footerIcons={['wallet', 'location', 'reviews']}
+              /> : <ShortProfileCard
+                  {...profiles[0]}
+                  showRating={true}
+                  footerIcons={['wallet', 'location', 'reviews']}
+              />
+            }
             <ShortProfileCard
               {...profiles[1]}
               showRating={true}
@@ -182,12 +194,20 @@ const Home = props => {
             toLink="#"
             badgeText="4 Profiles"
           >
-            <ShortProfileCard
-              {...profiles[9]}
-              showRating={true}
-              showVerified={true}
-              footerIcons={['wallet', 'calendar', 'time']}
-            />
+            {
+              showUpdatedStaffOnCall ? <ShortProfileCard
+                  {...profiles[0]}
+                  showRating={true}
+                  showVerified={true}
+                  footerIcons={['wallet', 'calendar', 'time']}
+              /> : <ShortProfileCard
+                  {...profiles[9]}
+                  showRating={true}
+                  showVerified={true}
+                  footerIcons={['wallet', 'calendar', 'time']}
+              />
+            }
+
             <ShortProfileCard
               {...profiles[10]}
               showRating={true}
@@ -214,7 +234,7 @@ const Home = props => {
           zoomLink="https://mindbodyonline.zoom.us/j/9486000"
       /> }
       { showConfirmationModal && <SentModal
-          handleClose={() => handleConfirmationModal(false)}
+          handleClose={handleSentModal}
           primaryMessage="Appointment invite sent successfully!"
       />
       }
