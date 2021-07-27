@@ -77,7 +77,8 @@ const Home = props => {
                 </div>
               </div>
             </div>
-            <div className="col-2" />
+            <div className="col-1 more-notifications"><span className="font-weight-bold">+ 2</span> Notifications</div>
+            <div className="col-1"/>
           </div>
         )}
 
