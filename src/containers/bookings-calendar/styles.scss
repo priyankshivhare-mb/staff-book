@@ -3,3 +3,175 @@
         margin: unset;
     }
 }
+
+.booking-card {
+    overflow-y: auto;
+    overflow-x: hidden;
+    box-shadow: 0 1px 3px rgba(45.00000111758709, 45.00000111758709, 45.00000111758709, 0.20000000298023224);
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 3px;
+
+    .booking {
+        position: relative;
+        height: 80px;
+        display: block;
+
+        .timer {
+            width: 100%;
+            height: 20px;
+            position: relative;
+            left: 20px;
+            top: 20px;
+
+            .text {
+                color: rgba(0, 0, 0, 1);
+                opacity: 0.4000000059604645;
+                width: 70px;
+                height: 20px;
+                position: absolute;
+                left: 0px;
+                top: 0px;
+                font-family: Averta, serif;
+                text-align: left;
+                font-size: 14px;
+                letter-spacing: 0;
+                line-height: px;
+            }
+
+            .border {
+                opacity: 0.20000000298023224;
+                width: 931px;
+                height: 0px;
+                position: absolute;
+                left: 85px;
+                top: 10px;
+                border-top: 1px dashed;
+            }
+        }
+
+
+
+
+
+        .booking-wrapper {
+            width: 462px;
+            height: 58px;
+            position: absolute;
+            left: 20px;
+            top: 40px;
+
+            .booking-a {
+                background-color: #e9fdf8;
+                width: 377px;
+                height: 58px;
+                position: absolute;
+                left: 85px;
+                top: 0px;
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+                border-bottom-left-radius: 10px;
+                border-bottom-right-radius: 10px;
+            }
+            .booking-b {
+                background-color: #FFF1E6;
+                left: 485px;
+            }
+            .booking-primary {
+                background-color: #E6ECFF;
+            }
+        }
+
+
+
+        .booking-a .status {
+            background-color: #18ba92;
+            width: 4px;
+            height: 38px;
+            position: absolute;
+            left: 0px;
+            top: 10px;
+            border-radius: 5px;
+        }
+
+        .booking-b .status{
+            background-color: #FF6E01;
+        }
+
+        .booking-a .content {
+            width: 343px;
+            height: 48px;
+            position: absolute;
+            left: 14px;
+            top: 5px;
+        }
+
+        .booking-a .content .title {
+            color: rgba(0, 0, 0, 1);
+            width: 343px;
+            height: 24px;
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            font-family: Averta;
+            text-align: left;
+            font-size: 16px;
+            letter-spacing: 0;
+            line-height: px;
+        }
+
+        .booking-a .content .booked {
+            width: 181px;
+            height: 24px;
+            position: absolute;
+            left: 0px;
+            top: 24px;
+        }
+
+        .booking-a .content .booked .time {
+            color: rgba(0, 0, 0, 1);
+            width: 47px;
+            height: 24px;
+            position: relative;
+            top: 0px;
+            font-family: Averta;
+            text-align: left;
+            font-size: 16px;
+            letter-spacing: 0;
+            line-height: px;
+        }
+
+        .booking-a .content .booked .border {
+            transform: rotate(90.00000250448032deg);
+            opacity: 0.20000000298023224;
+            width: 24px;
+            height: 0px;
+            position: absolute;
+            left: 124px;
+            top: 0px;
+        }
+
+        .booking-a .content .booked {
+            width: 100%;
+            height: 24px;
+            position: relative;
+            left: 0px;
+            top: 24px;
+        }
+
+        .booking-a .content .booked .title {
+            color: rgba(0, 0, 0, 1);
+            width: auto;
+            height: 24px;
+            position: relative;
+            padding-right: 10px;
+            left: 0px;
+            margin-right: 10px;
+            top: 0px;
+            font-family: Averta;
+            text-align: left;
+            font-size: 16px;
+            letter-spacing: 0;
+            border-right: 1px solid rgba(0,0,0,0.3);
+        }
+    }
+}

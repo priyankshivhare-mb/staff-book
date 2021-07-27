@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Select from 'react-select';
 import Calendar from 'react-calendar';
+import CalendarDayView from './calendarDayView';
 
 import SortByDropdown from '../../containers/common/sortByDropdown';
 
@@ -81,7 +82,7 @@ const BookingsCalendar = () => {
         </div>
         <div className="col-9">
           <div className="section calendar">
-            <img src={BookingCalendar} />
+            <CalendarDayView />
           </div>
         </div>
       </div>
