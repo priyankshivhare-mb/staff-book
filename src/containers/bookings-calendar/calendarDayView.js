@@ -39,7 +39,7 @@ const CalendarDayView = (props) => {
                         <div className="status"></div>
                         <div className="content"><span
                             className="title">Zumba and Aerobics for Seniors</span>
-                            <div className="booked"><span className="title">Christy Rogan</span>
+                            <div className="booked"><span className="title">Christy Rogahn</span>
                                 <div className="border"></div>
                                 <span className="time">40min</span>
                             </div>
