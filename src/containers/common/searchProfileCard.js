@@ -9,6 +9,7 @@ import download from '../../assets/icons/download.png';
 import comment from '../../assets/icons/comment.png';
 import socialIcons from '../../assets/icons/social-icons.png';
 import briefcase from '../../assets/icons/briefcase.png';
+import topArrow from '../../assets/icons/top-arrow.png';
 import Moment from 'react-moment';
 import { getProfileColor, getRangeBasedRandomVal } from './utils/utils';
 
@@ -24,6 +25,10 @@ const SearchProfileCard = (props) => {
                     </div>
                     <div className="social-icons">
                         <img src={socialIcons} className="img-responsive" />
+                        <div className="follower-wrapper">
+                            <img className="top-arrow" src={topArrow} />
+                            <div className="follower-data"><span>{getRangeBasedRandomVal(1,20)}K</span> Followers</div>
+                        </div>
                     </div>
                 </div>
                 <div className="col-md-10">

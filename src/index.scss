@@ -377,6 +377,32 @@ a.navbar-icon {
         max-width: 116px;
         cursor: pointer;
       }
+
+      .follower-wrapper {
+        position: relative;
+        width: 98px;
+        background-color: #96DEFF;
+        border-radius: 21px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 8px;
+
+        .top-arrow {
+          position: absolute;
+          width: 11px;
+          top: -28px;
+          left: 40px;
+        }
+
+        .follower-data {
+          padding: 4px 10px 4px 10px;
+          font-size: 12px;
+
+          span {
+            font-weight: bold;
+          }
+        }
+      }
     }
   }
 
