@@ -2,6 +2,10 @@
     box-shadow: inset 0px -1px 0px rgba(213, 217, 222, 0.5);
     padding: 8px 0;
 
+    &:last-child {
+        box-shadow: none;
+    }
+
     & .profile-meta {
         height: 20px;
     }
