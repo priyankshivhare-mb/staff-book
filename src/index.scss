@@ -597,7 +597,9 @@ a.navbar-icon {
       border: 1px solid black;
       border-radius: 20px;
       margin-right: 8px;
-      line-height: 50px;
+      margin-bottom: 8px;
+      line-height: 24px;
+      display: inline-block;
     }
   }
 }

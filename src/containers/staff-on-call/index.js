@@ -105,7 +105,7 @@ class StaffOnCall extends Component {
                             ]}/>
                         </div>
                         <div className="col-md-12">
-                            <Skills skillSet={['Yoga', 'Vikram Yoga', 'Wellness', 'Studio Manager']}/>
+                            <Skills skillSet={['Yoga', 'Vikram Yoga', 'Karma Yoga', 'Swara Yoga', 'Wellness', 'Studio Manager', 'Social Media Manager']}/>
                         </div>
                         <div className="col-md-12">
                             <ProfileBio
