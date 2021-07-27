@@ -20,7 +20,7 @@ class StaffListing extends React.Component {
               <div className="row staff-head-wrapper">
                 <div className="col-md-4 p-0">
                   <h1 className="heading-1">Book Staff On-Call</h1>
-                  <p className="staff-breadcrumb">Dashboard / Book Staff on Call / Book Staff-on call</p>
+                  <p className="staff-breadcrumb">Dashboard / Book Staff on Call / Book Staff on-call</p>
                 </div>
                 <div className="col-md-2" />
                 <div className="col-md-6 p-0">

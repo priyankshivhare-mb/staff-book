@@ -53,7 +53,7 @@ const Home = props => {
                   </div>
                   <div className="col-6">
                     <div className="notification-title">
-                      {profiles[0].name} accepted staff-on-call request.
+                      {profiles[0].name} accepted staff on-call request.
                     </div>
                     <div className="notification-description">
                       for Friday, July 5, 2021 at 2:00 - 3:00 PM

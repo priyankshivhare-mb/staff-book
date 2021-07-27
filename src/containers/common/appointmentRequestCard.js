@@ -4,7 +4,7 @@ const AppointmentRequestCard = (props) => {
     return (
         <div className="row">
             <div className="col-md-12 appointment-request-wrapper">
-                <h3>Staff-On Call Request Details</h3>
+                <h3>Staff On-Call Request Details</h3>
                 <div className="row appointment-details-wrapper">
                     <div className="col-md-12 appointment-details">
                         <div>

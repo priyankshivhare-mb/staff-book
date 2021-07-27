@@ -24,7 +24,7 @@ const BookingsCalendar = () => {
             <div className="row staff-head-wrapper">
               <div className="col-md-4 p-0">
                 <h1 className="heading-1">Book Staff On Call</h1>
-                <p className="staff-breadcrumb">Dashboard / Staff on Call / Book Staff-on call</p>
+                <p className="staff-breadcrumb">Dashboard / Staff on Call / Book Staff on-call</p>
               </div>
               <div className="col-md-2" />
               <div className="col-md-6 p-0">
@@ -66,7 +66,7 @@ const BookingsCalendar = () => {
 
           <div className="booking-view">
             <div className="booking-view-header">BOOKING VIEW</div>
-            <div className="booking-view-option active">Staff-on-Call</div>
+            <div className="booking-view-option active">Staff on-Call</div>
             <div className="booking-view-option">Full-Time Staff</div>
             <div className="booking-view-option">All Bookings</div>
           </div>
