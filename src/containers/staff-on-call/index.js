@@ -49,8 +49,8 @@ class StaffOnCall extends Component {
             <div className="staff-on-call-wrapper">
                 <div className="row staff-head-wrapper">
                     <div className="col-md-8">
-                        <h1 className="heading-1">Request Staff On Call</h1>
-                        <p className="staff-breadcrumb">Dashboard/Staff on Call/Request Staff on Call</p>
+                        <h1 className="heading-1">Request Staff On-Call</h1>
+                        <p className="staff-breadcrumb">Dashboard/Staff on-call/Request Staff on-call</p>
                     </div>
                     <div className="col-md-4">
                         <button className="btn btn-light pull-right">Download Resume</button>
