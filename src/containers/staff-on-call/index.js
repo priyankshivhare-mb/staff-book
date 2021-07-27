@@ -75,15 +75,15 @@ class StaffOnCall extends Component {
                                 emailVerified={true}
                                 mobile="+1 (234) 234 567"
                                 mobileVerified={true}
-                                jobsCompleted="98%"
-                                budgetPerc="85%"
-                                hireRate="60%"
+                                jobsCompleted={activeProfile.jobs_completed+'%'}
+                                budgetPerc={activeProfile.budget_perc+'%'}
+                                hireRate={activeProfile.hire_rate+'%'}
                                 bio={activeProfile.about_me}
                                 profileViews={activeProfile.views}
                                 profileDownloads={2}
                                 lastActive={activeProfile.active_date}
-                                lastModified="28 Feb 2020"
-                                reviewCount={25}
+                                lastModified={activeProfile.modified_date}
+                                reviewCount={activeProfile.reviews}
                             />
                         </div>
                         <div className="col-md-12">
