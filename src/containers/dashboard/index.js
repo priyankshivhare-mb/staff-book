@@ -41,7 +41,8 @@ const Home = props => {
 
   const handleSentModal = () => {
     handleConfirmationModal(false);
-    updateStaffOnCall(true);
+    //Enable this if we want to enable dynamic name change of jennifer in upcoming staff
+    //updateStaffOnCall(true);
   }
 
   return(
