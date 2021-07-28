@@ -9,6 +9,11 @@ import { getUserProfiles } from '../../modules/profile';
 import { connect } from "react-redux";
 
 class StaffListing extends React.Component {
+  constructor(props) {
+    super(props);
+    window.scrollTo(0, 0);
+  }
+
   render() {
     const { profile } = this.props;
 
