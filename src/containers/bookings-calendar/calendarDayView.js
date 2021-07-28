@@ -74,7 +74,7 @@ const CalendarDayView = (props) => {
                     <div className="booking-a  booking-primary">
                         <div className="status"></div>
                         <div className="content"><span
-                            className="title">Yoga Session, Karma Yoga</span>
+                            className="title">Yoga Session, Vikram Yoga</span>
                             <div className="booked"><span className="title">Jennifer Long</span>
                                 <div className="border"></div>
                                 <span className="time">60min</span>

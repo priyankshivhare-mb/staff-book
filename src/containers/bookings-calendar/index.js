@@ -14,7 +14,7 @@ import BookingCalendar from '../../assets/booking-calendar.png';
 import './styles.scss';
 
 const BookingsCalendar = () => {
-  const [currentDate, onDateChange] = useState(new Date());
+  const [currentDate, onDateChange] = useState(new Date(2021, 7, 2));
 
   return (
     <div className="container-fluid bookings-calendar">

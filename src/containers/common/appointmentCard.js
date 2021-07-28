@@ -4,7 +4,7 @@ import CustomCheckbox from './customCheckbox';
 import 'react-calendar/dist/Calendar.css';
 
 const AppointmentCard = (props) => {
-    const [currentDate, onDateChange] = useState(new Date());
+    const [currentDate, onDateChange] = useState(new Date(2021, 7, 2));
     const [selectedSlot, onSlotChange] = useState({'02:00 PM': true});
 
     const handleOnChange = (selection, label) => {
