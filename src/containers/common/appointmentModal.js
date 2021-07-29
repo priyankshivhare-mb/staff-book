@@ -83,7 +83,7 @@ const AppointmentModal = (props) => {
             <Select
                 className="form-input"
                 styles={customStyles}
-                defaultInputValue="Surya Yoga 101"
+                defaultInputValue="Vikram Yoga"
             />
           </div>
         </div>
