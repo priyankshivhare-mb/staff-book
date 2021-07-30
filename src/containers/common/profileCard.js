@@ -71,16 +71,13 @@ const ProfileCard = (props) => {
                         {!props.isBrand && <div className="row">
                             <div className="col-md-12 candidate-highlight">
                                 <span className="col bullet">
-                                    <span className="highlight">{props.jobsCompleted}</span> On Time
+                                    <span className="highlight">{props.jobsCompleted}</span> Jobs Completed
                                 </span>
                                 <span className="col bullet">
                                     <span className="highlight">{props.budgetPerc}</span> On Budget
                                 </span>
                                 <span className="col bullet">
-                                    <span className="highlight">{props.hireRate}</span> Repeated Hiring
-                                </span>
-                                <span className="col bullet">
-                                    <span className="highlight">{props.coreValues}</span> Core Values
+                                    <span className="highlight">{props.hireRate}</span> Repeat Hire Rate
                                 </span>
                             </div>
                         </div>}
