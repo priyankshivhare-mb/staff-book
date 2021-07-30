@@ -61,8 +61,8 @@ class StaffListing extends React.Component {
               profile.map(profileData => {
                 const {
                   profile_score, img_url, name, rating, hourly_rate,
-                  elocation, recommended_for, experience, key_skills,
-                  views, active_date, reviews, location,
+                  recommended_for, experience, key_skills,
+                  views, active_date, reviews, location, downloads,
                   recommendations = 8,
                   modified_date = "28 Feb 2020",
                   jobs_completed = "98",
@@ -89,7 +89,7 @@ class StaffListing extends React.Component {
                     hireRate={`${hire_rate}%`}
                     coreValues={`${core_values}%`}
                     profileViews={views}
-                    profileDownloads={2}
+                    profileDownloads={downloads}
                     lastActive={active_date}
                     lastModified={modified_date}
                     reviewCount={reviews}

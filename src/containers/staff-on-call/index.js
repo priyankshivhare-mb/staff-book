@@ -67,10 +67,11 @@ class StaffOnCall extends Component {
                                 profilePic={profilePic}
                                 name={activeProfile.name}
                                 profileRating={activeProfile.rating}
-                                recommendation={8}
+                                recommendation={activeProfile.recommendations}
                                 wage={'$'+activeProfile.hourly_rate + '/hr'}
                                 location={activeProfile.location}
                                 currentJob={activeProfile.recommended_for}
+                                coreValues={activeProfile.core_values+'%'}
                                 email="jennifer_long@gmail.com"
                                 emailVerified={true}
                                 mobile="+1 (234) 234 567"
@@ -80,7 +81,7 @@ class StaffOnCall extends Component {
                                 hireRate={activeProfile.hire_rate+'%'}
                                 bio={activeProfile.about_me}
                                 profileViews={activeProfile.views}
-                                profileDownloads={2}
+                                profileDownloads={activeProfile.downloads}
                                 lastActive={activeProfile.active_date}
                                 lastModified={activeProfile.modified_date}
                                 reviewCount={activeProfile.reviews}
