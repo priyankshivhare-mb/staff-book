@@ -38,10 +38,22 @@ const customStyles = {
 const appointmentMessage = `Dear Jennifer,
 We are pleased to inform that your appointment is all set for Power Yoga.
 When: Thursday, 02-August-2021 at 2 pm onwards.
-Total price: 28$/hour
+Total price: $28/hour
 
 Thanks,
 Team Power Fitness`;
+
+const dropdownOptions = [{
+    value: 'swara-yoga',
+    label: 'Swara Yoga'
+  },
+  {
+    value: 'vikram-yoga',
+    label: 'Vikram Yoga'
+  }, {
+    value: 'pliates',
+    label: 'Pilates'
+  }];
 
 const AppointmentModal = (props) => {
   return (
@@ -81,9 +93,10 @@ const AppointmentModal = (props) => {
           </div>
           <div className="col-md-9">
             <Select
-                className="form-input"
+                options={dropdownOptions}
+                className="form-input form-select"
                 styles={customStyles}
-                defaultInputValue="Vikram Yoga"
+                defaultInputValue={" "}
             />
           </div>
         </div>
