@@ -11,11 +11,20 @@ import { connect } from "react-redux";
 class StaffListing extends React.Component {
   constructor(props) {
     super(props);
+    this.state = { searchTerm: '' };
     window.scrollTo(0, 0);
+  }
+
+  handleSearch = (e) => {
+    const searchTerm = e.target.value;
+    this.setState({ searchTerm });
   }
 
   render() {
     const { profile } = this.props;
+    const { searchTerm } = this.state;
+    const filteredProfile = profile.filter(profileData => profileData['name'].toLowerCase().includes(searchTerm.toLowerCase())
+        || profileData['key_skills'].toLowerCase().includes(searchTerm.toLowerCase()));
 
     return (
       <div className="container-fluid search-profiles">
@@ -37,10 +46,12 @@ class StaffListing extends React.Component {
                           <span className="input-group-text"><i className="fa fa-search"/></span>
                         </div>
                         <input
-                          type="text"
-                          placeholder="Search by Name, Skills"
-                          className="form-control"
-                          aria-label="Amount (to the nearest dollar)"
+                            value={searchTerm}
+                            onChange={this.handleSearch}
+                            type="text"
+                            placeholder="Search by Name, Skills"
+                            className="form-control search-input"
+                            aria-label="Amount (to the nearest dollar)"
                         />
                       </div>
 
@@ -58,7 +69,7 @@ class StaffListing extends React.Component {
           </div>
           <div className="col-9">
             {
-              profile.map(profileData => {
+              filteredProfile.map(profileData => {
                 const {
                   profile_score, img_url, name, rating, hourly_rate,
                   recommended_for, experience, key_skills,
