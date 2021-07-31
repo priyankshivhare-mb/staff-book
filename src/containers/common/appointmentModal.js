@@ -36,7 +36,7 @@ const customStyles = {
 };
 
 const appointmentMessage = `Dear Jennifer,
-We are pleased to inform that your appointment is all set for Power Yoga.
+We are pleased to inform that your appointment is all set for Vikram Yoga.
 When: Thursday, 02-August-2021 at 2 pm onwards.
 Total price: $28/hour
 
