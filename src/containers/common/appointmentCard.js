@@ -5,7 +5,7 @@ import 'react-calendar/dist/Calendar.css';
 
 const AppointmentCard = (props) => {
     const [currentDate, onDateChange] = useState(new Date(2021, 7, 1));
-    const [selectedSlot, onSlotChange] = useState({'02:00 PM': true});
+    const [selectedSlot, onSlotChange] = useState({'02:00 PM': false});
 
     const handleOnChange = (selection, label) => {
         onSlotChange({...selectedSlot, [label]: selection});
