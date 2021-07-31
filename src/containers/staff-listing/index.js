@@ -59,7 +59,11 @@ class StaffListing extends React.Component {
         timeSlot: '',
         distance: '5 - 10'
       },
-      currentListing: props.profiles
+      currentListing: props.profiles.filter((profile, idx) => {
+        if(idx !== 0){
+          return profile;
+        }
+      })
     };
 
     window.scrollTo(0, 0);
@@ -76,9 +80,10 @@ class StaffListing extends React.Component {
     const { profiles } = this.props;
     const { searchTerm, filterValues } = this.state;
 
-    let filteredProfiles = profiles.filter(profileData => (
-      profileData['key_skills'].toLowerCase().includes(searchTerm.toLowerCase())
-    ));
+    // let filteredProfiles = profiles.filter(profileData => (
+    //   profileData['key_skills'].toLowerCase().includes(searchTerm.toLowerCase())
+    // ));
+    // this.setState({currentListing: filteredProfiles});
 
     // const filterMap = {
     //   vertical: 'vertical',
@@ -99,7 +104,7 @@ class StaffListing extends React.Component {
     //   ));
     // }
 
-    this.setState({currentListing: filteredProfiles});
+    this.setState({currentListing: profiles});
   }
 
   handleFilterChange = (filterValue, e) => {
