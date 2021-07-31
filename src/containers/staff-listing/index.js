@@ -142,7 +142,7 @@ class StaffListing extends React.Component {
                             value={searchTerm}
                             onChange={this.handleSearch}
                             type="text"
-                            placeholder="Search by Name, Skills"
+                            placeholder="Search by Skills"
                             className="form-control search-input"
                             aria-label="Amount (to the nearest dollar)"
                         />
