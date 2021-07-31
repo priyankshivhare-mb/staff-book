@@ -27,7 +27,7 @@ const SearchProfileCard = (props) => {
                         <img src={socialIcons} className="img-responsive" />
                         <div className="follower-wrapper">
                             <img className="top-arrow" src={topArrow} />
-                            <div className="follower-data"><span>{getRangeBasedRandomVal(1,20)}K</span> Followers</div>
+                            <div className="follower-data"><span>{props.followers || getRangeBasedRandomVal(1,20)}K</span> Followers</div>
                         </div>
                     </div>
                 </div>

@@ -174,7 +174,7 @@ class StaffListing extends React.Component {
               currentListing.map(profileData => {
                 const {
                   profile_score, img_url, name, rating, hourly_rate,
-                  recommended_for, experience, key_skills,
+                  recommended_for, experience, key_skills, social_followers,
                   views, active_date, reviews, location, downloads,
                   recommendations = 8,
                   modified_date = "28 Feb 2020",
@@ -206,6 +206,7 @@ class StaffListing extends React.Component {
                     lastActive={active_date}
                     lastModified={modified_date}
                     reviewCount={reviews}
+                    followers={social_followers}
                   />
                 );
               })

@@ -28,7 +28,8 @@
     "budget_perc": "85",
     "hire_rate": "89",
     "core_values": "95",
-    "recommendations": 8
+    "recommendations": 8,
+    "social_followers": "10"
   },
   {
     "id": 2,
@@ -58,7 +59,8 @@
     "budget_perc": "79",
     "hire_rate": "83",
     "core_values": "60",
-    "recommendations": 3
+    "recommendations": 3,
+    "social_followers": "2"
   },
   {
     "id": 3,
