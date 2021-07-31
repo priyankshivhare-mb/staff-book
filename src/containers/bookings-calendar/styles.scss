@@ -49,10 +49,6 @@
             }
         }
 
-
-
-
-
         .booking-wrapper {
             width: 462px;
             height: 58px;
@@ -78,6 +74,10 @@
             }
             .booking-a-primary {
                 background-color: #FFF1E6;
+
+                .status {
+                    background-color: #FF6E01;
+                }
             }
         }
 
