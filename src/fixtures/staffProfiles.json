@@ -23,6 +23,7 @@
     "booking_date": "2021-08-04",
     "booking_time": "3:30 PM",
     "recommended_for": "Yoga Instructor",
+    "vertical": "Yoga / Fitness, Wellness",
     "jobs_completed": "98",
     "budget_perc": "85",
     "hire_rate": "89",
@@ -38,6 +39,7 @@
     "experience": "7y 3m",
     "salary": "25,040",
     "location": "Smithtown, NY",
+    "vertical": "Yoga / Fitness, Wellness",
     "current_company": "Rise by We",
     "key_skills": "Yoga Instructor, Triathlete",
     "may_also_know": "Meditation, Diet Planning",
@@ -60,6 +62,7 @@
   },
   {
     "id": 3,
+    "vertical": "Yoga / Fitness, Wellness",
     "hourly_rate": 20,
     "profile_score": 70,
     "img_url": "profile-pics/small/profile-2.jpg",
@@ -89,6 +92,7 @@
   },
   {
     "id": 4,
+    "vertical": "Yoga / Fitness, Wellness",
     "hourly_rate": 19,
     "profile_score": 83,
     "img_url": "profile-pics/small/profile-3.jpg",
@@ -117,6 +121,7 @@
   },
   {
     "id": 5,
+    "vertical": "Yoga / Fitness, Wellness",
     "hourly_rate": 12,
     "profile_score": 55,
     "img_url": "profile-pics/small/profile-4.jpg",
@@ -141,6 +146,7 @@
   },
   {
     "id": 6,
+    "vertical": "Yoga / Fitness, Wellness",
     "hourly_rate": 23,
     "profile_score": 86,
     "img_url": "profile-pics/small/profile-6.jpg",
@@ -165,6 +171,7 @@
   },
   {
     "id": 7,
+    "vertical": "Yoga / Fitness, Wellness",
     "img_url": "profile-pics/small/profile-7.jpg",
     "profile_score": 90,
     "name": "Shawn Sanders",
@@ -189,6 +196,7 @@
   },
   {
     "id": 8,
+    "vertical": "Yoga / Fitness, Wellness",
     "img_url": "profile-pics/small/profile-8.jpg",
     "profile_score": 42,
     "name": "Sally Lambert",
@@ -213,6 +221,7 @@
   },
   {
     "id": 9,
+    "vertical": "Yoga / Fitness, Wellness",
     "img_url": "profile-pics/small/profile-9.jpg",
     "profile_score": 68,
     "name": "Polly Law",
@@ -237,6 +246,7 @@
   },
   {
     "id": 10,
+    "vertical": "Yoga / Fitness, Wellness",
     "img_url": "profile-pics/small/profile-10.jpg",
     "profile_score": 88,
     "name": "Josephine Wilcher",
@@ -261,6 +271,7 @@
   },
   {
     "id": 11,
+    "vertical": "Yoga / Fitness, Wellness",
     "img_url": "profile-pics/small/profile-11.jpg",
     "profile_score": 90,
     "name": "Misty Pearce",
@@ -285,6 +296,7 @@
   },
   {
     "id": 12,
+    "vertical": "Yoga / Fitness, Wellness",
     "img_url": "profile-pics/small/profile-12.jpg",
     "profile_score": 90,
     "name": "Kiyan Mosley",

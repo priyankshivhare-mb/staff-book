@@ -1,12 +1,9 @@
 import React from 'react';
 import Select from 'react-select';
 
-const Sidebar = () => {
-  const keySkillsSelectOptions = [
-    {value: 'vikram-yoga', label: 'Vikram Yoga'},
-    {value: 'raja-yoga', label: 'Raja Yoga'}
-  ];
+const Sidebar = props => {
 
+  const { onChange, filterValues, filterOptions } = props;
   return (
     <>
       <div className="section">
@@ -20,7 +17,11 @@ const Sidebar = () => {
                 Fitness Vertical
               </div>
               <div className="dropdown">
-                <Select defaultInputValue="Wellness" />
+                <Select
+                  defaultInputValue={filterValues.vertical}
+                  options={filterOptions.vertical}
+                  onChange={e => onChange('fitnessVertical', e)}
+                />
               </div>
             </div>
 
@@ -29,7 +30,11 @@ const Sidebar = () => {
                 Role
               </div>
               <div className="dropdown">
-                <Select defaultInputValue="Yoga Trainer" />
+                <Select
+                  defaultInputValue={filterValues.role}
+                  options={filterOptions.role}
+                  onChange={e => onChange('role', e)}
+                />
               </div>
             </div>
             <div className="filter-section">
@@ -37,15 +42,23 @@ const Sidebar = () => {
                 Hourly Rate
               </div>
               <div className="dropdown">
-                <Select defaultInputValue="Less than $20" />
+                <Select
+                  defaultInputValue={filterValues.hourlyRate}
+                  options={filterOptions.hourlyRate}
+                  onChange={e => onChange('hourlyRate', e)}
+                />
               </div>
             </div>
             <div className="filter-section">
               <div className="filter-title">
-                Distance
+                Distance (miles)
               </div>
               <div className="dropdown">
-                <Select defaultInputValue="Less than 5 Miles" />
+                <Select
+                  defaultInputValue={filterValues.distance}
+                  options={filterOptions.distance}
+                  onChange={e => onChange('distance', e)}
+                />
               </div>
             </div>
             <div className="filter-section">
@@ -54,9 +67,10 @@ const Sidebar = () => {
               </div>
               <div className="dropdown">
                 <Select
-                  defaultValue={keySkillsSelectOptions[0]}
+                  defaultValue={filterValues.keySkills}
                   isMulti
-                  options={keySkillsSelectOptions}
+                  options={filterOptions.keySkills}
+                  onChange={e => onChange('keySkills', e)}
                 />
               </div>
             </div>
@@ -75,7 +89,11 @@ const Sidebar = () => {
                 Active From
               </div>
               <div className="dropdown">
-                <Select defaultInputValue="Last 30 days" />
+                <Select
+                  defaultInputValue={filterValues.activeFrom}
+                  options={filterOptions.activeFrom}
+                  onChange={e => onChange('activeFrom', e)}
+                />
               </div>
             </div>
 
@@ -84,7 +102,11 @@ const Sidebar = () => {
                 Time Slot
               </div>
               <div className="dropdown">
-                <Select defaultInputValue="6:00 AM - 9:00 AM" />
+                <Select
+                  defaultInputValue={filterValues.timeSlot}
+                  options={filterOptions.timeSlot}
+                  onChange={e => onChange('timeSlot', e)}
+                />
               </div>
             </div>
           </div>
