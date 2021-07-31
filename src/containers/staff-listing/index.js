@@ -8,23 +8,116 @@ import { bindActionCreators } from 'redux';
 import { getUserProfiles } from '../../modules/profile';
 import { connect } from "react-redux";
 
+const filterOptions = {
+  vertical: [
+    { value: 'fitness', label: 'Fitness' },
+    { value: 'wellness', label: 'Wellness' },
+    { value: 'beauty', label: 'Beauty' }
+  ],
+  role: [
+    { value: 'yoga trainer', label: 'Yoga Instructor' },
+    { value: 'physiotherapist', label: 'Physiotherapist' },
+    { value: 'sales specialist', label: 'Sales Specialist' },
+    { value: 'gym trainer', label: 'Gym Trainer' }
+  ],
+  hourlyRate: [
+    { value: '0-10', label: '$0-10' },
+    { value: '10-20', label: '$10-20' },
+    { value: '20-30', label: '$20-30' },
+  ],
+  keySkills: [
+    {value: 'vikram yoga', label: 'Vikram Yoga'},
+    {value: 'raja yoga', label: 'Raja Yoga'},
+    {value: 'triathlete', label: 'Triathlete'},
+    {value: 'fitness trainer', label: 'Fitness Trainer'},
+  ],
+  distance: [
+    {value: '<5', label: 'Less than 5'},
+    {value: '5-10', label: '5 - 10'},
+    {value: '10+', label: '10+'},
+  ],
+  activeFrom: [
+    {value: '<30', label: 'Less than 30 days'},
+    {value: '30-60', label: '30 - 60 days'},
+    {value: '60+', label: '60+ days'},
+  ],
+  timeSlot: [
+  ]
+};
+
 class StaffListing extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { searchTerm: '' };
+    this.state = {
+      searchTerm: '',
+      filterValues: {
+        vertical: 'Wellness',
+        role: 'Yoga Instructor',
+        hourlyRate: '$20-30',
+        keySkills: '',
+        activeFrom: '30 - 60 days',
+        timeSlot: '',
+        distance: '5 - 10'
+      },
+      currentListing: props.profiles
+    };
+
     window.scrollTo(0, 0);
   }
 
   handleSearch = (e) => {
     const searchTerm = e.target.value;
     this.setState({ searchTerm });
+
+    this.filterProfiles();
+  }
+
+  filterProfiles = () => {
+    const { profiles } = this.props;
+    const { searchTerm, filterValues } = this.state;
+
+    let filteredProfiles = profiles.filter(profileData => (
+      profileData['key_skills'].toLowerCase().includes(searchTerm.toLowerCase())
+    ));
+
+    // const filterMap = {
+    //   vertical: 'vertical',
+    //   role: 'recommended_for',
+    //   keySkills: 'key_skills'
+    // };
+
+
+    // for (let [filterName, value] of Object.entries(filterValues)) {
+    //   filterName = filterMap[filterName] || '';
+
+    //   if (!filterName) {
+    //     continue;
+    //   }
+
+    //   filteredProfiles = filteredProfiles.filter(profileData => (
+    //     profileData[filterName].toLowerCase().includes(value.toLowerCase())
+    //   ));
+    // }
+
+    this.setState({currentListing: filteredProfiles});
+  }
+
+  handleFilterChange = (filterValue, e) => {
+    const { filterValues } = this.state;
+
+    this.setState({
+      filterValues: {
+        ...filterValues,
+        [filterValue]: e.value
+      }
+    });
+
+    this.filterProfiles();
   }
 
   render() {
-    const { profile } = this.props;
-    const { searchTerm } = this.state;
-    const filteredProfile = profile.filter(profileData => profileData['name'].toLowerCase().includes(searchTerm.toLowerCase())
-        || profileData['key_skills'].toLowerCase().includes(searchTerm.toLowerCase()));
+    const { profiles } = this.props;
+    const { searchTerm, filterValues, currentListing } = this.state;
 
     return (
       <div className="container-fluid search-profiles">
@@ -65,11 +158,15 @@ class StaffListing extends React.Component {
         </div>
         <div className="row">
           <div className="col-3">
-            <Sidebar />
+            <Sidebar
+              onChange={this.handleFilterChange}
+              filterValues={filterValues}
+              filterOptions={filterOptions}
+            />
           </div>
           <div className="col-9">
             {
-              filteredProfile.map(profileData => {
+              currentListing.map(profileData => {
                 const {
                   profile_score, img_url, name, rating, hourly_rate,
                   recommended_for, experience, key_skills,
@@ -115,8 +212,8 @@ class StaffListing extends React.Component {
   }
 };
 
-const mapStateToProps = ({ profile, staffGalleryImages }) => ({
-  profile,
+const mapStateToProps = ({ profile: profiles, staffGalleryImages }) => ({
+  profiles,
   staffGalleryImages
 })
 
